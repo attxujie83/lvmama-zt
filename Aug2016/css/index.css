@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+/* CSS RESET */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, select, textarea, p, blockquote, th, td, hr, button, figure, menu{margin: 0; padding: 0;}
+body{font: 12px/22px Tahoma, Arial, \5b8b\4f53, sans-serif;}
+body{min-width: 1096px;}
+h1, h2, h3, h4, h5, h6{font-size: 100%;}
+table{border-collapse: collapse; border-spacing: 0;}
+ol, ul{list-style: none;}
+a img{border: none; vertical-align: top;}
+input, button{font-family: Tahoma, Verdana, Geneva, sans-serif}
+a{text-decoration: none;}
+a:hover{text-decoration: none;}
+i{font-style: normal;}
+.clearfix:after{content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+/*OTHER*/
+.wrap{ overflow: hidden; zoom: 1; background-color:#f4f4f4;}
+.banner { background: url(../images/banner.jpg) no-repeat center 0; height: 660px;position: relative;}
+.banner h2 { position: absolute; left: 50%; margin-left: -190px; top: 155px; z-index: 2; width: 380px; height: 222px; background: url(../images/banTi.png);}
+.banner .videoBF { position: relative;top: 40px; width: 960px; height: 541px; margin: 0 auto; background: #333333;}
+
+.about { background: url(../images/fbg1.jpg) no-repeat center 0; background-color:#fff; font:14px/22px "Microsoft YaHei",微软雅黑; color:#999;}
+.about-content { padding: 100px 40px 0 420px;width: 540px; height: 400px; margin: 0 auto;}
+.about-content h2 { font-size: 30px; line-height: 40px;letter-spacing: 4px; color:#377cb7;font-weight: normal;margin-bottom: 20px;}
+.about-content p { text-indent: 2em;}
+
+
+.gallery-grids2 {width: 1000px; height:1000px; margin: 50px auto;font:14px/20px "Microsoft YaHei",微软雅黑; }
+.gallery-wrap {width: 1011px;}
+.gallery-grid2 { float: left; width:326px; margin:0 11px 11px 0; }
+.item, .item-img{ width:326px; height: 326px;}
+.item-img { position: absolute; top: 0; left: 0; }
+.item { float: none; margin: 0; position: relative; }
+
+.item-img { background-color: #377cb7; z-index: 0; }
+
+
+
+.ztfooter{width: 980px; overflow: hidden; margin: 0 auto; text-align: center; color: #666; line-height: 18px; padding: 25px 0 10px 0;}

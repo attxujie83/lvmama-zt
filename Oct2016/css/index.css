@@ -1,0 +1,128 @@
+@charset "utf-8";
+
+/* CSS RESET */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, select, textarea, p, blockquote, th, td, hr, button, figure, menu{margin: 0; padding: 0;}
+body{font: 12px/22px Tahoma, Arial, \5b8b\4f53, sans-serif;}
+body{min-width: 1096px;}
+h1, h2, h3, h4, h5, h6{font-size: 100%;}
+table{border-collapse: collapse; border-spacing: 0;}
+ol, ul{list-style: none;}
+a img{border: none; vertical-align: top;}
+input, button{font-family: Tahoma, Verdana, Geneva, sans-serif}
+a{text-decoration: none;}
+a:hover{text-decoration: none;}
+i{font-style: normal;}
+.clearfix:after{content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+/*OTHER*/
+.wrap{ overflow: hidden; zoom: 1; background-color:#fff;}
+.banner { background: url(../images/banner.jpg) no-repeat center 0; background-color:#09c; height: 500px;position: relative;}
+
+.gallery-grids1 {height:440px;color:#999; background-color: #F0F0F0;padding-top: 60px; font:14px/22px "Microsoft YaHei",微软雅黑;}
+.gallery-grid1 {width: 1000px; height:370px; margin: 0 auto; background-color:#fff;}
+.grid1-pic { float:left; width: 640px; height:338px; margin: 16px;}
+
+.grid1-content { float: right; width: 300px; height:338px; margin: 16px 28px 0 0;}
+.grid1-content .logo-sunfl { height:60px; margin-bottom:20px; background: url(../images/logo_sunfl.jpg) no-repeat;}
+.grid1-content p { margin-left:8px; text-indent:2em; }
+
+
+.title { background: url(../images/tit.jpg) no-repeat; height:60px; margin-top:40px;}
+.wayUs .title { background-position:0 0;}
+.prd .title { background-position:0 -60px;}
+.prdMore .title { background-position:0 -120px;}
+.theySay .title { background-position:0 -180px;}
+.title h2 {text-indent:-9999px;}
+
+.wayUs { height:320px; }
+.prd { height:2550px; }
+.prdMore { }
+
+.wayUs-content,.prd-content, .theySay-content { width: 1000px; margin: 0 auto; font:14px/18px "Microsoft YaHei",微软雅黑; color:#999;}
+
+.prdPic { margin:10px 0 ; clear:both;}
+.prdDetl { height:2050px; background: url(../images/prd01_way.jpg) no-repeat;}
+
+.wayUs ul { margin-top: 20px; }
+.wayUs ul li { float: left; width:200px; text-align:center;}
+.wayUs ul i { width:150px; height: 150px; margin: 12px 0 14px; display:inline-block;}
+.wayUs h4 { font-size:14px; color:#999; line-height:18px; font-weight:normal; }
+.wayUs ul .wayUsInfo1 {background: url(../images/why01.jpg) no-repeat;}
+.wayUs ul .wayUsInfo2 {background: url(../images/why02.jpg) no-repeat;}
+.wayUs ul .wayUsInfo3 {background: url(../images/why03.jpg) no-repeat;}
+.wayUs ul .wayUsInfo4 {background: url(../images/why04.jpg) no-repeat;}
+.wayUs ul .wayUsInfo5 {background: url(../images/why05.jpg) no-repeat;}
+
+.prdDetl .left { float:left; margin-left:200px; margin-bottom:110px;}
+.prdDetl .right { float:right; margin-right:200px; margin-bottom:110px;}
+.prdDetl .last { clear:both; margin-bottom:80px;}
+.prdDetl-info { margin: 0 auto ; width:200px; text-align:center; margin-bottom:190px;}
+.prdDetl-info i { width:200px; height: 200px; margin: 0 0 10px; display:block;}
+.prdDetl-info h4 { font-size:18px; color:#666; line-height:22px; }
+.prdDetl-info span { font-size:14px; line-height:18px;}
+.prdDetl-info .infoPrc1 {background: url(../images/prd01_01.jpg) no-repeat;}
+.prdDetl-info .infoPrc2 {background: url(../images/prd01_02.jpg) no-repeat;}
+.prdDetl-info .infoPrc3 {background: url(../images/prd01_03.jpg) no-repeat;}
+.prdDetl-info .infoPrc4 {background: url(../images/prd01_04.jpg) no-repeat;}
+.prdDetl-info .infoPrc5 {background: url(../images/prd01_05.jpg) no-repeat;}
+.prdDetl-info .infoPrc6 {background: url(../images/prd01_06.jpg) no-repeat;}
+.prdDetl-info .infoPrc7 {background: url(../images/prd01_07.jpg) no-repeat;}
+.prdDetl-info .infoPrc8 {background: url(../images/prd01_08.jpg) no-repeat;}
+.prdDetl-price  { margin: 0 auto ; width:180px; text-align:center; margin-bottom:190px;}
+.pro_price{font-size: 12px;font-family: "宋体"; text-align:right; margin-top:15px;}
+.pro_price i { font-style:normal; font-size:16px; font-family:"Microsoft YaHei";}
+.pro_price em { font-style:normal; font-size:32px; font-family:"Arial"; font-weight:bold; margin:0 4px;}
+.pro_btn{ float:right; display:block;width:180px; height:36px; line-height:36px;  border-radius:6px; text-align:center;font-size: 18px; font-family: "Microsoft YaHei"; color:#FFF; margin-top:10px;}
+.pro_btn:hover{ text-decoration:none;}
+.prdDetl .left .pro_price{ color:#ff6699;}
+.prdDetl .right .pro_price{ color:#6bd3ff;}
+.prdDetl .left .pro_btn{ background:#fd82ab; }
+.prdDetl .left .pro_btn:hover{ background:#fd6b9c; }
+.prdDetl .right .pro_btn{ background:#6bd3ff; }
+.prdDetl .right .pro_btn:hover{ background:#4cc9fe; }
+
+.prdInfo { clear:both;}
+.prdIcon { margin: 0 10px 10px 0; float:left; width:50px; height:50px; background: url(../images/prd02_icon.jpg) no-repeat;}
+.pi-overlay{ float: left; width: 630px; height: 42px; padding: 8px 0 0 10px; color:#333;font-size: 16px; }
+.pi-overlay small{font-size: 12px; color:#666; }
+.prdMore .prdDetl-price  { float:right; color:#ff6699; width: 280px; margin:4px 0;}
+.prdMore .pro_price{ float:right; margin:12px 20px 0 0;}
+
+.prdMore .pro_btn{ float:right; width:120px; height:38px; line-height:38px;font-size: 14px;margin-top:0px; background:#fd82ab; }
+.prdMore .pro_btn:hover{ text-decoration:none; background:#fd6b9c;}
+
+
+.conBar { float:left; width:300px; margin-right:50px;}
+.msgPup { margin:20px 0 40px ;}
+.userIcon, .sayCon::before, .sayCon::after { background: url(../images/ta_sp.png) no-repeat;}
+.userInfo { height:60px;}
+.userIcon { float:left; width:60px; height:60px; background: url(../images/ta_sp.png) no-repeat;}
+.user {float: left; margin:20px 0 20px 10px; color:#666; }
+.user span {float: left; }
+.user i {float: left; margin: 0 10px; font: 12px/16px \5b8b\4f53,Tahoma,Arial,sans-serif; border-radius: 2px; display: block; height: 16px; color: #fff; padding: 0 5px;}
+
+.sayCon { width:240px; margin:4px 0 0 60px; }
+.sayCon p { width:205px; padding: 0 10px 0 15px; margin-left: 10px; color:#FFF; line-height:20px;}
+
+.stud .sayCon p { background-color:#fd82ab; }
+.stud .sayCon::before { display:block;content:""; height:20px; background-position:0 0;}
+.stud .sayCon::after { display:block;content:""; height:16px; background-position:0 -24px;}
+.stud .userIcon { background-position:-300px 0;}
+.stud .user i { background: #fd82ab; }
+
+.pare .sayCon p { background-color:#85dbff; }
+.pare .sayCon::before { display:block;content:""; height:20px; background-position:0 -80px;}
+.pare .sayCon::after { display:block;content:""; height:16px; background-position:0 -104px;}
+.pare .female { background-position:-400px 0;}
+.pare .male { background-position:-400px -80px;}
+.pare .user i { background: #85dbff; }
+
+.teac .sayCon p { background-color:#999; }
+.teac .sayCon::before { display:block;content:""; height:20px; background-position:0 -160px;}
+.teac .sayCon::after { display:block;content:""; height:16px; background-position:0 -184px;}
+.teac .userIcon { background-position:-500px 0;}
+.teac .user i { background: #999; }
+
+
+
+
+.ztfooter{width: 980px; overflow: hidden; margin: 0 auto; text-align: center; color: #666; line-height: 18px; padding: 25px 0 10px 0;}

@@ -1,0 +1,61 @@
+﻿/*author:梅萌;time:2015.9.15*/
+@charset "utf-8";
+/* CSS Document */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,select,textarea,p,blockquote,th,td,hr,button,figure,menu{margin:0;padding:0;}
+body{font:12px/22px Tahoma,Arial,\5b8b\4f53,sans-serif;}
+body{ min-width:1000px}
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+table{border-collapse:collapse;border-spacing:0;}
+ol,ul{list-style:none;}
+a img{border:none; vertical-align:top;}
+input,button{ font-family:Tahoma,Verdana,Geneva,sans-serif}
+a{ text-decoration:none;}a:hover{ text-decoration: underline;}
+i{ font-style:normal;}
+
+
+.banner{ background:url(../images/banner.jpg) no-repeat center 0; height:600px;}
+.part{ background:#b1f8d6;}
+.main{ width:1000px; margin:0 auto; padding-bottom:100px;}
+.product_one{ overflow:hidden; background:#9bf6cb; border:3px solid #68dc9a; padding:12px 0 2px 2px; margin-bottom:40px;}
+.product_one li{ float:left; width:235px; height:300px; background:#FFF; position:relative; margin-left:10px; display:inline; margin-bottom:10px;}
+.flag{ display:block; font-size:12px; font-family:"simsun"; color:#FFF; height:28px; position:absolute;top:10px; left:-4px; background: url(../images/flag.jpg) no-repeat left;}
+.flag span{ display:block; background:#09f; height:24px; line-height:24px; padding:0 5px;}
+.pro_con{ padding:0 10px;}
+.pro_con .pro_til{color:#333333;font-size: 14px; font-family: "Microsoft YaHei"; line-height:20px; height:40px; overflow:hidden; display:block;}
+.pro_price{ display:block;color:#ff3300;font-size: 16px;font-family: "Microsoft YaHei"; text-align:right; margin-top:15px;}
+.pro_price em{ font-style:normal; font-size:32px;}
+.pro_btn{ display:block;width:215px; height:40px; line-height:40px; background:#ff771d; border-radius:6px; text-align:center;font-size: 20px; font-family: "Microsoft YaHei"; color:#FFF; margin-top:5px;}
+.pro_btn:hover{ background:#fe5400; text-decoration:none;}
+.product_one .pro_btn1{ width:215px;}
+
+.product_one .product_two{ width:725px;}
+.product_one .product_two .two_pic{ float:left; width:480px;}
+.two_til_con{ overflow:hidden; position:absolute; bottom:0px; left:0px; height:50px; overflow:hidden; padding:0 8px; width:464px;color:#ffffff;font-size: 12px; font-family: "Microsoft YaHei";
+background-color: rgba(0, 0, 0, 0.6); filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr=#88000000, endColorstr=#88000000);}
+.two_til_con a{ display:block;color:#ffffff;font-size: 16px; font-family: "Microsoft YaHei"; line-height:24px; height:24px; overflow:hidden;}
+.two_con{ float:right; width:225px;}
+.con_tj{ line-height:20px; margin-top:28px;}
+.con_tj dt{color:#666666;font-size: 18px; font-family: "Microsoft YaHei"; margin-bottom:22px;}
+.con_tj dd{color:#666666;font-size: 14px; font-family: "Microsoft YaHei"; height:20px; line-height:20px; overflow:hidden; background:url(../images/start.jpg) no-repeat 0px 4px; padding-left:12px;}
+.two_con .pro_price{ margin-right:10px;}
+.two_con .pro_price{ margin-top:66px;}
+
+.product_one2 li{ width:480px;}
+.product_one2 .one_first{ width:235px;}
+.product_one2 .pro_con{ height:60px;}
+.product_one2 .pro_con .pro_til{ float:left; display:block; line-height:22px; height:44px; overflow:hidden; width:225px; margin-top:5px;}
+.product_one2 .pro_price{ float:left; width:133px; text-align:left;}
+.product_one2 .pro_btn{ float:left; width:95px; height:36px; line-height:36px; margin-top:10px;}
+
+.main h2 {line-height: 40px;font-size: 22px;font-family: "微软雅黑";color: #fff;text-align: center;font-weight: normal;height: 40px;background: url(../images/h2_bg.jpg) no-repeat;}
+
+/*底部活动*/ 
+.main_b{ width:100%; background:#FFF; padding:20px 0; margin-bottom:-20px;} 
+.hd_title{ position:relative; width:991px; margin:0 auto; height:30px; line-height:30px; font-size:18px;} 
+.hd_title p{ height:15px; border-bottom:#CCC solid 1px;} 
+.hd_title h3{ font-family:"微软雅黑"; position:absolute; left:50%; margin-left:-105px; width:210px; top:0; line-height:30px; text-align:center; background:#FFF;} 
+.hd_list{ width:981px; padding:10px 0 0 10px; margin:0 auto; overflow:hidden; zoom:1; *padding:10px 0 20px 10px;} 
+.hd_list li{ float:left; margin:9px; display:inline;} 
+.hd_list li img{ display:block;} 
+.ztfooter{ width:980px; overflow:hidden; margin:0 auto; text-align:center; color:#666; line-height:18px; padding:25px 0 10px 0;} 
+
