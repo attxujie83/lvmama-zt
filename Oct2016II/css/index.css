@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+/* CSS RESET */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, select, textarea, p, blockquote, th, td, hr, button, figure, menu{margin: 0; padding: 0;}
+body{font: 12px/22px Tahoma, Arial, \5b8b\4f53, sans-serif;}
+body{min-width: 1096px;}
+h1, h2, h3, h4, h5, h6{font-size: 100%;}
+table{border-collapse: collapse; border-spacing: 0;}
+ol, ul{list-style: none;}
+a img{border: none; vertical-align: top;}
+input, button{font-family: Tahoma, Verdana, Geneva, sans-serif}
+a{text-decoration: none;}
+a:hover{text-decoration: none;}
+i{font-style: normal;}
+.clearfix:after{content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+/*OTHER*/
+.wrap{ overflow: hidden; zoom: 1; background-color:#fff;}
+.banner { background: url(../images/banner.jpg) no-repeat center 0; height: 400px;position: relative;}
+
+.title { height:140px; }
+.title h2 {text-indent:-9999px;}
+
+.about { height:660px; background: url(../images/aboutBg.jpg) no-repeat center 0; }
+.prd { height:1300px; background: url(../images/prdBg.jpg) no-repeat center 0; }
+.prdMore { height:630px; background: url(../images/prdMoreBg.jpg) no-repeat center 0; }
+
+.about-content,.prd-content, .theySay-content { width: 1000px; margin: 0 auto; font:14px/18px "Microsoft YaHei",微软雅黑; color:#999;}
+
+.about-focus { float:left; position: relative; margin-top: 84px; width: 672px; height: 532px; overflow: hidden; display: block; }
+.videoBF { margin: 16px; width: 640px; height: 358px; background: #333; overflow:hidden;}
+.about-focus embed { margin-top:-1px;}
+.about-focus p {margin: 16px 18px; line-height: 22px; text-indent: 2em;}
+
+.prd-cell { margin-left:200px; width: 800px; height: 270px; overflow: hidden; display: block; }
+
+.prd-cell .prdPic { float:left; margin:0 40px;}
+.prd-cell .prdDetl { float:left; width:364px; }
+.prd-cell h4 {font-size: 18px; color: #063; line-height: 24px; margin: 20px 0 18px;}
+.prd-cell p {font-size: 14px; color: #063; line-height: 24px; margin-bottom: 46px;}
+.prd-book { clear:both;}
+.prd-book p { float:left; font-size: 16px; color: #444; line-height: 20px; width:180px; margin-bottom: 20px;}
+.prd-book p span {font-size: 14px; color: #666; display:block;}
+.prd-book .book-btn { float:left; display: block; width: 120px; height: 40px; border-radius: 5px; font-size: 18px; color: #fff; line-height: 40px; text-align: center;}
+.prd-buy .book-btn { background: #090;}
+.prd-cus .book-btn { background: #369;}
+.prd-buy .book-btn:hover{ background: #15a715;}
+.prd-cus .book-btn:hover{ background: #4a7fb3;}
+
+.prdMore-list { margin-top:70px;}
+.prdMore-list li {float: left; width: 460px; margin:20px;}
+.prdMore-list li i { float:left; width: 150px; height: 150px; margin: 0 20px 0 0; display: inline-block;}
+.prdMore-list .list01 {background: url(../images/more01.png) no-repeat;}
+.prdMore-list .list02 {background: url(../images/more02.png) no-repeat;}
+.prdMore-list .list03 {background: url(../images/more03.png) no-repeat;}
+.prdMore-list .list04 {background: url(../images/more04.png) no-repeat;}
+.prdMore-list p { font-size:18px; line-height:24px; color:#444; margin-top:16px;}
+.prdMore-list p span { font-size:14px; line-height:24px; color:#666; margin-top:20px; display:block;}
+
+
+.theySay .title { background: url(../images/h2Bg.jpg) no-repeat; height:100px; margin-top:40px;}
+.theySay li { height:220px; display:block; border:1px solid #fff;  border-bottom:1px solid #eee; margin-bottom:20px; }
+.theySay li:hover { border:1px solid #eee; border-bottom:3px solid #393; margin-bottom:18px;}
+.theySay .prdPic { float:left; margin:0 20px 20px 0;}
+.theySay .prd-info { float:left; width:660px; line-height:24px; }
+.theySay .prd-info h4 { font-size:18px; color:#333; margin:12px 0 10px;}
+.theySay .prd-info .icon_user { width: 25px; height: 25px; display: inline-block; vertical-align: middle; background: url(http://pic.lvmama.com/img/you/icon_bg.png) 0px -103px no-repeat; }
+.theySay .prd-info .info { display: inline-block; color:#999; margin-bottom:20px;}
+.theySay .prd-info .trip { color:#999;}
+.theySay .prd-info .trip span { color:#666;}
+
+
+
+.ztfooter{width: 980px; overflow: hidden; margin: 0 auto; text-align: center; color: #666; line-height: 18px; padding: 25px 0 10px 0;}
