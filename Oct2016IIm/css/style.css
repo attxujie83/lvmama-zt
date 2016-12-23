@@ -8,48 +8,23 @@ body { min-width: 320px;/* max-width: 640px;*/ background: #f4f4f4; width: 100%;
     -webkit-tap-highlight-color: rgba(0,0,0,0); 
     -webkit-focus-ring-color: rgba(0, 0, 0, 0);}
 
-.top-header{ position: relative; min-height: 12rem;}
-.top-header .yimiaomiao{ position: absolute; width: 50%; top: 0; }
-.top-header .topTi{ position: absolute; width: 50%; top: 18%; left: 47%;}
-.top-header .slogan{ position: absolute; width: 50%; top: 50%; left: 47%;
-    -webkit-transform:translate(0,0) scale3d(1,1,1) rotate3d(0,0,1,0deg); transform:translate(0,0) scale3d(1,1,1) rotate3d(0,0,1,0deg); opacity: 0;
-    -webkit-animation:tada 2s ease 0s 1 forwards; animation:tada 2s ease 0s 1 forwards;}
-@-webkit-keyframes tada {
-               0% { -webkit-transform:translate(0,0) scale3d(1,1,1) rotate3d(0,0,1,0deg); transform:translate(0,0) scale3d(1,1,1) rotate3d(0,0,1,0deg); opacity: 0;}
-          10%,20% { -webkit-transform:translate(0,0) scale3d(.9,.9,.9) rotate3d(0,0,1,-3deg); transform:translate(0,0) scale3d(.9,.9,.9) rotate3d(0,0,1,-3deg); opacity: 1;}
-  30%,50%,70%,90% { -webkit-transform:translate(0,0) scale3d(1.1,1.1,1.1) rotate3d(0,0,1,3deg); transform:translate(0,0) scale3d(1.1,1.1,1.1) rotate3d(0,0,1,3deg); opacity: 1;}
-      40%,60%,80% { -webkit-transform:translate(0,0) scale3d(1.1,1.1,1.1) rotate3d(0,0,1,-3deg); transform:translate(0,0) scale3d(1.1,1.1,1.1) rotate3d(0,0,1,-3deg); opacity: 1;}
-             100% { -webkit-transform:translate(0,0) scale3d(1,1,1) rotate3d(0,0,1,0deg); transform:translate(0,0) scale3d(1,1,1) rotate3d(0,0,1,0deg); opacity: 1;}
-}
-@keyframes tada {
-               0% { -webkit-transform:translate(0,0) scale3d(1,1,1) rotate3d(0,0,1,0deg); transform:translate(0,0) scale3d(1,1,1) rotate3d(0,0,1,0deg); opacity: 0;}
-          10%,20% { -webkit-transform:translate(0,0) scale3d(.9,.9,.9) rotate3d(0,0,1,-3deg); transform:translate(0,0) scale3d(.9,.9,.9) rotate3d(0,0,1,-3deg); opacity: 1;}
-  30%,50%,70%,90% { -webkit-transform:translate(0,0) scale3d(1.1,1.1,1.1) rotate3d(0,0,1,3deg); transform:translate(0,0) scale3d(1.1,1.1,1.1) rotate3d(0,0,1,3deg); opacity: 1;}
-      40%,60%,80% { -webkit-transform:translate(0,0) scale3d(1.1,1.1,1.1) rotate3d(0,0,1,-3deg); transform:translate(0,0) scale3d(1.1,1.1,1.1) rotate3d(0,0,1,-3deg); opacity: 1;}
-             100% { -webkit-transform:translate(0,0) scale3d(1,1,1) rotate3d(0,0,1,0deg); transform:translate(0,0) scale3d(1,1,1) rotate3d(0,0,1,0deg); opacity: 1;}
-}
+.top-header{ position: relative; min-height: 12rem; padding-bottom:1rem;}
+.top-header .banner{ }
+.top-header .logo{ position: absolute; width: 24%; left:3%; top:4%; }
+.top-header .slogan{ position: absolute; width:100%; top:0; left:0; opacity:0;
+	-webkit-animation:move 2s ease .5s 1 forwards; animation:move 2s ease .5s 1 forwards;}
 
-.reason{ padding: 1rem;}
-.reason .bg{ overflow: hidden; background: #f0f0f0 url(../images/loading.png) center center no-repeat; background-size: 150px 150px;}
-.reason .bg .wrap{ position: relative;}
-.reason .bg .wrap span{ position: absolute; text-align:center; left: 50%; bottom: 12%; width: 70%; font-size: 1rem; line-height: 1.3rem; font-weight: bold; color:#999; -webkit-transform: translateX(-50%); transform: translateX(-50%);}
-.reason .bg .wrap{ float: left; width: 33.33%; -webkit-transform:perspective(400px) rotate3d(0,1,0,90deg); transform:perspective(400px) rotate3d(0,1,0,90deg); opacity:0;
-    -webkit-animation:flipInY 1s ease 1s 1 forwards; animation:flipInY 1s ease 1s 1 forwards;}
-.reason .bg .wrap:nth-child(2),.reason .bg .wrap:nth-child(4),.reason .bg .wrap:nth-child(6){ -webkit-animation-delay:1.5s; animation-delay:1.5s;}
-@-webkit-keyframes flipInY {
-      0% {-webkit-transform:perspective(400px) rotate3d(0,1,0,90deg); transform:perspective(400px) rotate3d(0,1,0,90deg); opacity:0;}
-     40% {-webkit-transform:perspective(400px) rotate3d(0,1,0,-20deg); transform:perspective(400px) rotate3d(0,1,0,-20deg); opacity:1;}
-     60% {-webkit-transform:perspective(400px) rotate3d(0,1,0,10deg); transform:perspective(400px) rotate3d(0,1,0,10deg); opacity:1;}
-     80% {-webkit-transform:perspective(400px) rotate3d(0,1,0,-5deg); transform:perspective(400px) rotate3d(0,1,0,-5deg); opacity:1;}
-    100% {-webkit-transform:perspective(400px) rotate3d(0,1,0,0deg); transform:perspective(400px) rotate3d(0,1,0,0deg); opacity:1;}
-}
-@keyframes flipInY {
-      0% {-webkit-transform:perspective(400px) rotate3d(0,1,0,90deg); transform:perspective(400px) rotate3d(0,1,0,90deg); opacity:0;}
-     40% {-webkit-transform:perspective(400px) rotate3d(0,1,0,-20deg); transform:perspective(400px) rotate3d(0,1,0,-20deg); opacity:1;}
-     60% {-webkit-transform:perspective(400px) rotate3d(0,1,0,10deg); transform:perspective(400px) rotate3d(0,1,0,10deg); opacity:1;}
-     80% {-webkit-transform:perspective(400px) rotate3d(0,1,0,-5deg); transform:perspective(400px) rotate3d(0,1,0,-5deg); opacity:1;}
-    100% {-webkit-transform:perspective(400px) rotate3d(0,1,0,0deg); transform:perspective(400px) rotate3d(0,1,0,0deg); opacity:1;}
-}
+.imgLord{ background: #fff url(../images/loading.png) center center no-repeat; background-size: 100px 100px; position: relative; }
+.imgCon{ position:relative; opacity:0;}
+
+.holiday { padding:1rem; }
+.holiday .list{ height: 0; padding-bottom: 66.67%; background: url(../images/loading.png) center center no-repeat;
+    background-size: 100px 100px; margin-bottom: 1rem; position: relative;}
+.holiday .list .imgCon{ }
+.holiday .list .des{ position: absolute; right: 1rem; color: #fff; z-index: 20; font-size: 1.1rem; top: 2rem; width: 40%; z-index: 0;}
+.holiday .list .des h3{ color: #fff; font-size: 1.5rem; text-align: right; margin-bottom: 2rem; letter-spacing: 0.3rem;}
+.holiday .list .des p{ text-align: justify; text-indent:2em; line-height: 1.6rem;}
+
 
 .introduce{ padding:0 1rem 1rem; line-height:18px;}
 .introduce .bg{ background-color:#fff; padding:1rem;}
@@ -59,8 +34,9 @@ body { min-width: 320px;/* max-width: 640px;*/ background: #f4f4f4; width: 100%;
 .title i { font-style: italic; margin-left:1%; vertical-align:-0.1rem;}
 .line { height: 1px; width:6%; background-color: #09c; margin: 1rem auto;}
 
-.imgLord{ background: #fff url(../images/loading.png) center center no-repeat; background-size: 100px 100px; position: relative; }
-.imgCon{ padding: 1rem 0; position:relative; opacity:0;}
+.introduce .imgCon{ padding: 1rem 0; }
+
+.play {position: absolute; display: block; width:20%; top:50%; left:50%; margin: -10% 0 0 -10%;}
 
 .introduce .wrap{ float: left; width: 49.1%; background-color: #09c; position: relative; margin-bottom: 0.5rem; height: 6rem;}
 .introduce .runInfo { height: 13rem;}
