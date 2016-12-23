@@ -30,7 +30,7 @@ body { min-width: 320px;/* max-width: 640px;*/ background: #f4f4f4; width: 100%;
 .introduce .bg{ background-color:#fff; padding:1rem;}
 .introduce p{text-indent: 2em; padding:0 0.5rem;}
 .introduce ul li{ padding:0 0.5rem;}
-.title { font-size:1.2rem; color:#063; text-align:center; margin: 1rem 0; }
+.title { font-size:1.4rem; line-height:2rem; color:#063; text-align:center; margin: 1rem 0; }
 .title i { font-style: italic; margin-left:1%; vertical-align:-0.1rem;}
 .line { height: 1px; width:6%; background-color: #063; margin: 1rem auto;}
 
@@ -44,7 +44,7 @@ body { min-width: 320px;/* max-width: 640px;*/ background: #f4f4f4; width: 100%;
     -webkit-background-size: 100% 100%; background-size: 100% 100%; position: absolute; top: 50%; left: 0;}
 .prd .list .msg{ position: relative; height: 0; padding-bottom: 60%; background-size: 150px 150px;
     background: url(../images/loading.png) center center no-repeat;}
-.prd .list .msg .pic-tag{ height: 2rem; line-height: 2rem; background: #096; font-size: 1.1rem; color: #fff; text-align: center;
+.prd .list .msg .pic-tag{ height: 2rem; line-height: 2rem; background: #096; font-size: 1.2rem; color: #fff; text-align: center;
     position: absolute; left: 0; top: 1rem; padding: 0 0.5rem;}
 .prd .list .msg .bottom{ position: absolute; bottom: 0; width: 100%; height: 4.5rem; background: rgba(0,0,0,0.5); overflow: hidden;}
 .prd .list .msg .bottom p{ width: 60%; float: left; font-size: 1.4rem; color: #fff; height: 4.5rem; line-height: 1.8rem; padding: 0.5rem 0 0 0.5rem;}
