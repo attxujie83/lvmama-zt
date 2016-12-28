@@ -39,6 +39,7 @@ body { min-width: 320px;/* max-width: 640px;*/ background: #f4f4f4; width: 100%;
 .themeCell .cellR .tmCon .tmTi { margin-top: 41px; font: 18px/18px "microsoft yahei", "Arial"; font-weight: bold; letter-spacing: 2px;}
 .themeCell .cellR .tmCon .tmTi span {display: block; font: 12px/20px "Helvetica Neue","microsoft yahei", "Arial"; font-weight: normal; margin-top: 5px; letter-spacing: 0;}
 
+footer { position: fixed; bottom: 0; left: 0; width: 100%; z-index: 3; }
 footer .lv-btn { height: 50px; text-align: center; border-radius:0; font-size:14px; line-height:50px; font-weight:bold; letter-spacing:2px; position: relative;}
 footer .lv-btn-yellow { width: 33.33%; float: left; background-color: #f90; }
 footer .lv-btn-default { width: 66.67%; float: left; background-color: #f69;}
