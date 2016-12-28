@@ -37,7 +37,7 @@ body { min-width: 320px;/* max-width: 640px;*/ background: #f4f4f4; width: 100%;
 .themeCell .cellR .tmCon {position: absolute; overflow: hidden; top:15%; left:4.78%; color: #fff;}
 .themeCell .cellR .tmCon .tmQuan { font: 1.24rem/1.4rem "Helvetica Light","microsoft yahei", "Arial"; height:1.4rem; display:block;}
 .themeCell .cellR .tmCon .tmTi { margin-top:3.2rem; font: 1.4rem/1.4rem "microsoft yahei", "Arial"; font-weight: bold; letter-spacing: 2px;}
-.themeCell .cellR .tmCon .tmTi span {display: block; font: 1rem/1.5rem "Helvetica Neue","microsoft yahei", "Arial"; font-weight: normal; margin-top:0.3rem; letter-spacing: 0;}
+.themeCell .cellR .tmCon .tmTi span {display: block; font: 1rem/1.5rem "Helvetica Neue","microsoft yahei", "Arial"; margin-top:0.3rem; letter-spacing: 0;}
 
 footer { position: fixed; bottom: 0; left: 0; width: 100%; z-index: 3; }
 footer .lv-btn { height: 50px; text-align: center; border-radius:0; font-size:1.1rem; line-height:50px; font-weight:bold; letter-spacing:0.16rem; position: relative;}
