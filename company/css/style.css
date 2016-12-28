@@ -17,7 +17,7 @@ body { min-width: 320px;/* max-width: 640px;*/ background: #f4f4f4; width: 100%;
 .slider-tab-box li {display: inline-block; width: 7px; height: 7px; border-radius: 7px; background: rgba(255,255,255,.5); margin: 0 3px;text-indent: -9999px;}
 .slider-tab-box .on{ background: #fff;}
 
-
+.theme{ margin-bottom: 50px;}
 .themeCell {position: relative; overflow: hidden; width:100%; height:0; padding-bottom:31.4%;}
 .themeCell .cellL {position: absolute; overflow: hidden; width:24.15%; height:100%; top:0; left:0;}
 .themeCell .yellow	{background: rgba(204,153,0,.5)}
