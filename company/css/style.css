@@ -34,7 +34,7 @@ body { min-width: 320px;/* max-width: 640px;*/ background: #f4f4f4; width: 100%;
 .themeCell .cellL .tm5 { background: url(../images/tm5Icon.png) no-repeat; background-size: 100%;}
 .themeCell .cellL .tm6 { background: url(../images/tm6Icon.png) no-repeat; background-size: 100%;}
 .themeCell .cellL .tm7 { background: url(../images/tm7Icon.png) no-repeat; background-size: 100%;}
-.themeCell .cellR .tmCon {position: absolute; overflow: hidden; top:14.1%; left:4.78%; color: #fff;}
+.themeCell .cellR .tmCon {position: absolute; overflow: hidden; top:15%; left:4.78%; color: #fff;}
 .themeCell .cellR .tmCon .tmQuan { font: 1.24rem/1.24rem "Helvetica Light","microsoft yahei", "Arial"; height:12.3%; display:block;}
 .themeCell .cellR .tmCon .tmTi { margin-top:31.54%; font: 1.4rem/1.4rem "microsoft yahei", "Arial"; font-weight: bold; letter-spacing: 2px;}
 .themeCell .cellR .tmCon .tmTi span {display: block; font: 1rem/1.5rem "Helvetica Neue","microsoft yahei", "Arial"; font-weight: normal; margin-top:0.1rem; letter-spacing: 0;}
