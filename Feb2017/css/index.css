@@ -16,7 +16,7 @@ i{font-style: normal;}
 /*OTHER*/
 .wrap{ overflow: hidden; zoom: 1; background-color:#f4f4f4;}
 .banner { background: url(../images/banner.jpg) no-repeat center 0; height: 600px;position: relative;}
-.banner h2 { position: absolute; left: 50%; z-index: 2; width: 530px; height: 600px; background: url(../images/tit.png);}
+.banner h2 { position: absolute; left: 50%; z-index: 2; width: 500px; height: 600px; background: url(../images/tit.png);}
 .banner i { position: absolute; right: 50%; z-index: 3; width: 630px; height: 600px; background: url(../images/runner.png);}
 
 .title { font-size:18px; color:#ff476a; }
