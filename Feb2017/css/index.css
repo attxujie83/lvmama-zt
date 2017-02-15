@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+/* CSS RESET */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, select, textarea, p, blockquote, th, td, hr, button, figure, menu{margin: 0; padding: 0;}
+body{font: 12px/22px Tahoma, Arial, \5b8b\4f53, sans-serif;}
+body{min-width: 1096px;}
+h1, h2, h3, h4, h5, h6{font-size: 100%;}
+table{border-collapse: collapse; border-spacing: 0;}
+ol, ul{list-style: none;}
+a img{border: none; vertical-align: top;}
+input, button{font-family: Tahoma, Verdana, Geneva, sans-serif}
+a{text-decoration: none;}
+a:hover{text-decoration: none;}
+i{font-style: normal;}
+.clearfix:after{content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+/*OTHER*/
+.wrap{ overflow: hidden; zoom: 1; background-color:#f4f4f4;}
+.banner { background: url(../images/banner.jpg) no-repeat center 0; height: 600px;position: relative;}
+.banner h2 { position: absolute; left: 50%; z-index: 2; width: 500px; height: 600px; background: url(../images/tit.png);}
+.banner i { position: absolute; right: 50%; z-index: 3; width: 630px; height: 600px; background: url(../images/runner.png);}
+
+.title { font-size:18px; color:#ff476a; }
+.title i { font-style: italic; margin-left:7px; vertical-align:-1px;}
+.line { height: 1px; width: 35px; background-color: #fe6d88;}
+.about { height:400px; background-color:#FFF;}
+.about-content { width: 1000px; margin: 0 auto; font:14px/18px "Microsoft YaHei",微软雅黑; color:#999;}
+.about .title { text-align:center; padding-top:45px; }
+.about .title b { letter-spacing: 4px;}
+.about .title .line { margin:18px auto 30px; }
+.about ul { }
+.about ul li { float: left; width:250px; text-align:center;}
+.about ul i {background: url(../images/aboutIco.jpg) no-repeat; width:60px; height: 60px; margin: 12px 0 24px; display:inline-block;}
+.about h4 { font-size:16px; color:#777; margin-bottom:16px; letter-spacing:4px;}
+.about span { line-height:20px;}
+.about ul .icon1 { background-position:0px 0px;}
+.about ul .icon2 { background-position:0px -60px;}
+.about ul .icon3 { background-position:0px -120px;}
+.about ul .icon4 { background-position:0px -180px;}
+
+.gallery-grids1 {width: 1000px; height:600px; margin: 60px auto; background-color:#fff; font:14px/22px "Microsoft YaHei",微软雅黑; color:#999;}
+.grid1-pic { float:left; width: 500px; height:300px; }
+.grid1-content { float:left; width: 440px; height:210px; margin:45px 30px;}
+.grid1-content .title .line { margin:18px 0 30px; }
+.grid1-content p { text-indent:2em;}
+
+
+.product-list{width: 1000px; margin: 0 auto;}
+.product-item{margin: 40px 0;}
+
+.pi-content{width: 968px; padding: 16px; background: #ffffff; overflow: hidden; zoom: 1;}
+.pi-thumbnail{position: relative; float: left; display: block; width: 640px; font-family: "Microsoft YaHei"; font-size: 16px; color: #ffffff; margin-right: 16px;}
+.pi-tag{position: absolute; top: 16px; left: -6px; height: 34px; background: #ff476a; line-height: 34px; padding: 0 18px;}
+.pi-tag i{position: absolute; top: 34px; left: 0; display: block; width: 6px; height: 6px; background: url(../images/flag.jpg) no-repeat; }
+
+.pi-desc{float: left; width: 272px; font-family: "Microsoft YaHei"; font-size: 14px; color: #444; margin:0 30px 0 10px;}
+.pi-desc i {float: left; margin: 13px 10px 0 0; background: #f96; font: 12px/16px \5b8b\4f53,Tahoma,Arial,sans-serif; border-radius: 2px; display: block; height: 16px; color: #fff; padding: 0 5px;}
+.pi-rec{font-size: 18px; margin: 8px 0 14px ; color: #ff476a;}
+.pi-rec h4{ }
+.pi-rec .line { margin:18px 0 30px; }
+.pi-highlight{margin:0 0 30px 0; line-height: 20px; overflow-x: hidden; overflow-y: auto; color:#999;}
+
+.pi-book-btn{display: block; width: 120px; height: 28px; background: #ff476a; border-radius:14px; font:800 14px/28px "Microsoft YaHei"; letter-spacing: 1px; color: #ffffff; text-align: center;}
+.pi-book-btn:hover{ background: #fe6985;}
+
+.ztfooter{width: 980px; overflow: hidden; margin: 0 auto; text-align: center; color: #666; line-height: 18px; padding: 25px 0 10px 0;}
