@@ -27,9 +27,9 @@ body { min-width: 320px;/* max-width: 640px;*/ background: #f4f4f4; width: 100%;
 
 
 .theme{ margin-bottom: 50px; position:relative;}
-.slider-bg { position: relative;top: 0; height: 0; padding-bottom: 100%;}
-.slider-bg-img{ padding-bottom: 100%; background-image: url(../images/ban01.jpg); -webkit-filter: blur(20px); filter: blur(20px);}
-.theme-list {position:absolute;padding:0 10px 10px!important;top:0;left:0;right:0;bottom:0;z-index:1;overflow:scroll}
+.slider-bg { position: relative;top: 0; height: 0; padding-bottom: 212%;}
+.slider-bg-img{ padding-bottom: 212%; background-image: url(../images/ban01.jpg); -webkit-filter: blur(20px); filter: blur(20px);}
+.theme-list {position:absolute;padding:0 10px 10px!important;top:0;left:0;right:0;bottom:0;z-index:1;}
 
 .themeCell {position: relative; overflow: hidden; width:100%; height:0; padding-bottom:31.4%;}
 .themeCell .cellL {position: absolute; overflow: hidden; width:24.15%; height:100%; top:0; left:0;}
