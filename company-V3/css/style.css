@@ -30,7 +30,7 @@ body { min-width: 320px;/* max-width: 640px;*/ background: #f4f4f4; width: 100%;
 
 .theme{ margin-bottom: 50px; position:relative; z-index: 1;}
 .slider-bg { position: relative;top: 0; height: 0; padding-bottom: 211%;}
-.slider-bg-img li{ background-position: center center; background-size: 100% 100%;width: 120%; height:110%; top: -5%; left: -10%; position: absolute;padding-bottom: 211%;-webkit-filter: blur(20px); filter: blur(20px);}
+.slider-bg-img li{ width: 120%; height:110%; top: -5%; left: -10%; position: absolute;padding-bottom: 211%;-webkit-filter: blur(20px); filter: blur(20px);}
 .theme-list {position:absolute;padding:0 10px 10px!important;top:0;left:0;right:0;bottom:0;z-index:1;}
 
 .themeCell {position: relative; overflow: hidden; width:100%; height:0; padding-bottom:31.4%;}
