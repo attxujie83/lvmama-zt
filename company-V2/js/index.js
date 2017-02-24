@@ -96,10 +96,14 @@
 
         var $sliderDiv = _options.sliderDiv;
         var $picBox = _options.picBox;
+        var $bgBox = _options.bgBox;
         var $tabBox = _options.tabBox;
 
         var $picList = $picBox.find("li");
         var picAmount = $picList.length;
+		
+        var $bgList = $bgBox.find("li");
+        var bgAmount = $bgList.length;
 
         var $tabList = $tabBox.find("li");
         $tabList.eq(0).addClass("on");
@@ -114,7 +118,7 @@
             setInterval(function() {
                 if(isAutoRun){
 					var thisIndex= $tabBox.find("li.on").index();
-					if( thisIndex == picAmount-1){
+					if( thisIndex == picAmount-1 ){
 						showPic(0);
                     } else {
 						showPic(thisIndex + 1);
@@ -132,6 +136,8 @@
         	$tabList.removeClass("on").eq(index).addClass("on");
             $picList.stop(true,true).eq(PRE_INDEX).css("z-index","0").animate({opacity:"0"}, _options.animateSpeed);
             $picList.eq(index).css("z-index","1").animate({opacity:"1"}, _options.animateSpeed);
+            $bgList.stop(true,true).eq(PRE_INDEX).css("z-index","0").animate({opacity:"0"}, _options.animateSpeed);
+            $bgList.eq(index).css("z-index","1").animate({opacity:"1"}, _options.animateSpeed);
             PRE_INDEX = index;
         }
     }
@@ -142,6 +148,7 @@ $(function(){
     $.slider({
     	sliderDiv: $(".slider"),
         picBox: $(".slider-img-box"), 
+        bgBox: $(".slider-bg-img"), 
         tabBox: $(".slider-tab-box")
     });
 });
