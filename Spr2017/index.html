@@ -8,6 +8,8 @@
 <link rel="stylesheet" href="css/index.css">
 <link rel="stylesheet" href="http://pic.lvmama.com/styles/zt/000global/styles/zt_global.css" >
 <base target="_blank">
+<script src="http://g.tbcdn.cn/kissy/k/1.4.3/seed.js" ></script>
+
 </head>
 
 <body>
@@ -16,111 +18,179 @@
 <!--专题公共头部END-->
 
 <div class="wrap">
-  <div class="banner"></div>
-  <div class="part">
+<div class="fdRight fadeIn animated">
+        <p>
+                            <a href="#mao1" target="_self">江南水乡</a>
+                            <a href="#mao2" target="_self">欢乐世界</a>
+                            <a href="#mao3" target="_self">帝都风韵</a>
+                            <a href="#mao4" target="_self">多彩贵州</a>
+                            <a href="#mao5" target="_self">山城烟雨</a>
+                            <a href="#mao6" target="_self">西域风情</a>
+                            <a class="top" href="#mao" target="_self">返回顶部</a>
+        </p>
+    </div>
+<div class="parallax-banner" id="mao" style="height: 600px;" >
+
+            <div class="parallax-srcroot" >
+                <div class="parallax-root" style="height: 600px; visibility: hidden">
+                    <div class="parallax-scene scene" style="width: 2160px;">
+                        <div class="layer" data-depth="1.0" style="width: 2160px; margin-top:-50px;"><img src="images/bg.jpg"></div>
+                        <div class="layer" data-depth="0.1" style="width: 2160px;"><img src="images/tit.png"></div>
+                        <div class="layer" data-depth="0.5" style="width: 2160px; margin-top:-100px;"><img src="images/leaf_s.png"></div>
+                        <div class="layer" data-depth="0.5" style="width: 2160px;"><img src="images/daiyanren.png"></div>
+                        <div class="layer" data-depth="0.2" style="width: 2160px; margin-top:-100px;"><img src="images/leaf_l.png"></div>
+                        <div class="mask" style="width: 2160px; "><img src="images/bg_mask_s.png"></div>
+
+                    </div>
+                </div>
+            </div>
+                    <script>
+
+            //config debug info
+            KISSY.config({
+                packages : {
+                    "parallax" : {
+                        base    : "./",
+                        debug   : true,
+                        ignorePackageNameInUri:true
+                    }
+                }
+            });
+
+            KISSY.use("node,parallax/index, ua", function(S, Node, Parallax, UA){
+
+
+                var $root   = S.all(".parallax-root");
+                var $scene  = $root.all(".scene");
+                var $win    = S.all(window);
+
+                function onResize(){
+                    $root.scrollLeft(($scene.width() - $root.width()) / 2 );
+                }
+                onResize();
+                S.all(window).on("resize", onResize);
+
+                $root.css("visibility","visible");
+
+                ///////////////////////
+
+                new Parallax(".parallax-scene", {
+					scalarX : 2,
+					scalarY : 2,
+                    frictionX : 0.03,
+                    frictionY : 0.03,
+					originX : 0.5,
+					originY : 0.5
+                });
+
+                ///////////////////////
+
+
+
+
+            });
+        </script>
+
+
+        </div>
+          <div class="part">
     <div class="main">
-      <h2>江南水乡</h2>
+      <h2 id="mao1">江南水乡</h2>
       <ul class="product_list">
-        
-        
-		<li ><a class="prd_pic" href="http://dujia.lvmama.com/customized/1022259/"><img src="images/evt_Spr2017_prd01.jpg" width="460" height="307" alt="" />
-          <span class="pi-tag">淮阳江南<i></i></span>
-          </a>
-          
+        <li ><a class="prd_pic" href="http://dujia.lvmama.com/customized/1022259/"><img src="images/evt_Spr2017_prd01.jpg" width="460" height="307" alt="" /> <span class="pi-tag">淮阳江南<i></i></span> </a>
           <div class="pi-desc">
-          	<div class="pi-rec"><h4>南京、镇江、扬州 、南山竹海 3日游</h4>船游太湖，享特色餐，升级一晚住宿</div>
-                            <span class="pro_price"><i>¥</i><em>1160</em>起</span>
-                <a class="pro_btn" href="http://dujia.lvmama.com/customized/1022259/">立即订购</a>
-                    </div>
+            <div class="pi-rec">
+              <h4>南京、镇江、扬州 、南山竹海 3日游</h4>
+              船游太湖，享特色餐，升级一晚住宿</div>
+            <span class="pro_price"><i>¥</i><em>1160</em>起</span> <a class="pro_btn" href="http://dujia.lvmama.com/customized/1022259/">立即订购</a> </div>
         </li>
-		<li ><a class="prd_pic" href="http://dujia.lvmama.com/customized/1022207/"><img src="images/evt_Spr2017_prd02.jpg" width="460" height="307" alt="" />
-          <span class="pi-tag">尊享之旅<i></i></span>
-          </a>
-          
+        <li ><a class="prd_pic" href="http://dujia.lvmama.com/customized/1022207/"><img src="images/evt_Spr2017_prd02.jpg" width="460" height="307" alt="" /> <span class="pi-tag">尊享之旅<i></i></span> </a>
           <div class="pi-desc">
-          	<div class="pi-rec"><h4>华东五市、乌镇、周庄6日游</h4>船游太湖，宿周庄一晚升级</div>
-                            <span class="pro_price"><i>¥</i><em>2620</em>起</span>
-                <a class="pro_btn" href="http://dujia.lvmama.com/customized/1022207/">立即订购</a>
-                    </div>
+            <div class="pi-rec">
+              <h4>华东五市、乌镇、周庄6日游</h4>
+              船游太湖，宿周庄一晚升级</div>
+            <span class="pro_price"><i>¥</i><em>2620</em>起</span> <a class="pro_btn" href="http://dujia.lvmama.com/customized/1022207/">立即订购</a> </div>
         </li>
-		<li ><a class="prd_pic" href="http://dujia.lvmama.com/customized/1022042/"><img src="images/evt_Spr2017_prd04.jpg" width="460" height="307" alt="" />
-          <span class="pi-tag">悠然之旅<i></i></span>
-          </a>
-          
+        <li ><a class="prd_pic" href="http://dujia.lvmama.com/customized/1022042/"><img src="images/evt_Spr2017_prd04.jpg" width="460" height="307" alt="" /> <span class="pi-tag">悠然之旅<i></i></span> </a>
           <div class="pi-desc">
-          	<div class="pi-rec"><h4>华东五市、乌镇、南浔5日游</h4>船游太湖，宿南浔</div>
-                            <span class="pro_price"><i>¥</i><em>1490</em>起</span>
-                <a class="pro_btn" href="http://dujia.lvmama.com/customized/1022042/">立即订购</a>
-                    </div>
+            <div class="pi-rec">
+              <h4>华东五市、乌镇、南浔5日游</h4>
+              船游太湖，宿南浔</div>
+            <span class="pro_price"><i>¥</i><em>1490</em>起</span> <a class="pro_btn" href="http://dujia.lvmama.com/customized/1022042/">立即订购</a> </div>
         </li>
-		<li ><a class="prd_pic" href="http://dujia.lvmama.com/customized/1021990/"><img src="images/evt_Spr2017_prd03.jpg" width="460" height="307" alt="" />
-          <span class="pi-tag">八品杭州<i></i></span>
-          </a>
-          
+        <li ><a class="prd_pic" href="http://dujia.lvmama.com/customized/1021990/"><img src="images/evt_Spr2017_prd03.jpg" width="460" height="307" alt="" /> <span class="pi-tag">八品杭州<i></i></span> </a>
           <div class="pi-desc">
-          	<div class="pi-rec"><h4>杭州、乌镇、西塘3日游</h4>畅游双水乡，一晚升级住宿</div>
-                            <span class="pro_price"><i>¥</i><em>2070</em>起</span>
-                <a class="pro_btn" href="http://dujia.lvmama.com/customized/1021990/">立即订购</a>
-                    </div>
-        </li>
-        
-        
-      </ul>
-      <h2 style="background-position:0 -100px">欢乐世界</h2>
-      <ul class="product_list">
-        
-        
-		<li ><a class="prd_pic" href="http://dujia.lvmama.com/customized/1054252"><img src="images/evt_Spr2017_prd05.jpg" width="460" height="307" alt="" />
-          <span class="pi-tag">奢华长隆<i></i></span>
-          </a>
-          
-          <div class="pi-desc">
-          	<div class="pi-rec"><h4>广州长隆野生动物园、大马戏、珠海海洋王国5日游</h4>畅游三大主题！和小动物们互动，遨游于海洋王国，精华景点全打尽</div>
-                            <span class="pro_price"><i>¥</i><em>3415</em>起</span>
-                <a class="pro_btn" href="http://dujia.lvmama.com/customized/1054252">立即订购</a>
-                    </div>
-        </li>
-		<li ><a class="prd_pic" href="http://dujia.lvmama.com/customized/1054268"><img src="images/evt_Spr2017_prd06.jpg" width="460" height="307" alt="" />
-          <span class="pi-tag">快乐长隆<i></i></span>
-          </a>
-          
-          <div class="pi-desc">
-          	<div class="pi-rec"><h4>感受长隆快乐假期！野生动物园、大马戏、海洋王国4日游</h4>领略动物的神奇世界，尽享三大主题乐园的精彩体验！</div>
-                            <span class="pro_price"><i>¥</i><em>3175</em>起</span>
-                <a class="pro_btn" href="http://dujia.lvmama.com/customized/1054268">立即订购</a>
-                    </div>
-        </li>
-		<li ><a class="prd_pic" href="http://dujia.lvmama.com/customized/1054831"><img src="images/evt_Spr2017_prd07.jpg" width="460" height="307" alt="" />
-          <span class="pi-tag">魅力长隆<i></i></span>
-          </a>
-          
-          <div class="pi-desc">
-          	<div class="pi-rec"><h4>舒适自由！长隆野生动物园、大马戏、珠海海洋王国4日游</h4>体验珠海长隆海洋王国，行程自由舒适（不含大门票）</div>
-                            <span class="pro_price"><i>¥</i><em>2240</em>起</span>
-                <a class="pro_btn" href="http://dujia.lvmama.com/customized/1054831">立即订购</a>
-                    </div>
-        </li>
-		<li ><a class="prd_pic" href="http://dujia.lvmama.com/customized/1054815"><img src="images/evt_Spr2017_prd08.jpg" width="460" height="307" alt="" />
-          <span class="pi-tag">畅游长隆<i></i></span>
-          </a>
-          
-          <div class="pi-desc">
-          	<div class="pi-rec"><h4>感受不一样的长隆之旅！广州长隆5日当地游</h4>长隆野生动物园，上下九步行街，精华景点一网打尽（不含大门票）</div>
-                            <span class="pro_price"><i>¥</i><em>2250</em>起</span>
-                <a class="pro_btn" href="http://dujia.lvmama.com/customized/1054815">立即订购</a>
-                    </div>
+            <div class="pi-rec">
+              <h4>杭州、乌镇、西塘3日游</h4>
+              畅游双水乡，一晚升级住宿</div>
+            <span class="pro_price"><i>¥</i><em>2070</em>起</span> <a class="pro_btn" href="http://dujia.lvmama.com/customized/1021990/">立即订购</a> </div>
         </li>
       </ul>
-      
+      <h2 id="mao2" style="background-position:0 -100px">欢乐世界</h2>
+      <ul class="product_list">
+        <li ><a class="prd_pic" href="http://dujia.lvmama.com/customized/1054252"><img src="images/evt_Spr2017_prd05.jpg" width="460" height="307" alt="" /> <span class="pi-tag">奢华长隆<i></i></span> </a>
+          <div class="pi-desc">
+            <div class="pi-rec">
+              <h4>广州长隆野生动物园、大马戏、珠海海洋王国5日游</h4>
+              畅游三大主题！和小动物们互动，遨游于海洋王国，精华景点全打尽</div>
+            <span class="pro_price"><i>¥</i><em>3415</em>起</span> <a class="pro_btn" href="http://dujia.lvmama.com/customized/1054252">立即订购</a> </div>
+        </li>
+        <li ><a class="prd_pic" href="http://dujia.lvmama.com/customized/1054268"><img src="images/evt_Spr2017_prd06.jpg" width="460" height="307" alt="" /> <span class="pi-tag">快乐长隆<i></i></span> </a>
+          <div class="pi-desc">
+            <div class="pi-rec">
+              <h4>感受长隆快乐假期！野生动物园、大马戏、海洋王国4日游</h4>
+              领略动物的神奇世界，尽享三大主题乐园的精彩体验！</div>
+            <span class="pro_price"><i>¥</i><em>3175</em>起</span> <a class="pro_btn" href="http://dujia.lvmama.com/customized/1054268">立即订购</a> </div>
+        </li>
+        <li ><a class="prd_pic" href="http://dujia.lvmama.com/customized/1054831"><img src="images/evt_Spr2017_prd07.jpg" width="460" height="307" alt="" /> <span class="pi-tag">魅力长隆<i></i></span> </a>
+          <div class="pi-desc">
+            <div class="pi-rec">
+              <h4>舒适自由！长隆野生动物园、大马戏、珠海海洋王国4日游</h4>
+              体验珠海长隆海洋王国，行程自由舒适（不含大门票）</div>
+            <span class="pro_price"><i>¥</i><em>2240</em>起</span> <a class="pro_btn" href="http://dujia.lvmama.com/customized/1054831">立即订购</a> </div>
+        </li>
+        <li ><a class="prd_pic" href="http://dujia.lvmama.com/customized/1054815"><img src="images/evt_Spr2017_prd08.jpg" width="460" height="307" alt="" /> <span class="pi-tag">畅游长隆<i></i></span> </a>
+          <div class="pi-desc">
+            <div class="pi-rec">
+              <h4>感受不一样的长隆之旅！广州长隆5日当地游</h4>
+              长隆野生动物园，上下九步行街，精华景点一网打尽（不含大门票）</div>
+            <span class="pro_price"><i>¥</i><em>2250</em>起</span> <a class="pro_btn" href="http://dujia.lvmama.com/customized/1054815">立即订购</a> </div>
+        </li>
+      </ul>
+      <h2 id="mao3" style="background-position:0 -200px">帝都风韵</h2>
+      <ul class="product_list">
+<li ><a class="prd_pic" href="http://dujia.lvmama.com/customized/1071420"><img src="images/evt_Spr2017_prd09.jpg" width="460" height="307" alt="" /> <span class="pi-tag">经典帝都<i></i></span> </a><div class="pi-desc"><div class="pi-rec"><h4>天坛、天安门、故宫、圆明园、颐和园5日</h4>北京经典景点一个不落，享受舌尖之旅。赠送景点大礼包</div><span class="pro_price"><i>¥</i><em>2400</em>起</span> <a class="pro_btn" href="http://dujia.lvmama.com/customized/1071420">立即订购</a> </div></li>
+<li ><a class="prd_pic" href="http://dujia.lvmama.com/customized/1071140"><img src="images/evt_Spr2017_prd10.jpg" width="460" height="307" alt="" /> <span class="pi-tag">亲子帝都<i></i></span> </a><div class="pi-desc"><div class="pi-rec"><h4>亲子北京经典5日游</h4>2成人报名免1儿童,商务车接送，全程旅游大巴服务</div><span class="pro_price"><i>¥</i><em>2810</em>起</span> <a class="pro_btn" href="http://dujia.lvmama.com/customized/1071140">立即订购</a> </div></li>
+      </ul>
+      <h2 id="mao4" style="background-position:0 -300px">多彩贵州</h2>
+      <ul class="product_list">
+        <li class="prdL"><a class="prd_pic" href="http://dujia.lvmama.com/customized/1071542 "><img src="images/evt_Spr2017_prdl11.jpg" width="640" height="338" alt=""> <span class="pi-tag">苗寨风情<i></i></span><p class="pi-overlay">小七孔，镇远、西江、黄果树、青岩6日<br><small>领略贵州的山水风土人情历史 准备了茅台集团酒和神秘礼物相送</small></p></a><div class="pi-desc"><div class="pi-rec"><h4>小七孔，镇远、西江、黄果树、青岩6日</h4></div><p class="pi-highlight"> 领略贵州的山水风土人情历史<br>准备了茅台集团酒和神秘礼物相送<br><br></p><span class="pro_price"><i>¥</i><em>2960</em>起</span> <a class="pro_btn" href="http://dujia.lvmama.com/customized/1071542 ">立即订购</a> </div></li>
+
+<li ><a class="prd_pic" href="http://dujia.lvmama.com/customized/1071519"><img src="images/evt_Spr2017_prd12.jpg" width="460" height="307" alt="" /> <span class="pi-tag">绿野仙踪<i></i></span> </a><div class="pi-desc"><div class="pi-rec"><h4>黄果树、荔波、西江5日</h4>迎接远道而来的客人，我们特别准备了茅台集团酒给您品尝。安排热情，负责，富有经验的持证导游带您领略贵州的山水风土</div><span class="pro_price"><i>¥</i><em>2320</em>起</span> <a class="pro_btn" href="http://dujia.lvmama.com/customized/1071519">立即订购</a> </div></li>
+<li ><a class="prd_pic" href="http://dujia.lvmama.com/customized/1070770"><img src="images/evt_Spr2017_prd13.jpg" width="460" height="307" alt="" /> <span class="pi-tag">水墨金州<i></i></span> </a><div class="pi-desc"><div class="pi-rec"><h4>黄果树、万峰林、马岭河4日</h4>品味布依族美食 其中一餐赠茅台集团酒/桌</div><span class="pro_price"><i>¥</i><em>2220</em>起</span> <a class="pro_btn" href="http://dujia.lvmama.com/customized/1070770">立即订购</a> </div></li>
+<li ><a class="prd_pic" href="http://dujia.lvmama.com/customized/1070498"><img src="images/evt_Spr2017_prd14.jpg" width="460" height="307" alt="" /> <span class="pi-tag">古镇悠悠<i></i></span> </a><div class="pi-desc"><div class="pi-rec"><h4>小七孔、镇远古城、千户苗寨、黄果树、青岩古镇6日</h4>领略贵州的山水风土人情历史 准备了茅台集团酒和神秘礼物相送</div><span class="pro_price"><i>¥</i><em>3290</em>起</span> <a class="pro_btn" href="http://dujia.lvmama.com/customized/1070498">立即订购</a> </div></li>
+<li ><a class="prd_pic" href="http://dujia.lvmama.com/customized/1070868"><img src="images/evt_Spr2017_prd15.jpg" width="460" height="307" alt="" /> <span class="pi-tag">花开印云<i></i></span> </a><div class="pi-desc"><div class="pi-rec"><h4>贵州百里杜鹃、织金洞5日</h4>品味布依族美食 其中一餐赠价值599茅台集团酒/桌</div><span class="pro_price"><i>¥</i><em>2300</em>起</span> <a class="pro_btn" href="http://dujia.lvmama.com/customized/1070868">立即订购</a> </div></li>
+      </ul>
+      <h2 id="mao5" style="background-position:0 -400px">山城烟雨</h2>
+      <ul class="product_list">
+        <li class="prdL"><a class="prd_pic" href="http://dujia.lvmama.com/customized/1071504 "><img src="images/evt_Spr2017_prdl16.jpg" width="640" height="338" alt=""> <span class="pi-tag">大足印记<i></i></span><p class="pi-overlay">重庆、大足、武隆4日<br><small>重庆三面临江，一面依山 品尝重庆特色美食，感受重庆独特风情</small></p></a><div class="pi-desc"><div class="pi-rec"><h4>重庆、大足、武隆4日</h4></div><p class="pi-highlight"> 重庆三面临江，一面依山<br>品尝重庆特色美食<br>感受重庆独特风情<br></p><span class="pro_price"><i>¥</i><em>2930</em>起</span> <a class="pro_btn" href="http://dujia.lvmama.com/customized/1071504 ">立即订购</a> </div></li>
+
+      </ul>
+      <h2 id="mao6" style="background-position:0 -500px">西域风情</h2>
+      <ul class="product_list">
+        <li class="prdL"><a class="prd_pic" href="http://dujia.lvmama.com/customized/1072184 "><img src="images/evt_Spr2017_prdl17.jpg" width="640" height="338" alt=""> <span class="pi-tag">深度西域<i></i></span><p class="pi-overlay">环天山草原之旅十日游<br><small>不到新疆，不知中国之大；不到伊犁，不知新疆之美 云集新疆知名五A景区，有名的湖泊，知名的草原</small></p></a><div class="pi-desc"><div class="pi-rec"><h4>环天山草原之旅十日游</h4></div><p class="pi-highlight"> 不到新疆，不知中国之大<br>不到伊犁，不知新疆之美<br>云集新疆知名五A景区<br>有名的湖泊，知名的草原</p><span class="pro_price"><i>¥</i><em>10090</em>起</span> <a class="pro_btn" href="http://dujia.lvmama.com/customized/1072184 ">立即订购</a> </div></li>
+
+      </ul>
     </div>
   </div>
 </div>
 
 <!--专题脚本START--> 
+<script src="http://s1.lvjs.com.cn/js/jquery-1.7.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
 <script src="http://s1.lvjs.com.cn/styles/zt/000global/js/ztFooter.js" type="text/javascript"></script>
 <script type="text/javascript" src="http://s3.lvjs.com.cn/js/common/losc.js"></script>
 <script src="http://s2.lvjs.com.cn/styles/zt/000global/js/eventCM.js" type="text/javascript"></script>
-<script src="http://s2.lvjs.com.cn/js/jquery-1.7.js"></script>
 <!--专题脚本END-->
 </body>
 </html>

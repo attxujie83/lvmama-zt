@@ -12,7 +12,49 @@ a{ text-decoration:none;}a:hover{ text-decoration: underline;}
 i{ font-style:normal;}
 
 .wrap { background-color:#fefee3;}
+
+.fdRight { background: url(../images/fdRight.png) no-repeat; width: 120px; height: 458px; position: fixed; top: 50%; margin-top: -400px; left: 50%; margin-left: 545px; z-index: 2;}
+.fdRight p {width: 90px; margin: 147px 0 0 15px; display: block;}
+.fdRight p a{ display: block; width: 90px; height: 30px; line-height: 30px; text-align: center; background: #fff; color: #063; font-family: "microsoft yahei"; font-size: 16px; letter-spacing:1px; border-radius: 6px; margin-bottom: 10px;}
+.fdRight p a:hover{ background: #cfc; text-decoration: none; }
+.fdRight p .top { margin-top: 30px;}
+
+.animated {-webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-fill-mode: both; animation-fill-mode: both; }
+
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.fadeIn { -webkit-animation-name: fadeIn; animation-name: fadeIn; -webkit-animation-timing-function: ease-out; animation-timing-function: ease-out; }
+
+
+
+.parallax-root img{display: block;margin: 0 auto;}
+.parallax-root{width: 100%;overflow: hidden;position: relative;background-position: center;background-repeat: no-repeat;}
+.parallax-root .scene{height: 100%;position: absolute;}
+.parallax-root .layer img{-webkit-animation-duration: 15s;-webkit-animation-timing-function: ease-in-out;-webkit-animation-iteration-count: infinite;-webkit-animation-direction: alternate;}
+.parallax-root .layer:nth-child(1) img{-webkit-animation-name: line1;-webkit-animation-duration: 15s;}
+.parallax-root .layer:nth-child(3) img,.parallax-root .layer:nth-child(4) img{-webkit-animation-name: line2;-webkit-animation-duration: 15s;}
+.parallax-root .layer:nth-child(5) img{-webkit-animation-name: line3; -webkit-animation-duration: 15s;}
+@-webkit-keyframes line1{0%{-webkit-transform:translate(0px , 0px);}
+50%{-webkit-transform:translate(100px , 0px);}
+100%{-webkit-transform:translate(0px , 0px);}}
+@-webkit-keyframes line2{0%{-webkit-transform:translate(0px , 0px);}
+50%{-webkit-transform:translate(50px , 0px);}
+100%{-webkit-transform:translate(0px , 0px);}}
+@-webkit-keyframes line3{0%{-webkit-transform:translate(0px , 0px);}
+50%{-webkit-transform:translate(25px , 0px);}
+100%{-webkit-transform:translate(0px , 0px);}}
+
+
+.parallax-root .mask {position: absolute; left: 0px; top: 0px;}
+
 .banner{ background:url(../images/banner.jpg) no-repeat center 0; height:600px;}
+
 .main{ width:1000px; margin:0 auto; padding-bottom:20px;}
 .main h2 {line-height: 40px;font-size: 22px;font-family: "微软雅黑";color: #fff;text-align: center;font-weight: normal;height: 100px;background: url(../images/h2_bg.png) no-repeat; text-indent: -9999px; position:relative;}
 .main h2:before, .main h2:after { content: ""; position: absolute; width:100px; height:100px; background: url(../images/lines_l.png) 0 0 no-repeat; left:300px; }
@@ -25,9 +67,9 @@ i{ font-style:normal;}
 .pi-tag i{position: absolute; top: 34px; left: 0; display: block; width: 6px; height: 6px; background: url(../images/flag.png) no-repeat; }
 .pi-overlay{position: absolute; left: 0; bottom: 0; width: 630px; height: 45px; padding: 5px 0 0 10px; background: #000\9; filter: progid:DXImageTransform.Microsoft.Alpha(opacity=80); background: rgba(0, 0, 0, 0.7);}
 .pi-overlay small{font-size: 12px;}
-.pi-desc{float: none; overflow:hidden; font-family: "Microsoft YaHei"; font-size: 14px; color: #444;}
+.pi-desc{ width:460px; float: none; overflow:hidden; font-family: "Microsoft YaHei"; font-size: 14px; color: #444;}
 .prdL .pi-desc{float: left; width: 312px;}
-.pi-rec{font-size: 14px; margin: 8px 0 ; padding: 0 10px; }
+.pi-rec{ height:44px; overflow:hidden; font-size: 14px; margin: 8px 0 ; padding: 0 10px; }
 .prdL .pi-rec{font-size: 18px; margin: 8px 0 14px ; padding: 0 10px; border-bottom: 1px solid #EEE; height:35px;}
 .pi-rec h4{ font-weight:normal; font-size:16px;}
 .prdL .pi-rec h4{ font-weight:normal;}
