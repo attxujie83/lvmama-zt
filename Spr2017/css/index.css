@@ -40,15 +40,15 @@ i{ font-style:normal;}
 .parallax-root .layer:nth-child(1) img{-webkit-animation-name: line1;-webkit-animation-duration: 15s;}
 .parallax-root .layer:nth-child(3) img,.parallax-root .layer:nth-child(4) img{-webkit-animation-name: line2;-webkit-animation-duration: 15s;}
 .parallax-root .layer:nth-child(5) img{-webkit-animation-name: line3; -webkit-animation-duration: 15s;}
-@-webkit-keyframes line1{0%{-webkit-transform:translate(0px , 0px);}
-50%{-webkit-transform:translate(100px , 0px);}
-100%{-webkit-transform:translate(0px , 0px);}}
-@-webkit-keyframes line2{0%{-webkit-transform:translate(0px , 0px);}
-50%{-webkit-transform:translate(50px , 0px);}
-100%{-webkit-transform:translate(0px , 0px);}}
-@-webkit-keyframes line3{0%{-webkit-transform:translate(0px , 0px);}
-50%{-webkit-transform:translate(25px , 0px);}
-100%{-webkit-transform:translate(0px , 0px);}}
+@-webkit-keyframes line1{0%{-webkit-transform:translate(-50px , 0px);}
+50%{-webkit-transform:translate(0px , 0px);}
+100%{-webkit-transform:translate(50px , 0px);}}
+@-webkit-keyframes line2{0%{-webkit-transform:translate(-25px , 0px);}
+50%{-webkit-transform:translate(0px , 0px);}
+100%{-webkit-transform:translate(25px , 0px);}}
+@-webkit-keyframes line3{0%{-webkit-transform:translate(-12px , 0px);}
+50%{-webkit-transform:translate(0px , 0px);}
+100%{-webkit-transform:translate(12px , 0px);}}
 
 
 .parallax-root .mask {position: absolute; left: 0px; top: 0px;}
