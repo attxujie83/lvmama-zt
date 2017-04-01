@@ -14,6 +14,8 @@ i{ font-style:normal;}
 .wrap { background-color:#000; }
 
 .wrapper{ overflow: hidden; position: relative; height: 600px; -webkit-perspective: 800; perspective: 800;}
+.part{padding-bottom: 150px;}
+
 .layer{position: absolute; will-change: transform; width:2160px; -webkit-animation-timing-function: ease-in-out;-webkit-animation-iteration-count: infinite;-webkit-animation-direction: alternate;}
 .ad{ width: 2160px; height: 700px; position: absolute; left: 50%; top: 50%; margin-left: -1080px;  margin-top: -350px;background: black; overflow: hidden; -webkit-transform-style: preserve-3d; transform-style: preserve-3d; will-change: transform; }
 .ad{ -webkit-animation-duration: 25s;-webkit-animation-timing-function: ease-in-out;-webkit-animation-iteration-count: infinite;-webkit-animation-direction: alternate;-webkit-animation-name:adpala;}
