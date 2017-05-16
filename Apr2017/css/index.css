@@ -1,0 +1,67 @@
+﻿@charset "utf-8";
+/* CSS Document */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,select,textarea,p,blockquote,th,td,hr,button,figure,menu{margin:0;padding:0;}
+body{font:12px/22px Tahoma,Arial,\5b8b\4f53,sans-serif;}
+body{ min-width:1000px}
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+table{border-collapse:collapse;border-spacing:0;}
+ol,ul{list-style:none;}
+a img{border:none; vertical-align:top;}
+input,button{ font-family:Tahoma,Verdana,Geneva,sans-serif}
+a{ text-decoration:none;}a:hover{ text-decoration: underline;}
+i{ font-style:normal;}
+
+.wrap { background-color:#fee5e8;}
+.banner { background: url(../images/banner_bg.jpg) no-repeat center 0; height: 650px ;position: relative;}
+.banner .logo{ position: absolute; left: 50%; margin-left: -465px; top:0px; z-index: 2; width: 104px; height: 155px; background: url(../images/lv9th.png);}
+
+
+.main{ width:1000px; margin:0 auto; padding-bottom:20px;}
+.main h2 {line-height: 40px;font-size: 22px;font-family: "微软雅黑";color: #fff;text-align: center;font-weight: normal;height: 100px;background: url(../images/h2_bg.png) no-repeat; text-indent: -9999px; position:relative;}
+.product_list{ overflow:hidden; margin:0 0 80px -16px;}
+.product_list li{ float:left; background:#FFF; padding:16px; position:relative; margin:0 0 16px 16px; }
+.prd_pic{position: relative; float: none; display: block; font-family: "Microsoft YaHei"; font-size: 16px; color: #ffffff;}
+.prdL .prd_pic{ float: left; margin-right: 16px;}
+.pi-tag{position: absolute; top: 16px; left: -6px; height: 34px; background: #f69; line-height: 34px; padding: 0 18px;}
+.pi-tag i{position: absolute; top: 34px; left: 0; display: block; width: 6px; height: 6px; background: url(../images/flag.png) no-repeat; }
+.pi-overlay{position: absolute; left: 0; bottom: 0; width: 630px; height: 45px; padding: 5px 0 0 10px; background: #000\9; filter: progid:DXImageTransform.Microsoft.Alpha(opacity=80); background: rgba(0, 0, 0, 0.7);}
+.pi-overlay small{font-size: 12px;}
+.pi-desc{ width:460px; float: none; overflow:hidden; font-family: "Microsoft YaHei"; font-size: 14px; color: #444;}
+.prdL .pi-desc{float: left; width: 312px;}
+.pi-rec{ height:44px; overflow:hidden; font-size: 14px; margin: 8px 0 ; padding: 0 10px; }
+.prdL .pi-rec{font-size: 18px; margin: 8px 0 14px ; padding: 0 10px; border-bottom: 1px solid #EEE; height:35px;}
+.pi-rec h4{ font-weight:normal; font-size:16px;}
+.prdL .pi-rec h4{ font-weight:normal;}
+.pi-highlight{margin-left: 10px; height: 183px; line-height: 24px; overflow-x: hidden; overflow-y: auto;}
+.pro_btn{ float:right; display:block;width:120px; height:36px; line-height:36px; background:#f69; border-radius:6px; text-align:center;font-size: 18px; font-family: "Microsoft YaHei"; color:#FFF; }
+.pro_btn:hover{ background:#f39; text-decoration:none;}
+.prdL .pro_btn{ width: 312px; height: 50px; font-size: 24px; line-height: 50px; margin-top:3px;}
+.pro_price{ float:left; display:block;color:#ff3300;font-size: 12px;font-family: "宋体"; text-align:right; margin-top:7px; padding-left:10px;}
+.prdL .pro_price{ float:none; margin-top:15px;}
+.pro_price i { font-style:normal; font-size:16px; font-family:"Microsoft YaHei";}
+.pro_price em { font-style:normal; font-size:32px; font-family:"Arial"; font-weight:bold; margin:0 4px;}
+
+.dingzhi { background: url(../images/infos_bg.png) no-repeat center 0; background-color: #fe738a; }
+.dingzhi .main { padding-top:200px;}
+.dingzhi .stps { margin:35px 110px 0; height:120px;}
+.dingzhi .stps li { float: left; width:180px; text-align:center; }
+.dingzhi .stps li i { width:120px; height:120px; background: url(../images/icons.png) no-repeat; display:inline-block;-webkit-transition: all 500ms ease-out; -moz-transition: all 500ms ease-out; -o-transition: all 500ms ease-out; transition: all 500ms ease-out;}
+.dingzhi .stps li i:hover { background: url(../images/icons_ac.png) no-repeat; }
+.dingzhi .stps span { width:20px; height:20px; display:block; float:left; margin-top: 50px; background: url(../images/arrw.png) no-repeat;}
+.dingzhi #ico1 {background-position: 0px 0px;}
+.dingzhi #ico2 {background-position: 0px -120px;}
+.dingzhi #ico3 {background-position: 0px -240px;}
+.dingzhi #ico4 {background-position: 0px -360px;}
+.dingzhi #ico1:hover {background-position: 0px 0px;}
+.dingzhi #ico2:hover {background-position: 0px -120px;}
+.dingzhi #ico3:hover {background-position: 0px -240px;}
+.dingzhi #ico4:hover {background-position: 0px -360px;}
+.dingzhi .dingzhi-infos { background: url(../images/infos_de.png) no-repeat center 0; height:100px;}
+.dingzhi_btn{ margin: 70px 0 200px 400px; display:block; width:200px; height:40px; line-height:40px; background:#fe94a6; border-radius:20px; text-align:center;font-size: 18px; font-family: "Microsoft YaHei"; color:#FFF;-webkit-transition: all 500ms ease-out; -moz-transition: all 500ms ease-out; -o-transition: all 500ms ease-out; transition: all 500ms ease-out;}
+.dingzhi_btn:hover{ background:#fff; color:#F69; text-decoration:none;}
+
+
+
+/*底部活动*/ 
+.ztfooter{ width:980px; overflow:hidden; margin:0 auto; text-align:center; color:#666; line-height:18px; padding:25px 0 10px 0;} 
+
