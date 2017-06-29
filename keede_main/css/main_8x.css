@@ -1,0 +1,22 @@
+#nav { width:760px; height:35px; float:left;}
+#navigation { float:left; width:760px; height:35px;}
+#navigation li { float:left; display:block; height:35px; width:auto; position:relative;}
+#navigation li a { display:block; outline:none; position:relative; height:70px; text-decoration:none; width:auto;}
+#navigation .home { background-position:0px -58px; width:88px; height:35px;}
+#navigation .ColorPupil { width:88px; height:35px; }
+#navigation .ContactLenses { width:119px; height:35px;}
+#navigation .FrameGlasses { width:119px; height:35px;}
+#navigation .GroupPurchase { width:88px; height:35px;}
+#navigation a .hover { display:block ; opacity:0; position:relative; top:0; left:0; height:100%; width:100%;}
+#navigation .home .hover { background:#669900;}
+#navigation .ColorPupil:hover{ background:#669900;}
+#navigation .ContactLenses:hover { background:#669900;}
+#navigation .FrameGlasses:hover { background:#669900;}
+#navigation .GroupPurchase:hover { background:#669900;}
+#navigation .home_hover { display:block; width:88px; height:35px; text-decoration:none; background-position:-0px -95px;}
+#navigation .home_hover .hover { background-position:-0px -95px;}
+
+.nav .submenubox { position:absolute; background:#FFF; left:236px; top:-1px; float:left; width:748px; overflow:hidden; z-index:21; border:1px solid #e0e0e0;}
+.nav #nav_top3 { top:-28px;}
+.nav #nav_top4 { top:-106px;}
+.nav #nav_top5 { top:-184px;}
