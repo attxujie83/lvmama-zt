@@ -12,7 +12,7 @@ body { background: #FFE600; font-size: 100px;}
 .nose {position: absolute; margin: 0 calc(50% - .11em); margin-top: .38em; width: 0; height: 0; z-index: 1; border-top: .09em solid black; border-left: .11em solid transparent; border-right: .11em solid transparent; box-shadow: 0 -.01em 0 black;}
 .nose:before {content: ''; display: block; position: absolute; width: .22em; height: .05em; background: black; border-top-left-radius: .11em .05em; border-top-right-radius: .11em .05em; margin: -.14em 0 0 -.11em;}
 .mouth {position: absolute; width: 2.28em; height: 1.8em; margin: .65em calc(50% - 1.14em); overflow: hidden;}
-.mouth:after,.mouth:before {content: ''; display: block; position: absolute; width: .8em; height: .25em; background: #FFE600; border: .03em solid black; border-top:none;  top: -.05em; box-shadow: 0 -.1em 0 #FFE600, -.05em -.03em 0 #FEE600;}
+.mouth:after,.mouth:before {content: ''; display: block; position: absolute; width: .8em; height: .25em; background: #FFE600; border: .03em solid black; border-top:none;  top: -.05em; box-shadow: 0 -.2em 0 #FFE600, -.05em -.03em 0 #FEE600;}
 .mouth:after  {border-left: none;  right: .3em; -webkit-transform:rotate(25deg);  -moz-transform:rotate(25deg);  -ms-transform:rotate(25deg);  transform:rotate(25deg);  border-bottom-right-radius: .6em .3em;}
 .mouth:before {border-right: none; left: .3em;  -webkit-transform:rotate(-25deg); -moz-transform:rotate(-25deg); -ms-transform:rotate(-25deg); transform:rotate(-25deg); border-bottom-left-radius: .6em .3em; z-index: 1;}
 .mouth > div { position: absolute; background: #FF485F; width: 2.28em; height: 8em; border-bottom-left-radius: 1.18em 8em; border-bottom-right-radius: 1.18em 8em; margin-top: -6.37em; overflow: hidden;}
