@@ -32,7 +32,7 @@ i{ font-style:normal;}
 
 
 
-.zt-bg{width: 1920px;position: absolute;left: 50%;margin-left: -960px;}
+.zt-bg{width:100%;position: absolute; }
 .bg1{top: 700px; background: url("../images/bg1.jpg") no-repeat center 0; height:640px;}
 .bg2{bottom:0px; background: url("../images/bg2.jpg") no-repeat center 0; height:540px;}
 
