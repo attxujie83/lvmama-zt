@@ -1,0 +1,296 @@
+*{margin: 0; padding: 0;}
+img { width: 100%; display: block;}
+input,button{ border: none; border-radius: 0; background: none; outline: none; }
+html { font-family: "microsoft yahei", "Arial"; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; width: 100%; font-size: 62.5%;}
+body { min-width: 320px; width: 100%; margin: 0 auto;
+    tap-highlight-color: rgba(0,0,0,0); 
+    focus-focus-ring-color: rgba(0, 0, 0, 0); 
+    -webkit-tap-highlight-color: rgba(0,0,0,0); 
+    -webkit-focus-ring-color: rgba(0, 0, 0, 0);
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;}
+
+#container{ overflow-x: hidden;}
+.prd-pic{ background: url(../../../3.0.0/img/loading.png) center center no-repeat; background-size: 100px 100px;}
+.left{ background: url(../../../3.0.0/img/loading.png) center center no-repeat; background-size: 100px 100px;}
+
+.top-header{ position: relative; height: 0; padding-bottom: 84.06%;}
+.top-header .logo{ background: url(../../../4.0.0/1604/hongbao-Template2.0/images/logo1.png) no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%; 
+    width: 7.5rem; height: 2.5rem; position: absolute; left: 1rem; top: 0.6rem;}
+.top-header .wenhao{ background: #ff410e url(../../../4.0.0/1604/hongbao-Template2.0/images/wenhao.png) no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%; 
+    width: 1.8rem; height: 1.8rem; position: absolute; right: 7.5rem; top: 0.2rem; border-radius: 20px; margin: 0 1rem 1rem;}
+.top-header .coupon-logo{ font-size: 1.2rem; color: #fff; text-align: center; height: 2.5rem; width: 7rem; line-height: 2.5rem; background: #ff410e;
+    position: absolute; right: 1rem; top: 0; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px; z-index: 10;}
+.top-header .coupon-logo span{ background: url(../../../4.0.0/1604/hongbao-Template2.0/images/lahuan1.png) no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%; 
+    width: 1.4rem; height: 2.3rem; position: absolute; left: 50%; bottom: -2rem; -webkit-transform: translateX(-50%); transform: translateX(-50%);}
+.top-header .daoyu{ background: url(../../../4.0.0/1604/hongbao-Template2.0/images/daoyu-bg.png) no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%; 
+    /*width: 30.1rem; height: 5rem;*/ position: absolute; left: 1rem; right: 1rem; bottom: 0;}
+.top-header .daoyu p{ color: #2086ea; font-size: 1.1rem; line-height: 1.5rem; padding: 1rem;}
+
+/*普通优惠券样式*/
+.common-coupon .coupon-list{ padding: 1rem 0.5rem 0; overflow: hidden;}
+.common-coupon .coupon-list li{ position: relative;}
+.common-coupon .coupon-list li.select:before{ content:""; position: absolute; top: 0; left: 0; background: rgba(0,0,0,0.6); width: 100%; height: 100%;}
+.common-coupon .coupon-list li.select:after{ content:""; position: absolute; top: 50%; left: 50%; width: 8.4rem; height: 4rem;
+    background: url(../../../4.0.0/1604/hongbao-Template2.0/images/yilingqu.png) no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%;
+    -webkit-transform: translate(-50%,-50%); transform: translate(-50%,-50%);}
+.common-coupon .coupon-list li{ width: 49%; float: left; margin: 0 2% 0.6rem 0;}
+.common-coupon .coupon-list li.zuhe{ width: 100%; margin: 0;}
+.common-coupon .coupon-list li.zuhe.join:after{ content:""; position: absolute; top: 50%; left: 50%; width: 8.4rem; height: 4rem;
+    background: url(../../../4.0.0/1604/hongbao-Template2.0/images/yicanyu.png) no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%;
+    -webkit-transform: translate(-50%,-50%); transform: translate(-50%,-50%);}
+.common-coupon .coupon-list li:nth-child(2n){ margin-right: 0;}
+
+/*红包树优惠券样式*/
+.hongbao-tree{ position: relative; margin-bottom: 8rem; /*display: none;*/}
+.hongbao-tree .tree{ width: 21.7rem; height: 23.3rem; margin: 0 auto; padding-top: 1rem;
+    background: url(../../../4.0.0/1604/hongbao-Template2.0/images/tree1.png) no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%; }
+.hongbao-tree .prize-show{ position: absolute; bottom: -7rem; width: 100%;}
+.hongbao-tree .prize-show h3{ font-size: 1.2rem; color: #fff; font-weight: bold; background: #ff410e; display: inline-block; 
+    border-top-right-radius: 20px; border-bottom-right-radius: 20px; padding: 0.4rem 1rem 0.4rem 0.6rem;}
+.hongbao-tree .prize-show .coupon-list{ padding: 0.5rem;}
+.hongbao-tree .prize-show .coupon-list ul{ overflow-x: scroll; width: auto; white-space: nowrap; font-size: 0;
+    -webkit-overflow-scrolling: touch; overflow-scrolling: touch;}
+.hongbao-tree .prize-show .coupon-list ul::-webkit-scrollbar{ width:0; height:0; display: none;}   
+.hongbao-tree .prize-show .coupon-list ul li{ width: 35%; height: 6.8rem; display: inline-block; margin-right: 2%;}
+.hongbao-tree .prize-show .coupon-list ul li{ background: url(../../../4.0.0/1604/hongbao-Template2.0/images/tree-coupon1.png) no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%;}
+.hongbao-tree .prize-show .coupon-list ul li:nth-child(2){ background: url(../../../4.0.0/1604/hongbao-Template2.0/images/tree-coupon2.png) no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%;}
+.hongbao-tree .prize-show .coupon-list ul li:last-child{ background: url(../../../4.0.0/1604/hongbao-Template2.0/images/tree-coupon3.png) no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%;}
+.hongbao-tree .prize-show .coupon-list ul li:last-child{ margin-right: 0;}
+
+/*转盘优惠券样式*/
+/*.zhuanpan{ display: none;}*/
+.zhuanpan .coupon-show{ position: relative; margin-top: 1rem;}
+.zhuanpan .coupon-show .zhuanpan-bg{ margin: 0 auto; background: url(../../../4.0.0/1604/hongbao-Template2.0/images/zhuanpan1.png) no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%; 
+    width:21.7rem; height: 21.7rem; position: relative; transform: rotate(0deg); z-index: 9;}
+.zhuanpan .coupon-show .btn{ background: url(../../../4.0.0/1604/hongbao-Template2.0/images/btn1.png) no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%; z-index: 10;
+    width: 6.2rem; height: 6.7rem; position: absolute; left: 50%; top: 7.5rem; margin-left: -3.1rem;}
+.zhuanpan .coupon-show .btn.already{ background: url(../../../4.0.0/1604/hongbao-Template2.0/images/btn2.png) no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%;}
+.zhuanpan .coupon-show .zhuanpan-bg .coupon-list{ color: #fff; font-weight: bold; text-align: center; text-shadow: 2px 2px 1px rgba(255,92,93,0.75); line-height: 2rem;}
+.zhuanpan .coupon-show .zhuanpan-bg .coupon-list p{ font-size: 1.2rem;}
+.zhuanpan .coupon-show .zhuanpan-bg .coupon-list span{ font-size: 1.6rem; height: 2.2rem; display: block;}
+.zhuanpan .coupon-show .zhuanpan-bg .coupon-list.top{ padding-top: 2.2rem;}
+.zhuanpan .coupon-show .zhuanpan-bg .coupon-list.right-top{ -webkit-transform: rotate(60deg); transform: rotate(60deg); margin-top: -1rem; margin-right: -12rem;}
+.zhuanpan .coupon-show .zhuanpan-bg .coupon-list.right-bottom{ -webkit-transform: rotate(120deg); transform: rotate(120deg); margin-top: 2.5rem; margin-right: -12rem;}
+.zhuanpan .coupon-show .zhuanpan-bg .coupon-list.bottom{ -webkit-transform: rotate(180deg); transform: rotate(180deg); margin-top: -1rem;}
+.zhuanpan .coupon-show .zhuanpan-bg .coupon-list.left-bottom{ -webkit-transform: rotate(240deg); transform: rotate(240deg); margin-top: -7rem; margin-right: 11rem;}
+.zhuanpan .coupon-show .zhuanpan-bg .coupon-list.left-top{ -webkit-transform: rotate(300deg); transform: rotate(300deg); margin-top: -11rem; margin-right: 11rem;}
+.zhuanpan .coupon-show .shadow{ background: url(../../../4.0.0/1604/hongbao-Template2.0/images/shadow.png) no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%; z-index: 8;
+    width: 14.7rem; height: 2.9rem; position: absolute; left: 50%; bottom: -5%; -webkit-transform:translateX(-50%); transform:translateX(-50%);}
+
+/*领取优惠券样式*/
+.lingqu-coupon{ background: url(../../../4.0.0/1604/hongbao-Template2.0/images/xinfeng1.png) no-repeat; position: relative;
+    -webkit-background-size: 100% 100%; background-size: 100% 100%; height: 27.3rem; margin-top: 1rem; /*display: none;*/}
+.lingqu-coupon h3{ font-size: 1.8rem; color: #fff; font-weight: bold; text-align: center; padding-top: 1rem; line-height: 1.6rem;}
+.lingqu-coupon ul{ text-align: center; margin: 1rem auto; width: 60%;}
+.lingqu-coupon ul li{ padding-top: 0.8rem; height: 2.8rem;}
+.lingqu-coupon ul li input{ background: #fffdec; border: 1px solid #c9c9c9; height: 2rem; width: 100%; 
+    border-radius: 5px; text-align: center; font-size: 1.2rem; -webkit-appearance: none; appearance: none;}
+.lingqu-coupon ul li input.short{ width: 60%; float: left;}
+.lingqu-coupon ul li i{ width: 35%; text-align: center; float: left; background: #ffd200;
+    color: #fff; margin-left: 5%; border-radius: 4px; height: 2rem; line-height: 2rem;}
+.lingqu-coupon ul li i.code1{ margin-right: 10%; width: 25%;}
+.lingqu-coupon ul li i.code1 img{ height: 100%;}
+.lingqu-coupon .lingqu-btn{ background: url(../../../4.0.0/1604/hongbao-Template2.0/images/lingqu-btn1.png) no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%; 
+    width: 18.8rem; height: 3.5rem; position: absolute; bottom: 3rem; left: 50%; margin-left: -9.4rem;}
+
+/*产品展示模块样式*/
+.prd-show .title{ margin: 2rem auto; font-size: 2.1rem; color: #fffcde; font-weight: bold; font-style: italic; text-align: center; position: relative; line-height: 2rem;}
+.prd-show .title:after{ content:""; background: url(../../../4.0.0/1604/hongbao-Template2.0/images/prd-title1.png) no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%; 
+    width: 32rem; height: 0.7rem; position: absolute; left: 50%; top: 50%; -webkit-transform: translate(-50%,-50%); transform: translate(-50%,-50%);}
+.prd-show .tab-list .tab-nav{ height: 3rem;}
+.prd-show .tab-list .tab-nav ul{ overflow: hidden;}
+.prd-show .tab-list .tab-nav ul li{ width: 24%; margin-right: 1%; float: left; background: #fffcde; 
+    color: #646464; font-size: 1.3rem; text-align: center; line-height: 3rem;}
+.prd-show .tab-list .tab-nav ul li.active{ background: #ff410e; color: #fff;}
+.prd-show .tab-list .tab-nav ul li:last-child{ margin-right: 0; width: 25%;}
+.prd-show .tab-list section{ padding: 1rem 0.5rem; overflow: hidden;}
+
+/*产品展示方式1*/
+/*.prd-show .tab-list .mode1{ display: none;}*/
+.prd-show .tab-list .mode1 .prd-list{ width: 49%; float: left; margin-right: 2%; margin-bottom: 0.5rem; position: relative;}
+.prd-show .tab-list .mode1 .prd-list .prd-pic img{ height: 15.4rem;}
+.prd-show .tab-list .mode1 .prd-list .prd-pic{ position: relative;}
+.prd-show .tab-list .mode1 .prd-list .prd-pic .pic-mark1{ background: url(../../../4.0.0/1604/hongbao-Template2.0/images/pic-mark1.png@v=20160728) no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%;
+    max-width: 6rem; height: 1.7rem; position: absolute; top: 0rem; left: 0rem; text-align: center; font-size: 1.1rem;
+    color: #fff; line-height: 1.7rem; overflow: hidden; padding: 0 0.5rem 0 0.2rem;}
+.prd-show .tab-list .mode1 a:nth-of-type(2n) .prd-list{ margin-right: 0;}
+.prd-show .tab-list .mode1 .prd-list .describe{ width: 100%; text-align: center; position: absolute; top: 50%; left: 50%; 
+    -webkit-transform:translate(-50%,-50%); transform:translate(-50%,-50%); background: rgba(0,0,0,0.3); padding: 1rem;}
+.prd-show .tab-list .mode1 .prd-list .describe h3{ color: #fff; font-size: 2.1rem; font-weight: bold; line-height: 3rem; white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}
+.prd-show .tab-list .mode1 .prd-list .describe p{ color: #fff; font-size: 1.2rem; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; line-height: 1.4rem;}
+
+/*产品展示方式2*/
+/*.prd-show .tab-list .mode2{ display: none;}*/
+.prd-show .tab-list .mode2 .prd-list{ background: #fff; margin-bottom: 0.6rem;}
+.prd-show .tab-list .mode2 .prd-list .left{ float: left; position: relative;}
+.prd-show .tab-list .mode2 .prd-list .left img{ width: 12.3rem; height: 10.4rem;}
+.prd-show .tab-list .mode2 .prd-list .left .pic-mark2{ background: url(../../../4.0.0/1604/hongbao-Template2.0/images/pic-mark2.png@v=20160728) no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%; width: 6rem; height: 5rem; position: absolute; top: 0rem; left: 0rem;}
+.prd-show .tab-list .mode2 .prd-list .left .pic-mark2 span{ font-size: 1.1rem; color: #fff; -webkit-transform: rotate(-40deg); transform: rotate(-40deg);
+    position: absolute; top: 0.8rem; left: -0.2rem; display: block; width: 100%; overflow: hidden; height: 2rem; max-width: 5rem; line-height: 2rem; text-align: center;}  
+.prd-show .tab-list .mode2 .prd-list .right{ height: 10.4rem; position: relative; padding: 0.5rem; padding-left: 12.8rem;}
+.prd-show .tab-list .mode2 .prd-list .right p{ color: #555; font-size: 1rem;}
+.prd-show .tab-list .mode2 .prd-list .right .name{ white-space: nowrap; text-overflow: ellipsis; overflow: hidden;
+    font-size: 1.2rem; margin-left: -0.5rem; margin-bottom: 0.2rem; line-height: 1.4rem;}
+.prd-show .tab-list .mode2 .prd-list .right .detail{ display: -webkit-box; overflow : hidden; text-overflow: ellipsis; 
+    -webkit-line-clamp: 2; -webkit-box-orient: vertical; line-height: 1.2rem; max-height: 2.4rem;}
+.prd-show .tab-list .mode2 .prd-list .right .p-btn{ position: absolute; bottom: 0.5rem; right: 0.5rem; left: 12.8rem; overflow: hidden;}
+.prd-show .tab-list .mode2 .prd-list .right .p-btn .price{ float: left; padding-top: 0.7rem;}
+.prd-show .tab-list .mode2 .prd-list .right .p-btn .price p{ font-size: 1rem; color: #f02f5b;}
+.prd-show .tab-list .mode2 .prd-list .right .p-btn .price p i:first-child{ font-size: 1.9rem;}
+.prd-show .tab-list .mode2 .prd-list .right .p-btn .price p i:last-child{ color: #999;}
+.prd-show .tab-list .mode2 .prd-list .right .p-btn .see{ padding: 0.5rem 1rem; color: #fff; font-size: 1.3rem; 
+    text-align: center; background: #ff410e; border-radius: 5px; float: right;}
+
+/*产品展示方式3*/
+/*.prd-show .tab-list .mode3{ display: none;}*/
+.prd-show .tab-list .mode3 .prd-list{ width: 48%; float: left; margin-right: 4%; margin-bottom: 1rem; background: #fff;}
+.prd-show .tab-list .mode3 .prd-list .prd-pic img{ height: 10.6rem;}
+.prd-show .tab-list .mode3 .prd-list .prd-pic{ position: relative;}
+.prd-show .tab-list .mode3 .prd-list .prd-pic .pic-mark3{ background: url(../../../4.0.0/1604/hongbao-Template2.0/images/pic-mark3.png) no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%;
+    max-width: 5rem; height: 2.3rem; position: absolute; top: 0rem; left: 0.3rem; text-align: center;
+    font-size: 1.1rem; color: #fff; line-height: 2rem; overflow: hidden; padding: 0 0.2rem;}
+.prd-show .tab-list .mode3 a:nth-of-type(2n) .prd-list{ margin-right: 0;}
+.prd-show .tab-list .mode3 .prd-list .describe{ padding: 0.5rem 1rem;}
+.prd-show .tab-list .mode3 .prd-list .describe p{ color: #333; font-size: 1.1rem; margin-bottom: 0.2rem;
+    white-space: nowrap; text-overflow: ellipsis; overflow: hidden; height: 1.6rem;}
+.prd-show .tab-list .mode3 .prd-list .describe .price{ overflow: hidden; line-height: 1.8rem;}
+.prd-show .tab-list .mode3 .prd-list .describe .price span{ font-size: 1.2rem; color: #f02f5b; float: left;}
+.prd-show .tab-list .mode3 .prd-list .describe .price del{ font-size: 1rem; color: #999; float: right;}
+
+/*活动规则样式*/
+.rule{ padding: 0 0.5rem; text-align: center;}
+.rule .title{ line-height: 2rem; padding: 0 1.5rem; color: #fffcde; font-size: 1.5rem; font-weight: bold; font-style: italic;
+    border-radius: 10px; display: inline-block;  border: 1px solid #fffcde;}
+.rule .detail{ text-align: left; background: rgba(255,255,255,0.15); border: 1px solid #fffcde; color: #fffcde; font-size: 1rem; margin-top: -1rem; border-radius: 8px;}
+.rule .detail p{ padding: 0 2rem; margin: 3rem 0 2rem; line-height: 1.6rem;}
+
+.coupon-footer{ padding: 4.5rem 0 4.2rem; opacity: 0.8;}
+.return-top{ background: url(../../../4.0.0/1604/hongbao-Template2.0/images/top.png) no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%;
+    width: 4.5rem; height: 4.5rem; position: fixed; bottom: 2rem; right: 1rem; display: none;}
+
+/*我的优惠券样式*/
+.my-coupon{ width: 100%; background: rgba(0,0,0,0.7); position: fixed; top: 0; padding: 1.2rem 0; z-index: 11; display: none; }
+.my-coupon.many{ height: 25rem; overflow-y: scroll; -webkit-overflow-scrolling: touch; overflow-scrolling: touch;}
+.my-coupon.many::-webkit-scrollbar{ width:0; height:0; display: none;}
+.my-coupon p.no-quan{ font-size: 1.7rem; color: #fff; text-align: center; padding: 2rem 0; display: none;}
+.list-show{ padding: 0 0.5rem; overflow: hidden; margin-bottom: 1.5rem;}
+.list-show:last-of-type{ margin-bottom: 0;}
+.list-show .quan{ float: left; width: 80%; padding-right: 2%;}
+.list-show .quan.change{ width: 100%; padding-right: 0;}
+.list-show .quan .price{ font-size: 1.9rem; color: #fff; font-weight: bold; line-height: 6rem; float: left; width: 30%; text-align: center;
+    background: url(../../../4.0.0/1604/hongbao-Template2.0/images/coupon-bg1.png) no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%;}
+.list-show .quan .detail{ float: right; text-align: center; line-height: 1.5rem; width: 70%; height: 6rem; position: relative;
+    background: url(../../../4.0.0/1604/hongbao-Template2.0/images/coupon-bg2.png) no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%;}
+.list-show .quan .detail .msg{ position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%,-50%); transform: translate(-50%,-50%); width: 100%;}
+.list-show .quan .detail p.name{ font-size: 1.3rem; color: #fff; font-weight: bold;}
+.list-show .quan .detail p.time{ font-size: 0.9rem; color: #fff;}
+.my-coupon .list-show .use{ float: right; background: url(../../../4.0.0/1604/hongbao-Template2.0/images/nowuse-btn.png) no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%;
+    width: 20%; height: 2.2rem; margin-top: 1.9rem;}
+
+/*弹窗公共样式*/
+.public-popup{ width: 100%; height: 100%; position: fixed; top: 0; left: 0; background: rgba(0,0,0,0.7); display: none; z-index: 20;}
+.public-popup .main{ position: absolute; top: 50%; left: 50%; -webkit-transform:translate(-50%,-50%); transform:translate(-50%,-50%); width: 80%; background: #fff8cb;}
+.public-popup .main .close{ background: url(../../../4.0.0/1604/hongbao-Template2.0/images/close.png) no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%;
+    width: 1.3rem; height: 1.3rem; position: absolute; top: -2rem; right: 0;}
+
+/*登录注册弹窗样式*/
+.signIn-popup .main{ position: fixed;}
+.signIn-popup .main .title{ background: url(../../../4.0.0/1604/hongbao-Template2.0/images/dlzc-title.png) no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%;
+    width: 23.4rem; height: 5.1rem; margin: -2.8rem auto 0;}
+.signIn-popup .main .content{ padding: 2rem 3.5rem 4rem; text-align: center;}
+.signIn-popup .main .content ul li{ margin-bottom: 1rem;}
+.signIn-popup .main .content ul li span{ font-size: 1.2rem; color: #4b4b4b; width: 28%; display: inline-block; text-align: left;}
+.signIn-popup .main .content ul li input{ background: #fff; border: 1px solid #c9c9c9; height: 2rem; width: 72%; padding-left: 0.5rem;}
+.signIn-popup .main .content ul li input.short{ width: 52%;}
+.signIn-popup .main .content ul li i{ width: 18%; text-align: center; display: inline-block; background: #ffae00;
+    color: #fff; margin-left: 2%; border-radius: 4px; height: 2rem; line-height: 2rem;}
+.signIn-popup .main .content .signIn{ background: url(../../../4.0.0/1604/hongbao-Template2.0/images/signin-btn.png) no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%;
+    width: 9.6rem; height: 2.7rem; margin-top: 1rem;}
+
+/*木有成功弹窗样式*/
+.noSuccess-popup .main .content{ text-align: center; padding: 6rem 0;}
+.noSuccess-popup .main .content p{ font-size: 1.8rem; color: #f25451; font-weight: bold; line-height: 1.8rem;}
+.noSuccess-popup .main .content .next-time{ background: url(../../../4.0.0/1604/hongbao-Template2.0/images/next.png) no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%;
+    width: 16.3rem; height: 2.9rem; margin-top: 2.5rem;}
+
+/*成功领取弹窗样式*/
+.lingqu-popup .main .title{ background: url(../../../4.0.0/1604/hongbao-Template2.0/images/lingqu-title.png) no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%;
+    width: 23.4rem; height: 9rem; margin: -6.7rem auto 0;}
+.lingqu-popup .main .content{ text-align: center; padding: 3rem 0;}
+.lingqu-popup .main .content p{ font-size: 1.8rem; color: #f25451; font-weight: bold; line-height: 1.8rem;}
+.main .content .share{ background: url(../../../4.0.0/1604/hongbao-Template2.0/images/share-btn.png) no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%;
+    width: 16.3rem; height: 2.9rem; margin: 2rem 0;}
+.main .content .nowuse{ background: url(../../../4.0.0/1604/hongbao-Template2.0/images/use-btn.png) no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%;
+    width: 16.3rem; height: 2.9rem; margin-top: 0.8rem;}
+
+/*恭喜获得弹窗样式*/
+.win-popup{ display: none;}
+.win-popup .main{ max-height: 70%; }
+.win-popup .main .title{ background: url(../../../4.0.0/1604/hongbao-Template2.0/images/win-title.png) no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%;
+    width: 23.4rem; height: 8.6rem; margin: -6.2rem auto 0;}
+.win-popup .main .content{ text-align: center; padding-top: 2rem;}
+.win-popup .main .list-show .quan{ width: 100%; height: 5.9rem; padding-right: 0; margin-bottom: 1rem;}
+.win-popup .main .list-show{ padding: 0 0.5rem; margin: 0; max-height: 20rem; overflow-y: auto;
+    -webkit-overflow-scrolling: touch; overflow-scrolling: touch;}
+.win-popup .main .content .list-show>p{ font-size: 1.3rem; color: #9c7d2c; margin: 0 auto; width: 16.3rem; line-height: 1.6rem;}
+
+/*活动规则弹窗样式*/
+/*.rule-popup{ display: block;}*/
+.rule-popup .main .title{ background: url(../../../4.0.0/1604/hongbao-Template2.0/images/rule-title.png) no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%;
+    width: 23.4rem; height: 5.1rem; margin: -2.8rem auto 0;}
+.rule-popup .main .content p{ height: 12rem; overflow-y: scroll; padding: 0 2rem; margin: 2rem 0; line-height: 1.6rem;}
+.rule-popup .main .content p::-webkit-scrollbar{ width:0; height:0; display: none;}
+
+/*黄色模板特有样式*/
+.yellow{ background: #ffe613;}
+.yellow .top-header{ background: url(../../../4.0.0/1604/hongbao-Template2.0/images/yellow-banner.jpg) no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%;}
+.yellow .prd-show .title{ color: #ff410e;}
+.yellow .prd-show .title:after{ background: url(../../../4.0.0/1604/hongbao-Template2.0/images/prd-title2.png) no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%;}
+.yellow .rule .title{ background: #ff410e;}
+.yellow .rule .detail{ color: #666; background: rgba(255,255,255,0.5);}
+.yellow .coupon-footer{ opacity: 1;}
+.yellow .zhuanpan .coupon-show .zhuanpan-bg{ background: url(../../../4.0.0/1604/hongbao-Template2.0/images/zhuanpan2.png) no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%;}
+.yellow .hongbao-tree .tree{ background: url(../../../4.0.0/1604/hongbao-Template2.0/images/tree2.png) no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%; }
+
+/*橙色模板特有样式*/
+.orange{ background: #ff8b19;}
+.orange .top-header{ background: url(../../../4.0.0/1604/hongbao-Template2.0/images/orange-banner.jpg) no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%;}
+.orange .rule .title{ background: #ff8b19;}
+.orange .zhuanpan .coupon-show .zhuanpan-bg{ background: url(../../../4.0.0/1604/hongbao-Template2.0/images/zhuanpan2.png) no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%;}
+.orange .hongbao-tree .tree{ background: url(../../../4.0.0/1604/hongbao-Template2.0/images/tree2.png) no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%; }
+
+/*红色模板特有样式*/
+.red{ background: #ff410f;}
+.red .top-header{ background: url(../../../4.0.0/1604/hongbao-Template2.0/images/red-banner.jpg) no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%;}
+.red .lingqu-coupon{ background: url(../../../4.0.0/1604/hongbao-Template2.0/images/xinfeng2.png) no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%;}
+.red .lingqu-coupon .lingqu-btn{ background: url(../../../4.0.0/1604/hongbao-Template2.0/images/lingqu-btn2.png) no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%;}
+.red .top-header .wenhao{ background: #ffc90f url(../../../4.0.0/1604/hongbao-Template2.0/images/wenhao.png) no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%;}
+.red .top-header .coupon-logo{ background: #ffc90f;}
+.red .top-header .coupon-logo span{ background: url(../../../4.0.0/1604/hongbao-Template2.0/images/lahuan2.png) no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%;}
+.red .prd-show .tab-list .tab-nav ul li.active{ background: #ffc90f;}
+.red .prd-show .tab-list .mode1 .prd-list .prd-pic .pic-mark1{ background: url(../../../4.0.0/1604/hongbao-Template2.0/images/pic-mark1-2.png) no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%;}
+.red .prd-show .tab-list .mode2 .prd-list .left .pic-mark2{ background: url(../../../4.0.0/1604/hongbao-Template2.0/images/pic-mark2-2.png) no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%;}
+.red .prd-show .tab-list .mode3 .prd-list .prd-pic .pic-mark3{ background: url(../../../4.0.0/1604/hongbao-Template2.0/images/pic-mark3-2.png) no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%;}
+.red .rule .title{ background: #ff410f;}
+.red .hongbao-tree .prize-show h3{ background: #ff8b1a;}
+.red .hongbao-tree .prize-show .coupon-list li:nth-child(2){ background: url(../../../4.0.0/1604/hongbao-Template2.0/images/tree-coupon2-1.png) no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%;}
+
+/*紫色模板特有样式*/
+.purple{ background: #390c83;}
+.purple .top-header{ background: url(../../../4.0.0/1604/hongbao-Template2.0/images/purple-banner.jpg) no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%;}
+.purple .rule .title{ background: #390c83;}
+
+/*玫红色模板特有样式*/
+.meihong{ background: #ff3d7d;}
+.meihong .top-header{ background: url(../../../4.0.0/1604/hongbao-Template2.0/images/meihong-banner.jpg) no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%;}
+.meihong .lingqu-coupon{ background: url(../../../4.0.0/1604/hongbao-Template2.0/images/xinfeng3.png) no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%;}
+.meihong .top-header .wenhao{ background: #8344a7 url(../../../4.0.0/1604/hongbao-Template2.0/images/wenhao.png) no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%;}
+.meihong .top-header .coupon-logo{ background: #8344a7;}
+.meihong .top-header .coupon-logo span{ background: url(../../../4.0.0/1604/hongbao-Template2.0/images/lahuan3.png) no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%;}
+.meihong .prd-show .tab-list .tab-nav ul li.active{ background: #8344a7;}
+.meihong .rule .title{ background: #ff3d7d;}
+.meihong .prd-show .tab-list .mode1 .prd-list .prd-pic .pic-mark1{ background: url(../../../4.0.0/1604/hongbao-Template2.0/images/pic-mark1-1.png@v=20160728) no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%;}
+.meihong .prd-show .tab-list .mode2 .prd-list .left .pic-mark2{ background: url(../../../4.0.0/1604/hongbao-Template2.0/images/pic-mark2-1.png@v=20160728) no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%;}
+.meihong .prd-show .tab-list .mode3 .prd-list .prd-pic .pic-mark3{ background: url(../../../4.0.0/1604/hongbao-Template2.0/images/pic-mark3-1.png) no-repeat; -webkit-background-size: 100% 100%; background-size: 100% 100%;}
+.meihong .hongbao-tree .prize-show h3{ background: #ffcf0e;}

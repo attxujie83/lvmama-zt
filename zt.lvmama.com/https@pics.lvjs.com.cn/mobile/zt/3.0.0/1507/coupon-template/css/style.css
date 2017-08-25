@@ -1,0 +1,161 @@
+*{ margin: 0; padding: 0;}
+input,button{ border: none;}
+img { width: 100%; display: block;}
+html{ width: 100%; height: 100%;}
+body{ min-width: 320px; font-family: "microsoft yahei", "Arial"; width: 100%; height: 100%;
+      tap-highlight-color: rgba(0,0,0,0); 
+      focus-focus-ring-color: rgba(0, 0, 0, 0); 
+      -webkit-tap-highlight-color: rgba(0,0,0,0); 
+      -webkit-focus-ring-color: rgba(0, 0, 0, 0);}
+.coupon-header{ position: relative;}
+.coupon-header .banner{ min-height: 325px;}
+/*.coupon-header .logo1{ background: url(../images/logo1.png) 0 0 no-repeat; width: 80px; height: 18px; 
+        -webkit-background-size: 100% 100%; background-size: 100% 100%; position: absolute; top: 8px; left: 5px;}*/
+.coupon-header .rule{ background: url(../images/rule-btn.png) 0 0 no-repeat; width: 64px; height: 58px; 
+        -webkit-background-size: 100% 100%; background-size: 100% 100%; position: absolute; top: 0; right: 1px;}
+.coupon-header .rule p{ color: #fff; font-size: 10px; transform:rotate(45deg); -webkit-transform:rotate(45deg);
+        position: absolute; top: 8px; right: 0;}
+.coupon-content{ padding: 20px; padding-top: 0;}
+.coupon-content ul.active{ margin: 20px auto 0;}
+.coupon-content ul.active li input{ margin-bottom: 18px;}
+.coupon-content ul li input{ height: 35px; border-radius: 5px; font-size: 12px; margin-bottom: 8px; padding-left: 10px;}
+.coupon-content ul li:nth-child(2).choose{ display: none;}
+.coupon-content ul li{ overflow: hidden; position: relative;}
+.coupon-content ul li input.input1{ width: 100%;}
+.coupon-content ul li input.input2{ width: 60%; float: left;}
+.coupon-content ul li input.input3{ width: 60%; float: left; margin-bottom: 10px;}
+.coupon-content ul li .code{ width: 38%; float: right; background: #fff; height: 35px; border-radius: 5px;}
+.coupon-content ul li .code img{ width: 50%; margin: 10px auto;}
+.coupon-content ul li button{  width: 38%; float: right; background: #fff; height: 35px; border-radius: 5px;}
+.coupon-content .lingqu{ width: 100%; height: 35px; line-height: 35px; border-radius: 5px; font-size: 16px;	margin: 0 auto 10px;}
+.coupon-content>p{ font-size: 9px; color: #fff; text-align: center;}
+.coupon-content .active-description h3{ font-size: 13px; color: #fff; text-align: center; margin: 10px 0; position: relative;}
+.coupon-content .active-description h3:before{ content:""; border-bottom: 1px solid #fff; 
+        position: absolute; width: 100px; left:0; top:10px;}
+.coupon-content .active-description h3:after{ content:""; border-bottom: 1px solid #fff; 
+        position: absolute; width: 100px; right:0; top:10px;}
+.coupon-content .active-description p{ font-size: 9px; color: #fff; line-height: 12px; position: relative; padding-left: 10px;}
+.coupon-content .active-description p span{ position: absolute; top: 0; left: 0;}
+
+/*弹窗公共样式*/
+.coupon-popup{ width: 100%; height: 100%; background: rgba(0,0,0,0.7); position: fixed; top: 0; bottom: 0; left: 0; 
+        display: none;}
+
+/*领取页面失败弹窗样式*/
+.sorry-popup .popup-main{ background: #fff; margin: 40% 35px; border-radius: 5px; position: relative;}
+.sorry-popup .popup-main img{ width: 50%; margin: 0 auto; padding-top: 8px;}
+.sorry-popup .popup-main p{ color: #d50080; font-size: 12px; padding: 25px; line-height: 15px;}
+.sorry-popup .popup-main .close{ width: 27px; height: 27px; border-radius: 27px; background: #fff; color: #7e7e7e; 
+		position: absolute; top: -15px; right: -15px; font-size: 30px; text-align: center; line-height: 27px;}
+
+/*活动说明弹窗样式*/
+.rule-popup .popup-main{ background: #fff; /*padding-bottom: 16px;*/ width: 90%; height: 65%; position: absolute; top: 50%; left: 50%;
+    -webkit-transform: translate(-50%,-50%); transform: translate(-50%,-50%); overflow: hidden;}
+.rule-popup .popup-main h3{ color: #fff; line-height: 40px; font-size: 18px; font-weight: bold; text-align: center;}
+.rule-popup .popup-main div{ font-size: 12px; color: #333; padding: 20px 13px 0; line-height: 16px; overflow-y: scroll; height: 70%;
+    -webkit-overflow-scrolling: touch; overflow-scrolling: touch;}
+.rule-popup .popup-main div::-webkit-scrollbar{ width:0; height:0; display: none;}
+.rule-popup .popup-main .know{ width: 118px; height: 33px; border-radius: 20px; font-size: 15px; font-weight: bold;
+		color: #fff; margin: 15px auto; display: block;}
+
+
+/*领取成功页面样式*/
+.lingqu-page{ position: relative; width: 100%; height: 100%;}
+/*.lingqu-page .logo1{ background: url(../images/logo1.png) 0 0 no-repeat; width: 80px; height: 18px; 
+        -webkit-background-size: 100% 100%; background-size: 100% 100%; position: absolute; top: 8px; left: 5px;}*/
+.lingqu-page .lingqu-content img{ width: 80%; position: absolute; top: 50%; left: 50%; 
+        transform:translate(-50%,-50%); -webkit-transform:translate(-50%,-50%);}
+.lingqu-page .lingqu-content .lingqu-main{ border: 1px solid #ddd; padding: 10px; width: 70%;
+    position: absolute; top: 58%; left: 50%; transform:translate(-50%,-50%); -webkit-transform:translate(-50%,-50%);}
+.lingqu-page .lingqu-content .lingqu-main h3{ color: #404040; font-size: 18px; text-align: center;}
+.lingqu-page .lingqu-content .lingqu-main h3.already-lingqu{ font-size: 16px;}
+.lingqu-page .lingqu-content .lingqu-main .price{ text-align: center; color: #e53c1d; margin: 10px 0;}
+.lingqu-page .lingqu-content .lingqu-main .price span{ font-size: 32px; font-weight: bold; vertical-align: middle;}
+.lingqu-page .lingqu-content .lingqu-main .price i{ font-size: 42px; font-weight: bold; vertical-align: middle;}
+.lingqu-page .lingqu-content .lingqu-main .price p{ display: inline-block; font-size: 20px; vertical-align: middle;
+		margin-left: 5px; border-top: 1px solid #e53c1d; border-bottom: 1px solid #e53c1d; padding: 5px 0;}
+.lingqu-page .lingqu-content .lingqu-main .detail{ background: #fff6e7; padding-bottom: 5px;}
+.lingqu-page .lingqu-content .lingqu-main .detail p{ font-size: 10px; color: #404040; line-height: 15px; text-align: left; padding-left: 10px;}
+.lingqu-page .lingqu-content .lingqu-main .detail p span{ float: right;}
+.lingqu-page .lingqu-content .lingqu-main .detail p.title{ font-size: 12px; border-bottom: 1px dashed #f2d974; line-height: 20px;
+        padding: 2px 0; margin:0 10px 2px; color: #e53c1d;}
+.lingqu-page .lingqu-content .lingqu-main button{ width: 100%; height: 32px; text-align: center; line-height: 32px; color: #fff; font-size: 16px; font-weight: bold; border-radius: 5px; margin: 0 auto 10px; display: block;}
+.lingqu-page .lingqu-content .lingqu-main button a{ color: #fff;}
+.lingqu-page .lingqu-content .lingqu-main>p{ line-height: 12px; font-size: 9px; color: #808080;}
+.pagination{ bottom: 0;}
+.pagination .swiper-pagination-switch{ background: #f5e7b0;}
+.pagination .swiper-active-switch{ background:#ead37e;}
+.swiper-container{ border: 1px solid #f2d974; margin-bottom: 20px;}
+
+
+/*活动结束页面样式*/
+.end-page{ background: #fff; position: relative; width: 100%; height: 100%;}
+/*.end-page .logo2{ background: url(../images/logo2.png) 0 0 no-repeat; width: 80px; height: 18px; 
+        -webkit-background-size: 100% 100%; background-size: 100% 100%; position: absolute; top: 8px; left: 5px;}*/
+.end-page img{ min-height: 304px;}
+.end-page p{ font-size: 15px; color: #d50080; text-align: center; margin: 20px 0;}
+.end-page .download{ overflow: hidden; padding: 0 30px;}
+.end-page .download div{ width: 125px; height: 30px; border-radius: 20px; margin-bottom: 10px;}
+.end-page .download .iphone-download{ background: #d50080 url(../images/iphone-download.png) 0 0 no-repeat;
+        -webkit-background-size: 100% 100%; background-size: 100% 100%; float: left;}
+.end-page .download .ipad-download{ background: #ff720e url(../images/ipad-download.png) 0 0 no-repeat;
+        -webkit-background-size: 100% 100%; background-size: 100% 100%; float: right;}
+.end-page .download .android-download{ background: #c672e1 url(../images/android-download.png) 0 0 no-repeat;
+        -webkit-background-size: 100% 100%; background-size: 100% 100%; float: left;}
+.end-page .download .wp8-download{ background: #5598dc url(../images/wp8-download.png) 0 0 no-repeat;
+        -webkit-background-size: 100% 100%; background-size: 100% 100%; float: right;}
+.end-page .return{ overflow: hidden; padding: 0 30px;}
+.end-page .return button{ width: 48%; color: #fff; font-size: 16px; text-align: center; line-height: 33px; border-radius: 5px;}
+.end-page .return button.previous{ background: #5598dc; float: left;}
+.end-page .return button.home{ background: #d50080; float: right;}
+
+
+/*红色 type-1*/
+.type-1{ background: #e53c1d;}
+.type-1 .coupon-content .lingqu{ color: #fff; background: #ffc001; box-shadow: 0 3px 0 #ff8901;}
+.type-1 .coupon-content ul li button{ color: #e53c1d;}
+.type-1 .rule-popup .popup-main h3{ background: #e53c1d;}
+.type-1 .rule-popup .popup-main .know{ background: #e53c1d;}
+.type-1 .lingqu-page{ background: url(../images/popup-bg1.jpg) 0 0 no-repeat; 
+		-webkit-background-size: 100% 100%; background-size: 100% 100%;}
+.type-1 .lingqu-page .lingqu-content .lingqu-main button{ background: #f8c02b;}
+
+/*黄色 type-2*/
+.type-2{ background: #ffe57d;}
+.type-2 .coupon-content .lingqu{ color: #fff; background: #ea3742; box-shadow: 0 3px 0 #c50a16;}
+.type-2 .coupon-content ul li button{ color: #ea3742;}
+.type-2 .coupon-content>p{ color: #a17900;}
+.type-2 .coupon-content .active-description h3{ color: #a17900;}
+.type-2 .coupon-content .active-description h3:before{ border-bottom: 1px solid #a17900;}
+.type-2 .coupon-content .active-description h3:after{ border-bottom: 1px solid #a17900;}
+.type-2 .coupon-content .active-description p{ color: #a17900;}
+.type-2 .rule-popup .popup-main h3{ background: #ffc000;}
+.type-2 .rule-popup .popup-main .know{ background: #ffc000;}
+.type-2 .lingqu-page{ background: url(../images/popup-bg2.jpg) 0 0 no-repeat;
+		 -webkit-background-size: 100% 100%; background-size: 100% 100%;}
+.type-2 .lingqu-page .lingqu-content .lingqu-main button{ background: #ea3742;}
+
+/*驴色 type-3*/
+.type-3{ background: #d50080;}
+.type-3 .coupon-content .lingqu{ color: #d50080; background: #ffea59; box-shadow: 0 3px 0 #e09400;}
+.type-3 .coupon-content ul li button{ color: #d50080;}
+.type-3 .rule-popup .popup-main h3{ background: #d50080;}
+.type-3 .rule-popup .popup-main .know{ background: #d50080;}
+.type-3 .lingqu-page{ background: url(../images/popup-bg3.jpg) 0 0 no-repeat;
+		 -webkit-background-size: 100% 100%; background-size: 100% 100%;}
+.type-3 .lingqu-page .lingqu-content .lingqu-main button{ background: #d50080;}
+.type-3 .lingqu-page .lingqu-content .lingqu-main .price{ color: #d50080;}
+.type-3 .lingqu-page .lingqu-content .lingqu-main .price p{ border-top: 1px solid #d50080;}
+.type-3 .lingqu-page .lingqu-content .lingqu-main .detail p.title{ color: #d50080;}
+
+
+/*分享弹出浮层样式*/
+#sharebg{ position: fixed; top: 0; left: 0; background-color: rgba(0,0,0,0.8); width: 100%; height: 100%; display: none; z-index: 9999;}
+#sharebg .subject{ width: 100%;}
+#sharebg .subject img{ margin-left: 50%; transform:translateX(-50%);
+    -webkit-transform:translateX(-50%); -o-transform:translateX(-50%);
+    height: auto; display: block; width: 80%;}
+
+/*折扣券样式2016.2.26*/
+.lingqu-main .zhekouquan{ height: 100px; width: 100%;}
+.lingqu-main .zhekouquan img{ position: relative; }

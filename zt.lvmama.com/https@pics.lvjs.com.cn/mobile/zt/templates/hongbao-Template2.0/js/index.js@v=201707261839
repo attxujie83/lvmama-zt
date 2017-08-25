@@ -1,0 +1,86 @@
+//rem自适应
+(function (doc, win) {
+    var docEl = doc.documentElement,
+        resizeEvt = "orientationchange" in window ? "orientationchange" : "resize",
+        recalc = function () {
+            var clientWidth = docEl.clientWidth;
+            if(clientWidth>640)
+                clientWidth = 640;
+            if (!clientWidth) return;
+            docEl.style.fontSize = 10 * (clientWidth / 320) + "px";
+        };
+    if (!doc.addEventListener) return;
+    win.addEventListener(resizeEvt, recalc, false);
+    doc.addEventListener("DOMContentLoaded", recalc, false);
+})(document, window);
+
+$(function(){
+    var agent = navigator.userAgent;
+    $(".proimg").lazyLoad();
+    // downPush();
+    // tabchange切换
+    $("nav").tabChange({
+        initNum : 0,
+        crumbsCallback:function(){
+            $(".proimg").lazyLoad();
+        }
+    });
+    // 返回顶部按钮
+    $(window).scroll(function(){
+        if($(window).scrollTop() > 100){
+            $(".return-top").fadeIn();
+        }else{
+            $(".return-top").fadeOut();
+        }
+    });
+    $(".return-top").click(function(){
+        if(agent.indexOf('Windows Phone')!=-1&&agent.indexOf('WebView')!=-1){
+            $("body").scrollTop(0);
+        }
+        $("body").animate({scrollTop:0},500);
+    });
+    // 点击我的优惠券
+    // $(".coupon-logo").click(function(){
+    //     $(".my-coupon").css("display","block");
+    //     var mcTop = $(".my-coupon").outerHeight();
+    //     $(".coupon-logo span").css("top",mcTop);
+    // });
+    // 点击立即使用定位到产品
+    // $(".use").click(function(){
+    //     $(".my-coupon").css("display","none");
+    //     $(".coupon-logo").css("top","0");
+    //     $("body").animate({scrollTop:$(".prd-show").offset().top-20},500);
+    // });
+    // $(".my-coupon").click(function(){
+    //     $(".my-coupon").css("display","none");
+    //     $(".coupon-logo span").css("top","2rem");
+    // });
+
+
+    // 点击问号弹出规则弹窗
+    $(".wenhao").click(function(){
+        $(".rule-popup").css("display","block");
+    });
+    $(".rule-popup .close").click(function(){
+        $(".rule-popup").css("display","none");
+    });
+
+    // tab切换个数变化
+    if($(".prd-show .tab-list .tab-nav ul li").length>=4){
+        $(".prd-show .tab-list .tab-nav ul li").css("width","24.25%");          
+    }else if($(".prd-show .tab-list .tab-nav ul li").length==3){
+        $(".prd-show .tab-list .tab-nav ul li").css("width","32.66667%");
+    }else if($(".prd-show .tab-list .tab-nav ul li").length==2){
+        $(".prd-show .tab-list .tab-nav ul li").css("width","49.5%");
+    }else if($(".prd-show .tab-list .tab-nav ul li").length==1){
+        $(".prd-show .tab-list .tab-nav ul li").css("width","100%");
+    };
+
+    if($(".hongbao-tree .prize-show .coupon-list li").length>=3){
+        $(".hongbao-tree .prize-show .coupon-list li").css("width","35%");          
+    }else if($(".hongbao-tree .prize-show .coupon-list li").length==2){
+        $(".hongbao-tree .prize-show .coupon-list li").css("width","49%");
+    }else if($(".hongbao-tree .prize-show .coupon-list li").length==1){
+        $(".hongbao-tree .prize-show .coupon-list li").css("width","100%");
+    };
+});

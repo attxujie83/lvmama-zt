@@ -1,0 +1,897 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+        		<title>暑期千万红包大派送【驴妈妈】</title>
+    <meta name="Keywords" content="驴妈妈无线,景区门票,旅游度假"/>
+    <meta name="Description" content="驴妈妈无线官网:支持手机快捷预订景区门票,自助游线路,全国酒店,豪华邮轮等各种旅游产品.(中国最领先的在线旅游预订服务商!)"/>
+    <meta content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" name="viewport">
+    <meta id="share" share-type="1" share-linkurl="https://zt1.lvmama.com/hongbao2/index/9D10144267F3DFC4" name="share" share-title="暑期千万红包大派送【驴妈妈】" share-content="热爱不停息，一起来淋红包雨，七夕特惠，抓紧世界不负夏~"
+          share-imageUrl="../../../pics.lvjs.com.cn/pics/allin/back/201708/1502793778293.jpg">
+    <meta id="shareFree" share-type="1" share-linkurl="https://zt1.lvmama.com/hongbao2/index/9D10144267F3DFC4" name="shareFree" share-title="暑期千万红包大派送【驴妈妈】" share-content="热爱不停息，一起来淋红包雨，七夕特惠，抓紧世界不负夏~"
+          share-imageUrl="../../../pics.lvjs.com.cn/pics/allin/back/201708/1502793778293.jpg">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="max-age=0" />
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="Cache-Control" content="no-transform " />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <link rel="apple-touch-icon" href="../../../https@pics.lvjs.com.cn/img/mobile/touch/img/lvmama_v1_png.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../../../https@pics.lvjs.com.cn/img/mobile/touch/img/lvmama_v1_png.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../../../https@pics.lvjs.com.cn/img/mobile/touch/img/lvmama_v1_png.png"/>
+    <link rel="apple-touch-icon" sizes="144x144" href="../../../https@pics.lvjs.com.cn/img/mobile/touch/img/lvmama_v1_png.png"/>
+    <link rel="shortcut icon" href="../../../https@pics.lvjs.com.cn/mobile/img/lvmama/icon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../../https@pics.lvjs.com.cn/mobile/zt/public/css/base/newGlobal.css">
+    <link rel="stylesheet" href="../../../https@pics.lvjs.com.cn/mobile/zt/templates/hongbao-Template2.0/css/style.css@v=201707261839">  
+</head>
+<!--
+    颜色类定义
+    红色 red
+    黄色 yellow
+    橙色 orange
+    紫色 purple
+    玫红 meihong
+ -->
+<body class="purple">
+    <div style="width:0; height:0; overflow: hidden; font-size: 0; position: fixed; left: 0;top: 0;">
+			<img src="../../../https@pics.lvjs.com.cn/pics/allin/back/201708/1502793778293.jpg" alt=""/>
+    </div>
+    <div id="container">
+         <script type="text/javascript" src="../../../https@pics.lvjs.com.cn/mobile/zt/public/js/base/ztheader.js"></script> 
+        <div class="top-header" style="background-image:url(../../../https@pics.lvjs.com.cn/pics/allin/back/201708/170824.jpg)">            
+            <div class="logo"></div>
+            <div id= "myCoupons" class="coupon-logo">我的优惠券<span id="lahuan" class="lahuan"></span></div>
+        </div>
+        <!-- 普通优惠券展示 -->
+        <div class="common-coupon" style="display: block;">
+            <ul class="coupon-list">
+              
+                 <li id ="dfk_2373">
+                   <img src="../../../https@pics.lvjs.com.cn/pics/allin/back/201708/1502793033790.jpg" alt="after"   onclick ="getDFKInfo('2373')">
+                 </li>
+                 <li id ="dfk_2374">
+                   <img src="../../../https@pics.lvjs.com.cn/pics/allin/back/201708/1502793100943.jpg" alt="after"   onclick ="getDFKInfo('2374')">
+                 </li>
+                 <li id ="dfk_2375">
+                   <img src="../../../https@pics.lvjs.com.cn/pics/allin/back/201708/1502793152852.jpg" alt="after"   onclick ="getDFKInfo('2375')">
+                 </li>
+                 <li id ="dfk_2376">
+                   <img src="../../../https@pics.lvjs.com.cn/pics/allin/back/201708/1502793206328.jpg" alt="after"   onclick ="getDFKInfo('2376')">
+                 </li>
+                 <li id ="dfk_2377">
+                   <img src="../../../https@pics.lvjs.com.cn/pics/allin/back/201708/1502793259362.jpg" alt="after"   onclick ="getDFKInfo('2377')">
+                 </li>
+                 <li id ="dfk_2378">
+                   <img src="../../../https@pics.lvjs.com.cn/pics/allin/back/201708/1502793311967.jpg" alt="after"   onclick ="getDFKInfo('2378')">
+                 </li>
+                <li class ="zuhe" id ="dfk_2379">
+                   <img   src="../../../https@pics.lvjs.com.cn/pics/allin/back/201708/1502793598946.jpg" alt="" onclick ="getDFKInfo('2379')">
+                </li>
+               
+            </ul>                    
+        </div>
+        <!-- 红包树优惠券展示 -->
+        <div class="prd-show">
+            <div class="title">狂嗨不负夏</div>
+            <div class="tab-list">
+                <nav class="tab-nav">
+                    <ul>
+                        	<li class="active">精选门票</li>
+	                        <li>惬意酒景</li>
+                    </ul>
+                </nav>
+                
+                <section class="mode2" style="display: block;">
+                <article class="tabChange" data-tabId="45140" style="display: none;">           
+                   <div class="a"><img style="width:50px; height:50px;margin-left: 42%;margin-top:20px;" src="../../../https@pics.lvjs.com.cn/pics/allin/back/201601/1452741980551.gif" /></div>       
+                </article>
+                <article class="tabChange" data-tabId="45407" style="display: none;">           
+                   <div class="a"><img style="width:50px; height:50px;margin-left: 42%;margin-top:20px;" src="../../../https@pics.lvjs.com.cn/pics/allin/back/201601/1452741980551.gif" /></div>       
+                </article>
+                </section>
+                
+            </div>
+        </div>
+        
+
+        <div class="rule">
+               <div class="title">活动规则</div>
+            <div class="detail">
+                <p>1、领取时间：2017年8月15日-2017年8月31日； </br>
+2、使用时间：2017年8月26日-2017年8月31日，机票、火车票优惠券自领取15日内有效，邮轮优惠券使用时间2017年8月25日-2017年9月1日； </br>
+3、活动期间，同一种优惠券同一用户仅能领取一次，领完即止； </br>
+4、优惠券使用说明具体如下：</br>
+a)门票优惠券：适用于景点门票，单笔订单满100元减5元；</br>
+b)火车票优惠券：适用于火车票，单笔订单每满100元减2元，最高减20元；</br>
+c)机票优惠券：适用于机票，单笔订单每满500元减5元，最高减45元；</br>
+d)95折酒店券：适用于单酒店产品，单笔订单最高减100 元；</br>
+e)线路优惠券：适用于线路产品，单笔订单每满1800元减30元，最高减1200元；</br>
+f)邮轮优惠券：适用于产品名称带有“邮轮特惠”的邮轮产品，单笔订单每满1000元减100元，最高减4000元；</br> 
+g) 门票首单优惠券：适用于景点门票，仅限App端新用户使用，每日限量发放100张；</br>
+h) 点击领取即可100%获得；</br>
+5、下单时可使用优惠券进行抵扣，全场通用（除特价特卖商品）；</br>
+6、优惠券不转赠、不提现、不找零，一经使用不可退改；</br>	
+7、参与活动的用户若存在以下不正当方式（包括但不限于恶意套现、机器作弊等），驴妈妈旅游有权终止其参与活动，取消优惠券资格和撤销交易，具体以驴妈妈旅游判定为准。</p>
+            </div>
+        </div>   
+        <div class="coupon-footer">
+            <img src="../../../https@pics.lvjs.com.cn/mobile/zt/templates/hongbao-Template2.0/images/endorsement.png" alt="">
+        </div>
+        <div class="return-top"></div>
+        <!-- 我的优惠券弹窗 -->
+        <div class="my-coupon" id="myCoupon">
+             <div class="list-show">
+             </div>  
+             <p class="no-quan">暂无优惠券哦~</p> 
+        </div> 
+        
+        <!-- 登录注册弹窗 -->
+        <div class="signIn-popup public-popup">
+            <div class="main">
+                <div class="title"></div>
+                <div class="content">
+                    <ul>
+                        <li><span>账号：</span><input type="text"></li>
+                        <li><span>密码：</span><input type="text"></li>
+                        <li><span>验证码：</span><input class="short" type="text"><i class="code">5263</i></li>
+                    </ul>
+                    <button class="signIn"></button>
+                </div>
+                <div class="close"></div>
+            </div>
+        </div>
+        <!-- 木有成功弹窗 -->
+        <div id="fail_popup" class="noSuccess-popup public-popup">
+            <div class="main">
+                <div class="content" id = "failPopup">
+                    <p>阿偶，真遗憾木有中奖</p>
+                    <button class="next-time" id="nextTime"></button>
+                </div>
+                <div class="close"></div>
+            </div>
+        </div>
+        <!-- 成功领取弹窗 -->
+        <div class="lingqu-popup public-popup">
+            <div class="main">
+                <div class="title"></div>
+                <div class="content">
+                    <p>邮轮100元优惠券</p>
+                    <button class="nowuse"></button>
+                </div>
+                <div class="close"></div>
+            </div>
+        </div>
+        <!-- 恭喜获得弹窗 -->
+        <div class="win-popup public-popup" id="getPopup">
+            <div class="main">
+                <div class="title"></div>
+                <div class="content">
+                    <div class="list-show" id="winPopup">
+                        
+                    </div>
+                    <button class="nowuse" onclick="useNow()"></button>
+                </div>
+                <div class="close"></div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 活动规则弹窗 -->
+    <div class="rule-popup public-popup">
+            <div class="main">
+                <div class="title"></div>
+                <div class="content">
+                    <p>1、领取时间：2017年8月15日-2017年8月31日； </br>
+2、使用时间：2017年8月26日-2017年8月31日，机票、火车票优惠券自领取15日内有效，邮轮优惠券使用时间2017年8月25日-2017年9月1日； </br>
+3、活动期间，同一种优惠券同一用户仅能领取一次，领完即止； </br>
+4、优惠券使用说明具体如下：</br>
+a)门票优惠券：适用于景点门票，单笔订单满100元减5元；</br>
+b)火车票优惠券：适用于火车票，单笔订单每满100元减2元，最高减20元；</br>
+c)机票优惠券：适用于机票，单笔订单每满500元减5元，最高减45元；</br>
+d)95折酒店券：适用于单酒店产品，单笔订单最高减100 元；</br>
+e)线路优惠券：适用于线路产品，单笔订单每满1800元减30元，最高减1200元；</br>
+f)邮轮优惠券：适用于产品名称带有“邮轮特惠”的邮轮产品，单笔订单每满1000元减100元，最高减4000元；</br> 
+g) 门票首单优惠券：适用于景点门票，仅限App端新用户使用，每日限量发放100张；</br>
+h) 点击领取即可100%获得；</br>
+5、下单时可使用优惠券进行抵扣，全场通用（除特价特卖商品）；</br>
+6、优惠券不转赠、不提现、不找零，一经使用不可退改；</br>	
+7、参与活动的用户若存在以下不正当方式（包括但不限于恶意套现、机器作弊等），驴妈妈旅游有权终止其参与活动，取消优惠券资格和撤销交易，具体以驴妈妈旅游判定为准。</p>
+                </div>
+                <div class="close"></div>
+            </div>
+    </div>
+<script type="text/javascript" src="../../../https@pics.lvjs.com.cn/mobile/lib/js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="../../../https@pics.lvjs.com.cn/minify/@@static_2Fzt_2Fpublic_2Fjs_2Fbase_2FnewBase.js,static_2Fplugins_2FnativeJs_2Flogin_2F1.0_2Fbuild.min.js,s06580ED77F"></script>
+<script type="text/javascript">
+var proshow='IMGLIST';
+var shownum='FIVE';
+var ljsy = 'NEED';   //是否立即使用
+var thematicId='9D10144267F3DFC4';
+var sendHBWay = 'DFK';   //发送红包的方式
+var uuId = uuid();
+changeImg();
+if(sendHBWay=="DFK"){
+	  var lvsessionid = global.getCookie("lvsessionid")||uuId;
+	  if(lvsessionid){  
+		  $.ajax({
+				url:"../getMyDiscount@lvsessionid="+lvsessionid+"&thematicId="+thematicId+"&v="+getVersion(),
+				type:"GET",
+				dataType:"json",
+				async:false,
+				error:function(){
+				},
+				success:function(data){
+				 if(data.isLogin){
+				    var str="";
+		        	var strJson=data.disInfolist;
+		        	if(strJson.length>0){
+		        		for(var i = 0 ; i<strJson.length;i++ ){
+							var id = strJson[i].id;
+							$("#dfk_"+id).addClass("select");
+						}
+		        	}
+				}
+				}
+			});   
+	    }
+}
+
+$("article").each(function(i){
+	var host=window.location.href;
+	var tabId = $(this).attr("data-tabid");
+	var prourl=(host.indexOf("v=")==-1)?'../product/'+tabId+"@proshow="+proshow:'../product/'+tabId+"@proshow="+proshow+'&v='+global.getUrlParam("v");
+	var $this=$(this);
+	$.ajax({
+		url:prourl,
+		type:"GET",
+		dataType:'html',
+		async:true,
+ 		error:function(){
+			global.createDialog("网络不畅通，请刷新重试！",1);
+		},  
+		success:function(data){
+			$this.append(data);
+			$this.find(".a").css("display","none");
+			//产品个数超过设置显示的个数隐藏
+			$this.find(".prd-list").each(function(j){
+				var probj = $(this);
+				if(shownum=="TWO"){
+					if(j>1){
+						probj.css("display","none");
+					}
+				}else if(shownum=="THREE"){
+					if(j>2){
+						probj.css("display","none");
+					}
+				}else if(shownum=="FOUR"){
+					if(j>3){
+						probj.css("display","none");
+					}
+				}else if(shownum=="FIVE"){
+					if(j>4){
+						probj.css("display","none");
+					}
+				}
+			});
+		}
+	});
+});
+ 
+//获取验证码
+function getMobileAuthCode(){
+	var id =thematicId;
+	var mobile = $("#mobile").val();
+	var imgCode = $("#msgCode").val();// 图片验证码 
+	var lvsessionid = global.getCookie("lvsessionid")||uuId;
+	if(lvsessionid){   
+		$.ajax({
+            type: "GET", 
+            url: "../../hongbao/getMobileAuthCode/"+id+"@mobile="+mobile+"&imgCode="+imgCode+"&lvsessionid="+lvsessionid+"&v="+getVersion(),
+            dataType: "json",
+            async: false,
+            error:function(){
+            },
+            success: function(data) {
+                if(1 != data.code){
+                	if(null == data.message){
+                		global.createDialog('系统忙，请稍后!',1);
+                	} else {
+                		global.createDialog(data.message,1);
+                		if(data.station="-10"){
+                			changeImg();
+                		}
+                	}
+                } else {
+                	 // 倒计时  moibleAuthCode
+                	 var timeCount = 60;
+                	 $('#moibleAuthCode').hide();
+                	 $('#moibleDaojishi').show();
+                	 var timer = setInterval(function () {
+                	        if (timeCount > 0) {
+                	        	timeCount--;
+                	        	$('#moibleDaojishi').html('剩余' +timeCount+'秒');
+                	        } else {
+                            	 $('#moibleDaojishi').hide();
+                	        	 $('#moibleAuthCode').show();
+                	             clearInterval(timer);
+                	        }
+                	    }, 1000);
+                }
+            }
+      });
+	}else{
+		global.createDialog("网络不畅通，请刷新重试！",1);
+	}
+}
+
+//校验手机号、图形验证码
+function checkMobile(mobile,imgCode){
+	var telTrue=/^(13[0-9]|14[0-9]|15[0-9]|17[0-9]|18[0-9])\d{8}$/i.test(mobile);
+	if(mobile=="" || !telTrue){
+		global.createDialog('请填写正确的手机号码',1);
+		return false;
+	}
+	if(imgCode==""){
+		global.createDialog('图形验证码不能为空',1);
+		return false; 
+	}
+	return true; 
+}
+//检验内容不能为空
+function checkMsgCode(msgCode,msg){
+	if(!msgCode){
+		global.createDialog(msg,1);
+		return false; 
+	}
+	return true;
+}
+
+// 点击一种品类的立即领取按钮
+var clickFlg = false;
+$("#lingquBtn").click(function(){
+	var obj = $(this);
+	var id =thematicId;
+	var mobile = $("#mobile").val();
+	var convertCode = $("#convert").val(); //兑换码
+	var imgCode = $(".short").val();// 图片验证码 
+	var msgCode = $("#authCode").val();// 短信验证码
+	var lvsessionid = global.getCookie("lvsessionid")||uuId;
+	if(lvsessionid && checkMobile(mobile,imgCode) && checkMsgCode(msgCode,"短信验证码不能为空") && !clickFlg){ 
+		clickFlg = true;
+		$.ajax({
+	            type: "GET", 
+	            url: "../regAndLogin/"+id+"@mobile="+mobile+"&convertCode="+convertCode+"&msgCode="+msgCode+"&imgCode="+imgCode+"&lvsessionid="+lvsessionid+"&v="+getVersion(),
+	            dataType: "json",
+	            error:function(data){
+	            	global.createDialog("网络不畅通，请刷新重试",1);
+	            },
+	            success: function(data) {
+	   				if(data.code=="1"){
+	   				  var str="";
+	  	        	  var strJson=data.oActComm;
+	  	        	  for(var i=0;i<strJson.length;i++){
+		  	        	  var money = strJson[i].money!= null ? strJson[i].money :'';
+		  	        	  var title = strJson[i].title !=null ? strJson[i].title : '';
+		  	        	  var validity = strJson[i].validity != null ? strJson[i].validity :'';
+		  	        	  str=str+
+		  	   		      "<div class='quan'>"+
+		  	   		      "<div class='price'><span>&yen;"+money+"</span></div>"+
+		  	   		      "<div class='detail'>"+
+		  	   		      "<div class = 'msg'>"+
+		  	   		      "<p class='name'>"+title+"</p>"+
+		  	   		      "<p class='time'>"+validity+"</p>"+
+		  	   		      "</div></div></div>"+
+		  	   		      "</div>" ;
+	  	        	  }
+	  				  $("#winPopup").html(str); 
+	  				  $("#getPopup").show();
+	   				}else{
+	   				  if("-1" == data.code){
+	   					if(null == data.message){
+	                		global.createDialog('系统忙，请稍后!',1);
+	                	} else {
+	   						global.createDialog(data.message,1);
+	                	}
+	   				  }
+	   				}
+	   				clickFlg = false;
+	            }
+	      });
+	}
+});
+function changeImg(){ 
+    var lvsessionid = global.getCookie("lvsessionid")||uuId;
+	$("#authCodeChange").attr("src","../../../https@m.lvmama.com/usso/router/rest.do@method=api.com.validateCode.createNewValidateCode&version=1.0.0&lvversion=7.9.5&validateTemplateId=21&lvsessionid="+lvsessionid); 
+}
+
+ // 点击我的优惠券
+$("#myCoupons").click(function(){
+  $(".no-quan").hide();
+  $(".list-show").html(""); 
+  var lvsessionid = global.getCookie("lvsessionid")||uuId;
+  if(lvsessionid){  
+	  $.ajax({
+			url:"../getMyDiscount@lvsessionid="+lvsessionid+"&thematicId="+thematicId+"&v="+getVersion(),
+			type:"GET",
+			dataType:"json",
+			async:false,
+			error:function(){
+				global.createDialog("网络不畅通，请刷新重试！",1);
+			},
+			success:function(data){
+			 if(data.isLogin){
+			    var str="";
+	        	var strJson=data.disInfolist;
+	        	if(strJson.length>0){
+	        		str=showDiscountList(str,strJson);  
+					$("#myCoupon").html(str);
+					if(strJson.length>3){
+						$("#myCoupon").removeClass().addClass("my-coupon many"); 	
+					}
+	        	}else{
+	        		$(".no-quan").show();	
+	        	}
+	        	$("#myCoupon").css("display","block");				
+	        	var mcTop = $("#myCoupon").outerHeight()
+	        	$(".coupon-logo span").css("top",mcTop);
+			}else{
+				jumpLogin();
+			 }
+			}
+		}); 
+    }else{
+		jumpLogin();
+	}
+});
+ function useNow(){
+	 var ljsyUrl = '';
+	 if(ljsyUrl!=null && ljsyUrl!=""){
+		 window.location.href = ljsyUrl;
+	 }else{
+		 $("#getPopup").hide();
+		 $("#myCoupon").css("display","none");
+		 $(".coupon-logo span").css("top","2rem");
+		 $("body").animate({scrollTop:$(".prd-show").offset().top-20},500); 
+	 }
+ }
+ 
+ $(".close").click(function (){
+	  $("#getPopup").hide();
+	  $("#fail_popup").hide()
+	  $("#oneCoupon").find("input").val("");
+	  $("#moibleDaojishi").css("display","none");
+	  $("#moibleAuthCode").show();
+ });
+ 
+ $("#nextTime").click(function (){
+	  $("#getPopup").hide();
+	  $("#fail_popup").hide()
+	  $("#oneCoupon").find("input").val("");
+	  $("#moibleDaojishi").css("display","none");
+	  $("#moibleAuthCode").show();
+});
+  
+ $(".no-quan").click(function (){
+		$(".no-quan").hide();
+		 $("#myCoupon").css("display","none");
+		 $(".coupon-logo span").css("top","2rem");
+ }); 
+ $("#lahuan").click(function(){
+	 var a = document.getElementById("myCoupon").style.display;
+	 if("block" == a){
+	  $("#myCoupon").css("display","none");
+	  $(".coupon-logo span").css("top","2rem");
+	  return false;
+	 } 
+});
+
+$('body div').bind('click', function(event) {
+    // IE支持 event.srcElement ， FF支持 event.target    
+    var evt = event.srcElement ? event.srcElement : event.target;    
+    if(evt.id == 'myCoupons' || evt.id == 'lahuan') return; // 如果是点击我的优惠券或拉环不操作
+    else {
+    	$("#myCoupon").hide();
+    	$(".coupon-logo span").css("top","2rem");
+    }   
+});
+
+ // 点击优惠巻列表 浮层消失
+//  $("#myCoupon").click(function(){
+//      $("#myCoupon").css("display","none");
+//      $(".coupon-logo span").css("top","2rem");
+//  });
+ 
+function showDiscountList(str,strJson){
+	var j=strJson.length;
+	var needStr ="";
+	var isUsed = "change";
+	if(ljsy=='NEED'){
+		needStr = " <button class='use' onclick = 'useNow()'></button>";
+		isUsed = "";
+	}
+	 for(var i=0;i<j;i++){
+		 var money =strJson[i].money!=null?strJson[i].money:"";
+		 var title =strJson[i].title!=null?strJson[i].title:"";
+         var validity =strJson[i].validity!=null?strJson[i].validity:"";
+		 str=str+
+		"<div class='list-show'>"+ 
+		"<div class='quan "+isUsed+"'>"+
+		"<div class='price'><span>&yen;"+money+"</span></div>"+
+		"<div class='detail'>"+
+		"<div class = 'msg'>"+
+		"<p class='name'>"+title+"</p>"+
+		"<p class='time'>"+validity+"</p>"+
+		"</div> </div> </div>"+
+		needStr
+		+
+		"</div></div>" 
+		
+		
+		
+		
+	 }return str;
+}
+
+function showFailMessage(str,message){
+	str = str+
+    "<p>"+message+"</p>"+
+   "<button class='next-time'></button>"
+  return str;
+}
+
+//点击红包树领取优惠券
+$(".tree").click(function(){
+	var lvsessionid = global.getCookie("lvsessionid")||uuId;
+	if (lvsessionid) {
+		$.ajax({
+			url:"../hbtreeDiscount@lvsessionid="+lvsessionid+"&thematicId="+thematicId+"&v="+getVersion(),
+			type:"GET",
+			dataType:"json",
+			async:false,
+			error:function(){
+				global.createDialog("网络不畅通，请刷新重试！",1);
+			},
+			success:function(data){
+				if(data.isLogin){
+					      if(data.code==1){
+		   				  var str="";
+		  	        	  var strJson=data.oActComm;
+		  	        	  var type = strJson.back1;
+
+		  	        	  var money =strJson.money!=null?strJson.money:"";
+		  	 		      var title =strJson.title!=null?strJson.title:"";
+		  	              var validity =strJson.validity!=null?strJson.validity:"";
+		  	        	  if("N" == type){
+			  	        		 str=str+
+				  	   		      "<p class='name'>"+title+"</p>";
+				  	   		 
+			  	          }else{
+		  	        	         str=str+
+		  	   		               "<div class='quan'>"+
+		  	   		               "<div class='price'><span>&yen;"+money+"</span></div>"+
+		  	   		               "<div class='detail'>"+
+		  	   		               "<div class = 'msg'>"+
+		  	   		               "<p class='name'>"+title+"</p>"+
+		  	   		               "<p class='time'>"+validity+"</p>"+
+		  	   		               "</div></div> </div>"+
+		  	   		               "</div>" ;		  	   		               
+		  	   		               
+		  	   		               
+		  	   		               
+			  	        	  }
+		  				  $("#winPopup").html(str); 
+		  				  $("#getPopup").show();
+					      }else if("-1" == data.code){
+					    	  if("-3" == data.station || "-14" == data.station ){
+					    		  global.createDialog(data.message,1);
+					    	  }else{
+					    		  $("#fail_popup").show(); 
+					    	  }
+					    	 
+					      }
+					
+				}else{
+					jumpLogin();    
+				}
+			}
+		});
+	}else{
+		jumpLogin(); 
+	}
+});
+
+//豆腐块点击领取优惠巻
+function getDFKInfo(id){
+	var lvsessionid = global.getCookie("lvsessionid")||uuId;
+	var hbType = "DFK";
+	if (lvsessionid) {
+		$.ajax({
+			url:"../hbtreeDiscount@lvsessionid="+lvsessionid+"&thematicId="+thematicId+"&oActInfoId="+id+"&hbType="+hbType+"&v="+getVersion(),
+			type:"GET",
+			dataType:"json",
+			async:true,
+			error:function(){
+				global.createDialog("网络不畅通，请刷新重试！",1);
+			},
+			success:function(data){
+				if(data.isLogin){
+					if(data.code==1){
+						 if(data.DFK_Y!="Y"){
+						  var str="";
+		  	        	  var strJson=data.oActComm;
+		  	        	  var type = strJson.back1;
+		  	        	  var money =strJson.money!=null?strJson.money:"";
+		  	 		      var title =strJson.title!=null?strJson.title:"";
+		  	              var validity =strJson.validity!=null?strJson.validity:"";
+		  	              
+		  	             if("N" == type){
+		  	        		 str=str+
+			  	   		      "<p class='name'>"+title+"</p>";
+			  	   		 
+		  	             }else{
+	  	        	         str=str+
+	  	   		               "<div class='quan'>"+
+	  	   		               "<div class='price'><span>&yen;"+money+"</span></div>"+
+	  	   		               "<div class='detail'>"+
+	  	   		               "<div class='msg'>"+
+	  	   		               "<p class='name'>"+title+"</p>"+
+	  	   		               "<p class='time'>"+validity+"</p>"+
+	  	   		               "</div></div> </div>"+
+	  	   		               "</div>" ;
+		  	        	  }
+		  	        	
+		  	    
+		  	             
+		  				  $("#winPopup").html(str); 
+		  				  $("#getPopup").show();
+						 }else{
+							global.createDialog(data.message,1);
+						 }
+						
+					}else if("-3"==data.station || "-14" == data.station){      //已经领取过红包的情况
+						/* var str ="";
+						str = showFailMessage(str,data.message);
+						$("#failPopup").html(str);
+						$("#fail_popup").show(); */
+						global.createDialog(data.message,1);
+					}else{
+					   $("#fail_popup").show();
+					}
+					//将领取的劵码置为已领取样式
+					if(data.oActComm!=null && data.oActComm!=""){
+						
+						//在这判断下是不是豆腐块组合卷  是的话 换一个样式，明天找前端要样式
+						var id = data.oActComm.id;
+						var type = data.oActComm.back1;
+						var code = data.code;
+						if("N" == type && code == "-1"){   //组合卷的豆腐块 且未抽中奖
+							$("#dfk_"+id).addClass("select join");
+						}else{
+							$("#dfk_"+id).addClass("select");
+						}
+		
+						
+						
+					}
+					if(data.oActCommList!=null && data.oActCommList!=""){
+						console.log(data.oActCommList);
+						for(var i = 0 ; i<data.oActCommList.length;i++ ){
+							var id = data.oActCommList[i].id;
+							$("#dfk_"+id).addClass("select");
+						}
+					}
+				}else{
+					jumpLogin();
+				}
+			}
+		});
+	}else{
+		jumpLogin();
+	}
+}
+
+
+
+ //点击转盘转动抽奖js
+$(function(){
+	var timeOut = function(message){  //超时函数
+		$("#btnDraw").rotate({
+			angle:0, 
+			duration: 10000, 
+			animateTo: 2160, //这里是设置请求超时后返回的角度，所以应该还是回到最原始的位置，2160是因为我要让它转6圈，就是360*6得来的
+			callback:function(){
+				global.createDialog(message,1);
+			}
+		}); 
+	}; 
+
+	var rotateFunc = function(awards,angle,title,money,validity,type){  //awards:奖项，angle:奖项对应的角度
+		$('#btnDraw').stopRotate();
+		$("#btnDraw").rotate({
+			angle:0, 
+			duration: 5000, 
+			animateTo: angle+1440, //angle是图片上各奖项对应的角度，1440是我要让指针旋转4圈。所以最后的结束的角度就是这样子^^
+			callback:function(){
+				      if("" == money || null == money){
+				    	  money="";
+				      }else{
+				    	  money ="&yen;"+money;
+				      }
+					  var str="";
+				      if("N" == type){      //非优惠巻类型
+		  	        		 str=str+
+			  	   		      "<p class='name'>"+title+"</p>";
+		  	          }else{
+		  	        	 str=str+
+		  	   		      "<div class='quan'>"+
+		  	   		      "<div class='price'><span>"+money+"</span></div>"+
+		  	   		      "<div class='detail'>"+
+		  	   		      "<div class='msg'>"+
+		  	   		      "<p class='name'>"+title+"</p>"+
+		  	   		      "<p class='time'>"+validity+"</p>"+
+		  	   		      "</div></div> </div>"+
+		  	   		      "</div>" ;
+		  	        	
+		  	          }
+				      $("#winPopup").html(str); 
+	  				  $("#getPopup").show();
+				     
+				
+				$("#btnAlready").show();
+				$("#btnDraw").hide();
+				
+			}
+		}); 
+	};
+
+	$("#btnDraw").rotate({ 
+	   bind: 
+		 { 
+			click: function(){
+				var time = [0,1];
+				var code;
+				var zpshow;
+				var lvsessionid = global.getCookie("lvsessionid")||uuId;
+				$.ajax({
+					url:"../hbtreeDiscount@lvsessionid="+lvsessionid+"&thematicId="+thematicId+"&v="+getVersion(),
+					type:"GET",
+					dataType:"json",
+					async:false,
+					error:function(){
+						time =0;
+					},
+					success:function(data){
+						if(data.isLogin){
+							time = 1;
+							angle =data.angle;
+	                        code = data.code;
+	                        station = data.station;
+	                        zpshow = data.oActComm;
+							if(code=="-1"){
+								time = 2;
+								if("-3" == station || "-14" == station){
+									global.createDialog(data.message,1);
+								}else{
+									$("#fail_popup").show();
+								}
+								
+								$("#btnAlready").show();
+								$("#btnDraw").hide();
+							}
+							
+							
+						}else{
+							jumpLogin();
+						}
+					}
+				});
+				 if(time==0){
+					timeOut("网络不通畅，请稍后再试试！"); //网络超时
+				}
+				if(time==1){
+	
+					if(angle==0){
+						rotateFunc(0,0,zpshow.title,zpshow.money,zpshow.validity,zpshow.back1)
+					}
+					if(angle==1){
+						rotateFunc(1,60,zpshow.title,zpshow.money,zpshow.validity,zpshow.back1)
+
+					}
+					if(angle==2){
+						rotateFunc(2,120,zpshow.title,zpshow.money,zpshow.validity,zpshow.back1)
+
+					}
+					if(angle==3){
+
+						rotateFunc(3,180,zpshow.title,zpshow.money,zpshow.validity,zpshow.back1)
+		
+					}
+					if(angle==4){
+
+						rotateFunc(4,240,zpshow.title,zpshow.money,zpshow.validity,zpshow.back1)
+		
+					}
+					if(angle==5){
+
+						rotateFunc(5,300,zpshow.title,zpshow.money,zpshow.validity,zpshow.back1)
+						
+					}if(angle =='undefined'){
+						time = 2;
+						
+						$("#fail_popup").show();
+						$("#btnAlready").show();
+						$("#btnDraw").hide();
+					}
+				} 
+			}
+		 } 
+	   
+	});
+	
+})
+
+function getVersion(){
+	var d = new Date();
+	return d.getTime();
+}
+
+var lvsessionid = global.getCookie("lvsessionid")||uuId;
+var callback=function(data){
+    if(data.code==-3){
+        console.log("未登陆,跳登陆台");
+        loginUtil.gotoLogin({callbackUrl:'', successCbName:'success', failCbName:'fail'})
+    }else if(data.code==1){
+        //登陆验证通过后的处理
+        console.log("已登陆");
+        success(data.data);
+    }
+}
+
+function jumpLogin(){
+	loginUtil.gotoLogin({callbackUrl:'', successCbName:'success', failCbName:'fail'});
+}
+function success(data) {
+	location.reload();
+}
+function fail(){
+}
+ 
+function uuid() {
+    var s = [];
+    var hexDigits = "0123456789abcdef";
+    for (var i = 0; i < 36; i++) {
+        s[i] = hexDigits.substr(Math.floor(Math.random() * 0x10), 1);
+    }
+    s[14] = "4";  // bits 12-15 of the time_hi_and_version field to 0010
+    s[19] = hexDigits.substr((s[19] & 0x3) | 0x8, 1);  // bits 6-7 of the clock_seq_hi_and_reserved to 01
+    s[8] = s[13] = s[18] = s[23] = "-";
+ 
+    var uuid = s.join("");
+    return uuid;
+}
+var _vds = _vds || [];
+window._vds = _vds;
+(function(){
+  var lvsessionid = global.getCookie("lvsessionid");
+  _vds.push(['setAccountId', '8e1dbc43c3be2071']);
+  if(lvsessionid != "" && lvsessionid != undefined && lvsessionid != null){
+   	  _vds.push(['setCS1', 'userId', md5.createHash(lvsessionid).substring(0,30)]);
+  }
+  // 获取用户信息
+  (function() {
+    var vds = document.createElement('script');
+    vds.type='text/javascript';
+    vds.async = true;
+    vds.src = ('https:' == document.location.protocol ? '../../../https@' : 'http://') + 'dn-growing.qbox.me/vds.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(vds, s);
+  })();
+})();
+</script>
+<script type="text/javascript" src="../../../https@pics.lvjs.com.cn/mobile/plugins/nativeJs/downloadBar/1.0/build.min.js"></script>
+<script type="text/javascript" src="../../../https@pics.lvjs.com.cn/mobile/zt/public/js/base/mlosc.js" charset="utf-8"></script>
+<script type="text/javascript" src="../../../https@pics.lvjs.com.cn/mobile/zt/templates/hongbao-Template2.0/js/index.js@v=201707261839"></script> 
+<script type="text/javascript" src="../../../https@pics.lvjs.com.cn/mobile/zt/templates/hongbao-Template2.0/js/jquery.easing.min.js"></script>
+<script type="text/javascript" src="../../../https@pics.lvjs.com.cn/mobile/zt/templates/hongbao-Template2.0/js/jQueryRotate.2.2.js"></script>
+<script async defer type="text/javascript" src="../../../https@pics.lvjs.com.cn/mobile/lib/js/tingyun-zt.js"></script>
+</body>
+</html>
