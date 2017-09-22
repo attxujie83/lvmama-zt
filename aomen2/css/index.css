@@ -12,7 +12,7 @@ a{ text-decoration:none;}a:hover{ text-decoration: underline;}
 i{ font-style:normal;}
 
 
-.wrap { position:relative; background:#0b0025 url(../images/wrapBg.png) repeat center 0;}
+.zt-wrap { position:relative; background:#0b0025 url(../images/wrapBg.png) repeat center 0;}
 
 .banner { background: url(../images/bg.jpg) no-repeat center 0; height: 700px;position: relative;}
 .banner .lvLogo { position: absolute; left: 50%; margin-left:-460px; top:0; z-index: 2; width: 460px; height: 80px; background: url(../images/lvLogo.png);}
