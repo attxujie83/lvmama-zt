@@ -17,7 +17,7 @@ i{ font-style:normal;}
 .banner { background: url(../images/bg.jpg) no-repeat center 0, url(../images/bg2.jpg) no-repeat center bottom; height: 700px;position: relative;}
 .banner .lvLogo { position: absolute; left: 50%; margin-left:-460px; top:0; z-index: 2; width: 460px; height: 80px; background: url(../images/lvLogo.png);}
 .banner h2 { position: absolute; left: 50%; margin-left:-20px; z-index: 2; width: 520px; height: 600px; background: url(../images/tit.png) -30px;}
-.banner .rac{ position: absolute; left: 50%; margin-left: -1000px; top:0px; z-index: 2; width: 1000px; height: 700px; background: url(../images/RAC.png);}
+.banner .rac{ position: absolute; left: 50%; margin-left: -960px; top:0px; z-index: 2; width: 1000px; height: 700px; background: url(../images/RAC.png);}
 
 .zt-content{width: 1000px;margin: 0 auto;position: relative;z-index: 2;}
 .zt-video{width: 640px; height: 400px;margin: 0 auto;background: rgba(120,129,107,0.3);margin-top: -100px;}
