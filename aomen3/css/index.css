@@ -21,6 +21,21 @@ i{ font-style:normal;}
 .banner .titLight { z-index: 1; background: url(../images/titLight.png) -30px; mix-blend-mode: screen;}
 .banner .rac{ position: absolute; left: 50%; margin-left: -960px; top:0px; z-index: 2; width: 1200px; height: 700px; background: url(../images/RAC.png);}
 
+.rac{
+    transition: all 0.3s ease;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+	animation-name: l0;
+}
+@keyframes l0 {
+    0%   { transform: translateX(0) translateZ(0); }
+    25% { transform: translateX(-6px) translateZ(0); }
+    75% { transform: translateX(4px) translateZ(0); }
+    100% { transform: translateX(0px) translateZ(0); }
+}
+
 .zt-content{width: 1000px;margin: 0 auto;position: relative;z-index: 2;}
 .zt-video{width: 640px; height: 400px;margin: 0 auto;background: rgba(120,129,107,0.3);margin-top: -100px;}
 .zt-strategy{box-shadow: 0px 6px 14px 0px rgba(0,0,0,0.3);}
