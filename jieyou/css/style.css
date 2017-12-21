@@ -30,8 +30,8 @@ body { min-width: 320px;/* max-width: 640px;*/ background: #9c6729; width: 100%;
 .evt-main .desk{ position: absolute; width:100%; bottom: 0; left:0;}
 .evt-main .light{ position: absolute; width:14%;  opacity:0;
 	-webkit-animation:flash 1s linear infinite alternate ; animation:flash 1s linear infinite alternate ;}
-.evt-main #light2 { top:83%; left:15.3%; }
-.evt-main #light1 { top:87.5%; left:26.9%; }
+.evt-main #light2 { top:83.5%; left:15.3%; }
+.evt-main #light1 { top:88%; left:26.9%; }
 .evt-info .evtQR{ position: absolute; width:25.9%; top:12%; left:50%;transform:translateX(-50%);-webkit-transform:translateX(-50%);}
 .evt-info .QRinfo{ position: absolute; width:37.5%; top:40%; left:50%;transform:translateX(-50%);-webkit-transform:translateX(-50%); color:#FFF; font-size:1.2rem;line-height: 1.8rem;text-align: center;}
 .evt-info .evtInfo{ position: absolute; width:78.1%; top:68%; left:50%;transform:translateX(-50%);-webkit-transform:translateX(-50%); color:#FFF; font-size:1rem;line-height: 1.4rem; text-align: center;}
