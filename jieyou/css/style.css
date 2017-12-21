@@ -8,7 +8,7 @@ body { min-width: 320px;/* max-width: 640px;*/ background: #9c6729; width: 100%;
     -webkit-tap-highlight-color: rgba(0,0,0,0); 
     -webkit-focus-ring-color: rgba(0, 0, 0, 0);}
 
-.evt-main{ position: relative; min-height: 12rem; font-family: microsoft yahei,Arial;}
+.evt-main, .evt-info{ position: relative; min-height: 12rem; font-family: microsoft yahei,Arial;}
 .evt-main .banner{ }
 .evt-main .logo{ position: absolute; width: 47%; left:3%; top:1%; }
 .evt-main .moon{ position: absolute; width:100%; top:0; left:0;}
@@ -25,17 +25,17 @@ body { min-width: 320px;/* max-width: 640px;*/ background: #9c6729; width: 100%;
 	-webkit-animation:move 2s ease .5s 1 forwards; animation:move 2s ease .5s 1 forwards;}
 .evt-main .xiaowan{ position: absolute; width:100%; top:0; left:0; opacity:0;
 	-webkit-animation:move 2s ease 1s 1 forwards; animation:move 2s ease 1s 1 forwards;}
-.evt-main .dial{ position: absolute; width:100%; top:30%; left:0;-webkit-animation: flot 10s infinite;animation: flot 10s infinite;}
-.evt-main .clocHan{ position: absolute; width:7%; top:54.5%; left:40.6%;-webkit-animation: shake 4s infinite;animation: shake 4s infinite;}
-.evt-main .desk{ position: absolute; width:100%; top:30%; left:0;}
+.evt-main .dial{ position: absolute; width:100%; top:47%; left:0;-webkit-animation: flot 10s infinite;animation: flot 10s infinite;}
+.evt-main .clocHan{ position: absolute; width:7%; top:82%; left:40.6%;-webkit-animation: shake 4s infinite;animation: shake 4s infinite;}
+.evt-main .desk{ position: absolute; width:100%; bottom: 0; left:0;}
 .evt-main .light{ position: absolute; width:14%;  opacity:0;
 	-webkit-animation:flash 1s linear infinite alternate ; animation:flash 1s linear infinite alternate ;}
-.evt-main #light2 { top:55.5%; left:15.3%; }
-.evt-main #light1 { top:58.6%; left:26.9%; }
-.evt-main .evtQR{ position: absolute; width:25.9%; top:70.9%; left:50%;transform:translateX(-50%);-webkit-transform:translateX(-50%);}
-.evt-main .QRinfo{ position: absolute; width:37.5%; top:80.5%; left:50%;transform:translateX(-50%);-webkit-transform:translateX(-50%); color:#FFF; font-size:1.2rem;line-height: 1.4rem;text-align: center;}
-.evt-main .evtInfo{ position: absolute; width:78.1%; top:89.7%; left:50%;transform:translateX(-50%);-webkit-transform:translateX(-50%); color:#FFF; font-size:1rem;line-height: 1.4rem; text-align: center;}
-.evt-main .evtInfo b{font-size:1.2rem; line-height: 1.4rem;}
+.evt-main #light2 { top:83%; left:15.3%; }
+.evt-main #light1 { top:87.5%; left:26.9%; }
+.evt-info .evtQR{ position: absolute; width:25.9%; top:12%; left:50%;transform:translateX(-50%);-webkit-transform:translateX(-50%);}
+.evt-info .QRinfo{ position: absolute; width:37.5%; top:40%; left:50%;transform:translateX(-50%);-webkit-transform:translateX(-50%); color:#FFF; font-size:1.2rem;line-height: 1.4rem;text-align: center;}
+.evt-info .evtInfo{ position: absolute; width:78.1%; top:68%; left:50%;transform:translateX(-50%);-webkit-transform:translateX(-50%); color:#FFF; font-size:1rem;line-height: 1.4rem; text-align: center;}
+.evt-info .evtInfo b{font-size:1.2rem; line-height: 1.4rem;}
 
 
 .lv-bottom {margin: .7rem 0 4rem;}
