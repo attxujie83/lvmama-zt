@@ -3,7 +3,7 @@
 (function($){
     var defaults = {
         animateSpeed: 800,
-        isAutoRun : false,
+        isAutoRun : true,
         autoSpeed: 15000
     };
     //$picBox, $tabBox
