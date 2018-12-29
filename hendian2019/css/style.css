@@ -10,7 +10,7 @@ body { min-width: 320px;/* max-width: 640px;*/ background: url(../images/mainBg.
 	
 	
 	
-.top-header{position: relative;min-height: 12rem;padding-bottom:1rem;}
+.top-header{position: relative;overflow: hidden;}
 .top-header .banBg{ }
 .top-header .logo{ position: absolute; width: 24%; left:3%; top:2%; }
 .top-header .banTi{ position: absolute; width:100%; top:0; left:0; opacity:0;
@@ -18,6 +18,10 @@ body { min-width: 320px;/* max-width: 640px;*/ background: url(../images/mainBg.
 .top-header .banRen{ position: absolute; width:100%; top:0; left:0; opacity:0;
 	-webkit-animation:move 2s ease 1s 1 forwards; animation:move 2s ease 1s 1 forwards;}
 
+.zt-video{ margin-top: -7rem; position: relative; height: 22rem;}
+.zt-video .plBtn{ position: absolute; width: 12%; left:44%; top:49%; }
+.zt-video .vdMsk{ position: absolute; width:100%; top:0; left:0;}
+.zt-video .vdBan{ position: absolute; width: 75.5%; left:12.27%; top:24%; }
 
 .evt-main, .evt-info{ position: relative; min-height: 100rem; font-family: microsoft yahei,Arial;}
 .evt-main .banner{ }
