@@ -23,6 +23,7 @@ body { min-width: 320px;/* max-width: 640px;*/ background: url(../images/mainBg.
 .zt-video .vdMsk{ position: absolute; width:100%; top:0; left:0;}
 .zt-video .vdBan{ position: absolute; width: 75.5%; left:12.27%; top:24%; }
 
+.zt-title{ overflow: hidden; margin: 1rem 0; text-align: center;}
 
 
 
