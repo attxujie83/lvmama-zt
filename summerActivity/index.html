@@ -1,0 +1,721 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>玩水就找驴妈妈</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" name="viewport">
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="applicable-device" content="mobile">
+    <meta needAutoshare='false' id="share" share-linkurl="" name="share" share-title="" share-content="" share-imageurl="" share-shortmessage="">
+    <link rel="apple-touch-icon" href="https://pics.lvjs.com.cn/img/mobile/touch/img/lvmama_v1_png.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://pics.lvjs.com.cn/img/mobile/touch/img/lvmama_v1_png.png ">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://pics.lvjs.com.cn/img/mobile/touch/img/lvmama_v1_png.png ">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://pics.lvjs.com.cn/img/mobile/touch/img/lvmama_v1_png.png ">
+    <meta id="_keywords" name="Keywords" content="驴妈妈无线,景区门票,旅游度假">
+    <meta id="_description" name="Description" content="驴妈妈无线官网:支持手机快捷预订景区门票,自助游线路,全国酒店,豪华邮轮等各种旅游产品.(中国最领先的在线旅游预订服务商!)">
+</head>
+
+<body>
+    <div id="app"></div>
+    <script src="https://pics.lvjs.com.cn/mobile/lib/plugins/nativeUtil/2.0/dist/nativeUtil-2.5.1.min.js"></script>
+    <script src="https://pics.lvjs.com.cn/mobile/plugins/nativeJs/login/1.2/build.min.js"></script>
+    <script src="https://pics.lvjs.com.cn/mobile/plugins/nativeJs/location/1.1/code.min.js"></script>
+    <script src="https://pics.lvjs.com.cn/mobile/plugins/nativeJs/toTop/2.0/build.min.js"></script>
+    <script src="https://pics.lvjs.com.cn/mobile/lib/plugins/statisticsUtil/4.0/dist/statisticsUtil-4.0.1.min.js"></script>
+    <script src="https://pics.lvjs.com.cn/mobile/lib/vue/vue-2.4.1.min.js"></script>
+    <script src="https://pics.lvjs.com.cn/mobile/lib/vue/axios-0.16.2.min.js"></script>
+    <!-- built files will be auto injected -->
+  <div id="app">
+    <!-- 顶部小程序指引收藏 -->
+    <div class="hxbTop" v-if="currentEnv=='小程序'">
+      <img src="./assets/hxb_top_bg.png" alt style="display:block">
+    </div>
+    <!-- 头部背景 -->
+    <div class="hxbHeader">
+      <img src="./assets/hxb_header_bg1.jpg" alt style="width:750px">
+      <img src="./assets/hxb_header_bg2.png" alt>
+      <img src="./assets/hxb_header_bg3.png" alt style="width:400px;left:120px;bottom:220px">
+      <img src="./assets/hxb_header_bg4.png" alt style="width:119px;bottom:58px;right:0">
+    </div>
+    <!-- 优惠券 -->
+    <div class="hxbCoupon">
+      <ul class="hxbCouponUl">
+        <li v-for="item in couponsList">
+          <img :src="item.image_url" alt>
+          <img v-if="item.isReceive==1" :src="item.image_url1" style="position:absolute;top:0" alt>
+        </li>
+      </ul>
+    </div>
+    <!-- 9.9元惊喜价 -->
+    <div class="hxbBuyWrapOne">
+      <img src="./assets/hxb_couponOne.png" style="display:block" alt>
+      <div class="buyWrap">
+        <ul class="buyWrapTitle">
+          <li
+            v-for="item in cityList"
+            :class="choiceCity==item ? 'active' : ''"
+            @click="choiceCurentCity(item)"
+          >{{item}}</li>
+        </ul>
+        <ul class="buyWrapContent" :style="{'height':thurProductList_flag ? '330px' : 'auto'}">
+          <li v-for="item in thurProductList">
+            <div class="imgTopWrap">
+              <img :src="item.image_url" style="width:325px" alt>
+              <p>
+                距开始
+                <span>03</span>天
+                <span>23</span>:
+                <span>59</span>:
+                <span>58</span>
+              </p>
+            </div>
+            <div class="contentWrap">
+              <div class="textDescWrap">{{item.title}}</div>
+              <div class="priceDescWrap">
+                <div class="left">
+                  ¥
+                  <span style="font-weight:bold;font-size:28px">{{item.price}}</span>元
+                </div>
+                <div class="right">
+                  <!-- <button class="redBtn">立即抢</button> -->
+                  <button class="greyBtn">未开始</button>
+                </div>
+              </div>
+              <div class="mountDescWrap">
+                <div class="left">已抢80%</div>
+                <div class="right">
+                  <div class="progressBar"></div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div
+          v-if="thurProductList_extendFlag"
+          class="buyWrapBottom"
+          @click="extendMore('thurProductList_flag','thurProductList_extendFlag')"
+        >点击查看更多>>></div>
+        <div
+          v-else
+          class="buyWrapBottom"
+          @click="shrinkMore('thurProductList_flag','thurProductList_extendFlag')"
+        >收起</div>
+        <div style="padding:20px;" v-if="currentEnv!='APP'">
+          <img src="./assets/hxb_couponOne1.png" style="display:block;" alt>
+        </div>
+      </div>
+    </div>
+    <!-- 99元限量抢 -->
+    <div class="hxbBuyWrapTwo" style="padding-bottom:10px">
+      <img src="./assets/hxb_couponTwo.png" style="display:block" alt>
+      <div class="buyWrap">
+        <ul class="buyWrapTitle">
+          <li
+            v-for="item in timeList"
+            :class="choiceTime==item ? 'active' : ''"
+            @click="choiceCurentTime(item)"
+          >{{item}}</li>
+        </ul>
+        <ul class="buyWrapContent" :style="{'height':limitedProductList_flag ? '330px' : 'auto'}">
+          <li v-for="item in limitedProductList">
+            <div class="imgTopWrap">
+              <img :src="item.image_url" style="width:325px" alt>
+              <p>
+                距开始
+                <span>03</span>天
+                <span>23</span>:
+                <span>59</span>:
+                <span>58</span>
+              </p>
+            </div>
+            <div class="contentWrap">
+              <div class="textDescWrap">{{item.title}}</div>
+              <div class="priceDescWrap">
+                <div class="left">
+                  ¥
+                  <span style="font-weight:bold;font-size:28px">{{item.price}}</span>元
+                </div>
+                <div class="right">
+                  <button class="redBtn">立即抢</button>
+                </div>
+              </div>
+              <div class="mountDescWrap">
+                <div class="left">已抢80%</div>
+                <div class="right">
+                  <div class="progressBar"></div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div
+          v-if="limitedProductList_extendFlag"
+          class="buyWrapBottom"
+          @click="extendMore('limitedProductList_flag','limitedProductList_extendFlag')"
+        >点击查看更多>>></div>
+        <div
+          v-else
+          class="buyWrapBottom"
+          @click="shrinkMore('limitedProductList_flag','limitedProductList_extendFlag')"
+        >收起</div>
+        <div style="padding:20px;" v-if="currentEnv!='APP'">
+          <img src="./assets/hxb_couponTwo1.png" style="display:block;" alt>
+        </div>
+      </div>
+    </div>
+    <!-- 情景抢购区 -->
+    <img src="./assets/hxb_couponThree.png" style="display:block" alt>
+    <div
+      class="hxbBuyWrapThree"
+      style="background:rgb(255,240,182);padding:0 20px 10px 20px; margin:0;"
+    >
+      <div class="buyWrap">
+        <div class="wrapThreeTitle">
+          <img :src="shelvesInfo.image_url" style="display:block;border-radius:15px 15px 0 0" alt>
+          <div class="topBtn">
+            <button
+              v-for="item in sceneList"
+              :class="choiceScene==item ? 'activeBtn' : ''"
+              @click="choiceCurentScene(item)"
+            >
+              <span>{{item}}</span>
+            </button>
+          </div>
+          <div class="bottomTag">
+            <p style="font-size:20px;line-height:28px">超级大喇叭</p>
+            <div>
+              <ul>
+                <li style="margin-right:8px;float:left">
+                  <ul>
+                    <li style="float:left;margin-right:5px;">刺激</li>
+                    <li v-for="item in 5" style="width:16px;float:left;margin-right:2px;">
+                      <img src="./assets/hxb_iconStar1.png" alt>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <ul>
+                    <li style="float:left;margin-right:5px;">清凉</li>
+                    <li v-for="item in 4" style="width:16px;float:left;margin-right:2px;">
+                      <img src="./assets/hxb_iconStar1.png" alt>
+                    </li>
+                    <li style="width:16px;float:left">
+                      <img src="./assets/hxb_iconStar2.png" alt>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <div style="float:right;margin-top:-5px">
+                <button
+                  style="background:rgba(0,0,0,0.4);border-radius:15px;padding:2px;border:1px solid #ffffff;width:80px;height:25px;margin-right:10px"
+                >亲子</button>
+                <button
+                  style="background:rgba(0,0,0,0.4);border-radius:15px;padding:2px;border:1px solid #ffffff;width:80px;height:25px"
+                >儿童</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ul
+          class="buyWrapContent"
+          style="position:relative;top:-15px;margin-bottom:-15px;border-radius:15px 15px 0 0"
+          :style="{'height':shelvesInfoProductList_flag ? '310px' : 'auto'}"
+        >
+          <li v-for="item in shelvesInfo.productList" style="height:269px">
+            <div class="imgTopWrap">
+              <img :src="item.image_url" style="width:325px !important" alt>
+            </div>
+            <div class="contentWrap">
+              <div class="textDescWrap">{{item.title}}</div>
+              <div class="priceDescWrap">
+                <div class="left">
+                  ¥
+                  <span style="font-weight:bold;font-size:28px">{{item.price}}</span>元
+                </div>
+                <div class="right">
+                  <button class="redBtn">立即抢</button>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div
+          v-if="shelvesInfoProductList_extendFlag"
+          class="buyWrapBottom"
+          @click="extendMore('shelvesInfoProductList_flag','shelvesInfoProductList_extendFlag')"
+        >点击查看更多>>></div>
+        <div
+          v-else
+          class="buyWrapBottom"
+          @click="shrinkMore('shelvesInfoProductList_flag','shelvesInfoProductList_extendFlag')"
+        >收起</div>
+        <div style="padding:20px;">
+          <img src="./assets/hxb_couponThree1.png" style="display:block;" alt>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/hxb_couponThree2.png" style="display:block" alt>
+    <!-- 底部提示区 -->
+    <div
+      class="hxbTipWrap"
+      style="background:rgba(255, 228, 139, 1);padding:0 20px 40px 20px; margin:0;"
+    >
+      <img src="./assets/hxb_bottomBg.png" style="display:block" alt>
+      <div class="buyWrapContent" style="border-radius:15px;margin-top:-25px;padding-top:40px">
+        <img src="./assets/hxb_bottomBg1.jpg" style="display:block" alt>
+        <img src="./assets/hxb_bottomBg2.png" style="display:block;margin:20px 0;" alt>
+      </div>
+      <img
+        src="./assets/hxb_bottomBg3.png"
+        alt
+        style="width:80%;margin:20px 10%;"
+        @click="goRedPacket()"
+      >
+      <img src="./assets/hxb_bottomBg4.png" alt>
+    </div>
+    <!-- <div style="width:100%;height:100%;position:fixed;top:0;left:0;background:rgba(0,0,0,0.5)">
+        <div></div>
+    </div> -->
+  </div>
+
+<script>
+const arrList = require("./mock.json");
+import { Toast } from "matrix-ui";
+const api =
+  "http://m.lvmama.com/bullet/index.php?s=/WaterSeason/getChannelInfos&stationCode=*";
+
+export default {
+  data() {
+    return {
+      currentEnv: "小程序",
+      couponsList: [], // 优惠券列表
+      choiceCity: "苏州",
+      cityList: ["上海", "苏州", "杭州", "南京", "常州"], // 9.9元城市tab栏
+      thurProductList: [],
+      thurProductList_flag: false,
+      thurProductList_extendFlag: true,
+      choiceTime: "周三10:00",
+      timeList: ["周三10:00", "周五10:00", "周六10:00"], // 99元限量抢时间tab栏
+      limitedProductList: [],
+      limitedProductList_flag: false,
+      limitedProductList_extendFlag: true,
+      choiceScene: "结伴玩水",
+      sceneList: ["结伴玩水", "家庭出游", "情侣嘻游"], // 情景抢购tab栏
+      shelvesInfo: {},
+      shelvesInfoProductList_flag: false,
+      shelvesInfoProductList_extendFlag: true
+    };
+  },
+  mounted() {
+    // this.initData();
+    this.dealData();
+    // this.getData();
+  },
+  methods: {
+    initData() {
+      let that = this;
+      Toast("请重新登陆");
+      that.judgePlace();
+      that.checkLogin();
+    },
+    // 获取数据
+    getData() {
+      axios
+        .post(
+          "https://m.lvmama.com/bullet/index.php?s=/WaterSeason/getChannelInfos&stationCode=SH"
+        )
+        .then(data => {
+          console.log(data);
+        });
+    },
+    // 对数据进行相关处理
+    dealData() {
+      // console.log(arrList.couponsList)
+      const that = this;
+      // 优惠券数据处理
+      const couponsList = arrList.couponsList;
+      couponsList.forEach(element => {
+        (element["image_url"] = require("./assets/hxb_unreceived.png")),
+          (element["image_url1"] = require("./assets/hxb_received.png"));
+      });
+      that.couponsList = couponsList;
+      // 9.9元惊喜价数据处理
+      const thurProductList = arrList.thurProductList;
+      if (thurProductList.length > 2) {
+        that.thurProductList_flag = true;
+      }
+      that.thurProductList = thurProductList;
+      console.log(thurProductList);
+      // 99元限量抢数据处理
+      const limitedProductList = arrList.limitedProductList;
+      if (limitedProductList.length > 2) {
+        that.limitedProductList_flag = true;
+      }
+      that.limitedProductList = limitedProductList;
+      // 场景选择数据处理
+      const shelvesInfo = arrList.shelvesInfo;
+
+      if (shelvesInfo.productList.length > 2) {
+        that.shelvesInfoProductList_flag = true;
+      }
+      that.shelvesInfo = shelvesInfo;
+      console.log(shelvesInfo);
+    },
+    // 判断是否登陆
+    checkLogin() {
+      let that = this;
+      loginUtil.isLogin(function(data) {
+        console.log(data);
+      });
+    },
+    // 判断当前环境
+    judgeEnv() {
+      var ua = window.navigator.userAgent.toLowerCase();
+      if (ua.match(/MicroMessenger/i) == "micromessenger") {
+        wx.miniProgram.getEnv(function(res) {
+          if (res.miniprogram) {
+            // 小程序环境下逻辑
+            // wx.miniProgram.switchTab({
+            //     url: '/pages/index/index'
+            // });
+          } else {
+            //非小程序环境下逻辑
+            // window.location.href = 'https://m.lvmama.com';
+          }
+        });
+      } else {
+        //非微信环境逻辑
+        // window.location.href = 'https://m.lvmama.com';
+      }
+    },
+    // 获取当前时间
+    // 判断当前定位地址
+    judgePlace() {
+      var that = this;
+      positionUtil.getposition(function(data) {
+        console.log(data);
+        // that.stationName = data.CITY.PROVINCENAME || '上海';
+        // that.cityName = data.CITY.NAME || '上海';
+      });
+    },
+    // 倒计时处理
+    countdown(saleTime) {
+      const self = {
+        days: "",
+        hours: "",
+        minutes: "",
+        seconds: ""
+      };
+      let leftTime = saleTime;
+      if (leftTime <= 0) {
+        self.days = "00";
+        self.hours = "00";
+        self.minutes = "00";
+        self.seconds = "00";
+      } else {
+        let timer = setInterval(() => {
+          leftTime = leftTime - 1000;
+          const dd = parseInt(leftTime / 1000 / 60 / 60 / 24, 10);
+          const hh = self.checkTime(
+            parseInt((leftTime / 1000 / 60 / 60) % 24, 10)
+          );
+          const mm = self.checkTime(parseInt((leftTime / 1000 / 60) % 60, 10));
+          const ss = self.checkTime(parseInt((leftTime / 1000) % 60, 10));
+          self.days = dd;
+          self.hours = hh;
+          self.minutes = mm;
+          self.seconds = ss;
+          if (leftTime < 0) {
+            clearTimeout(timer);
+          }
+        }, 1000);
+      }
+    },
+    checkTime(val) {
+      return val < 10 ? `0${val}` : val;
+    },
+    extendMore(flag, extendFlag) {
+      // 查看更多
+      console.log(flag);
+      const that = this;
+      that[flag] = false;
+      that[extendFlag] = false;
+    },
+    shrinkMore(flag, extendFlag) {
+      // 收起
+      const that = this;
+      that[flag] = true;
+      that[extendFlag] = true;
+    },
+    // 9.9元惊喜区当前选中城市tab
+    choiceCurentCity(item) {
+      const that = this;
+      that.thurProductList_extendFlag = true;
+      that.choiceCity = item;
+      that.dealData();
+    },
+    // 99元限量抢区当前选中时间tab
+    choiceCurentTime(item) {
+      const that = this;
+      that.limitedProductList_extendFlag = true;
+      that.choiceTime = item;
+      that.dealData();
+    },
+    // 情景抢购tab栏
+    choiceCurentScene(item) {
+      const that = this;
+      that.shelvesInfoProductList_extendFlag = true;
+      that.choiceScene = item;
+      that.dealData();
+    },
+    // 跳转领红包页面
+    goRedPacket() {
+      // alert(1234)
+      window.location.href = "https://zt1.lvmama.com/template4/index/4842";
+    }
+  }
+};
+</script>
+<style>
+#app {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background: rgba(255, 228, 139, 1);
+}
+.active {
+  background: #ffffff;
+  border-radius: 10px 10px 0 0;
+  color: rgba(255, 52, 3, 1) !important;
+}
+.fontEllipsis {
+  /* 字体超出隐藏 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.hxbHeader {
+  position: relative;
+  height: 600px;
+}
+.hxbHeader img {
+  position: absolute;
+}
+.hxbCoupon {
+  height: 115px;
+  width: 570px;
+  margin: 0 auto;
+  /* padding: 0 42px; */
+  /* background: #ffffff; */
+  position: relative;
+  top: -100px;
+  margin-bottom: -100px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.hxbCoupon::-webkit-scrollbar {
+  display: none;
+}
+.hxbCoupon .hxbCouponUl {
+  width: 2000px;
+}
+.hxbCouponUl li {
+  float: left;
+  /* margin:0 18px; */
+}
+.hxbCouponUl li img {
+  width: 285px;
+  transform: scale(0.8);
+}
+.hxbBuyWrapOne,
+.hxbBuyWrapTwo,
+.hxbBuyWrapThree,
+.hxbTipWrap {
+  width: calc(100%-40px);
+  margin: 0 20px;
+}
+.buyWrap {
+  border-radius: 15px;
+  background: rgba(255, 153, 51, 1);
+}
+.buyWrapTitle {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  border-radius: 15px 15px 0 0;
+  background: rgba(255, 153, 51, 1);
+}
+.wrapThreeTitle {
+  height: 295px;
+  padding-top: 40px;
+  position: relative;
+  background: rgb(255, 240, 182);
+}
+.wrapThreeTitle .topBtn {
+  width: 100%;
+  position: absolute;
+  top: -5px;
+  right: -40px;
+}
+.topBtn button {
+  width: 160px;
+  height: 60px;
+  border-radius: 30px;
+  background: rgb(255, 142, 45);
+  transform: scale(0.8);
+  color: #ffffff;
+}
+.topBtn button span {
+  display: block;
+  font-size: 24px;
+}
+.activeBtn {
+  width: 200px !important;
+  height: 97px !important;
+  color: #ffffff;
+  background: url("./assets/hxb_btnBg1.png") !important;
+  background-repeat: no-repeat !important;
+  background-size: 100% !important;
+}
+.activeBtn span {
+  margin-top: -15px;
+  font-size: 30px !important;
+}
+.wrapThreeTitle .bottomTag {
+  width: 100%;
+  position: absolute;
+  bottom: 15px;
+  padding: 5px 10px;
+  color: #ffffff;
+  /* right: -40px; */
+}
+.buyWrapTitle li {
+  height: 50px;
+  width: 100%;
+  line-height: 50px;
+  font-size: 16px;
+  text-align: center;
+  color: #ffffff;
+}
+.buyWrapContent {
+  padding: 20px 20px 0 20px;
+  background: #ffffff;
+  overflow: hidden;
+}
+.buyWrapContent li {
+  width: 260px;
+  height: auto;
+  float: left;
+  margin: 10px 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(224, 224, 224, 1);
+  background: #ffffff;
+}
+.imgTopWrap {
+  position: relative;
+}
+.imgTopWrap img {
+  border-radius: 10px 10px 0 0;
+}
+.imgTopWrap p {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  display: flex;
+  color: rgba(255, 255, 255, 0.8);
+}
+.imgTopWrap p span {
+  background: rgba(0, 0, 0, 0.3);
+  display: block;
+  border-radius: 25%;
+  padding: 0 2px;
+  margin: 0 5px;
+}
+.contentWrap {
+  margin: 0 10px;
+}
+.contentWrap .textDescWrap {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #444444;
+}
+.contentWrap .priceDescWrap {
+  height: 40px;
+}
+.priceDescWrap .left {
+  width: 72%;
+  height: 100%;
+  float: left;
+  color: rgb(252, 31, 52);
+  line-height: 40px;
+}
+.priceDescWrap .right {
+  height: 100%;
+  float: right;
+}
+.redBtn {
+  /* width:100px; */
+  border-radius: 20px;
+  padding: 2px 10px;
+  margin: 8px 0;
+  color: #ffffff;
+  background: linear-gradient(
+    90deg,
+    rgb(252, 25, 122) 0%,
+    rgb(252, 67, 36) 62%
+  );
+}
+.greyBtn {
+  background: rgba(204, 204, 204, 1);
+  border-radius: 20px;
+  padding: 2px 10px;
+  margin: 8px 0;
+  color: #ffffff;
+}
+.mountDescWrap {
+  height: 20px;
+}
+.mountDescWrap .left {
+  width: 40%;
+  float: left;
+  color: rgb(204, 204, 204);
+  font-size: 12px;
+}
+.mountDescWrap .right {
+  width: 60%;
+  height: 8px;
+  margin-top: 8px;
+  float: right;
+  background: rgb(204, 204, 204);
+  border-radius: 5px;
+}
+.progressBar {
+  width: 60%;
+  height: 8px;
+  background: rgb(253, 89, 97);
+  border-radius: 5px;
+}
+.buyWrapBottom {
+  padding: 0 20px 10px 20px;
+  border-radius: 0 0 15px 15px;
+  background: #ffffff;
+  color: rgb(255, 117, 117);
+  text-align: center;
+  overflow: hidden;
+}
+</style>
+</body>
+
+</html>
