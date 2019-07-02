@@ -1,0 +1,102 @@
+{
+    "couponsList": [{
+            "couponId": 123456,
+            "image_url": "./assets/hxb_unreceived.png",
+            "isReceive": 0
+        },
+        {
+            "couponId": 123457,
+            "image_url": "./assets/hxb_unreceived.png",
+            "isReceive": 1
+        },
+        {
+            "couponId": 123458,
+            "image_url": "./assets/hxb_unreceived.png",
+            "isReceive": 1
+        }
+    ],
+    "thurProductList": [{
+        "id": 1,
+        "title": "fontEllipsis上海玛雅海滩水公园上海玛雅海fontEllipsis上海玛雅海滩水公园上fontEllipsis上海玛雅海滩水公园上海玛雅海fontEllipsis上海玛雅海滩水公园上",
+        "price": 9.9,
+        "image_url": "http://pic.lvmama.com/uploads/pc/place2/2017-04-12/a9a1b167-dc5b-41c2-99a1-269df1deac76.jpg",
+        "productId": 123456,
+        "beginTime": 2333333,
+        "endTime": 3455555
+    }, {
+        "id": 1,
+        "title": "香港迪士尼乐园2日1晚自由行([限时特卖]【买门票送酒店！】，买香港迪士尼乐园“快乐通行香港迪士尼乐园2日1晚自由行([限时特卖]【买门票送酒店！】，买香港迪士尼乐园“快乐通行",
+        "price": 89.9,
+        "image_url": "http://pic.lvmama.com/uploads/pc/place2/2018-11-26/bd7f6650-33b7-42f6-99fd-ee27046bcb52.jpg",
+        "productId": 123456,
+        "beginTime": 2333333,
+        "endTime": 3455555
+    }, {
+        "id": 1,
+        "title": "尼泊尔、纳加阔特、奇旺、博卡拉9日8晚",
+        "price": 189.9,
+        "image_url": "http://pic.lvmama.com/uploads/pc/place2/2018-01-11/3a1e7a6a-827e-4cf8-a10b-0f7cb0e10618.jpg",
+        "productId": 123456,
+        "beginTime": 2333333,
+        "endTime": 3455555
+    }],
+    "limitedProductList": [{
+        "id": 1,
+        "title": "尼泊尔、纳加阔特、奇旺、博卡拉9日8晚",
+        "price": 189.9,
+        "image_url": "http://pic.lvmama.com/uploads/pc/place2/2018-01-11/3a1e7a6a-827e-4cf8-a10b-0f7cb0e10618.jpg",
+        "productId": 123456,
+        "beginTime": 2333333,
+        "endTime": 3455555
+    }, {
+        "id": 1,
+        "title": "香港迪士尼乐园2日1晚自由行([限时特卖]【买门票送酒店！】，买香港迪士尼乐园“快乐通行香港迪士尼乐园2日1晚自由行([限时特卖]【买门票送酒店！】，买香港迪士尼乐园“快乐通行",
+        "price": 89.9,
+        "image_url": "http://pic.lvmama.com/uploads/pc/place2/2018-11-26/bd7f6650-33b7-42f6-99fd-ee27046bcb52.jpg",
+        "productId": 123456,
+        "beginTime": 2333333,
+        "endTime": 3455555
+    }, {
+        "id": 1,
+        "title": "尼泊尔、纳加阔特、奇旺、博卡拉9日8晚",
+        "price": 189.9,
+        "image_url": "http://pic.lvmama.com/uploads/pc/place2/2018-01-11/3a1e7a6a-827e-4cf8-a10b-0f7cb0e10618.jpg",
+        "productId": 123456,
+        "beginTime": 2333333,
+        "endTime": 3455555
+    }],
+    "shelvesInfo": {
+        "image_url": "http://pic.lvmama.com/uploads/pc/place2/2018-01-11/3a1e7a6a-827e-4cf8-a10b-0f7cb0e10618.jpg",
+        "productList": [{
+            "title": "香港迪士尼乐园2日1晚自由行([限时特卖]【买门票送酒店！】，买香港迪士尼乐园“快乐通行香港迪士尼乐园2日1晚自由行([限时特卖]【买门票送酒店！】，买香港迪士尼乐园“快乐通行",
+            "price": 899.9,
+            "image_url": "http://pic.lvmama.com/uploads/pc/place2/2018-11-26/bd7f6650-33b7-42f6-99fd-ee27046bcb52.jpg",
+            "productId": 123456
+        }, {
+            "title": "尼泊尔、纳加阔特、奇旺、博卡拉9日8晚",
+            "price": 189.9,
+            "image_url": "http://pic.lvmama.com/uploads/pc/place2/2018-01-11/3a1e7a6a-827e-4cf8-a10b-0f7cb0e10618.jpg",
+            "productId": 123456
+        }, {
+            "title": "尼泊尔、纳加阔特、奇旺、博卡拉9日8晚",
+            "price": 189.9,
+            "image_url": "http://pic.lvmama.com/uploads/pc/place2/2018-01-11/3a1e7a6a-827e-4cf8-a10b-0f7cb0e10618.jpg",
+            "productId": 123456
+        }, {
+            "title": "尼泊尔、纳加阔特、奇旺、博卡拉9日8晚",
+            "price": 189.9,
+            "image_url": "http://pic.lvmama.com/uploads/pc/place2/2018-01-11/3a1e7a6a-827e-4cf8-a10b-0f7cb0e10618.jpg",
+            "productId": 123456
+        }, {
+            "title": "尼泊尔、纳加阔特、奇旺、博卡拉9日8晚",
+            "price": 189.9,
+            "image_url": "http://pic.lvmama.com/uploads/pc/place2/2018-01-11/3a1e7a6a-827e-4cf8-a10b-0f7cb0e10618.jpg",
+            "productId": 123456
+        }, {
+            "title": "尼泊尔、纳加阔特、奇旺、博卡拉9日8晚",
+            "price": 189.9,
+            "image_url": "http://pic.lvmama.com/uploads/pc/place2/2018-01-11/3a1e7a6a-827e-4cf8-a10b-0f7cb0e10618.jpg",
+            "productId": 123456
+        }]
+    }
+}
